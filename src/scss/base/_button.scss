@@ -1,0 +1,75 @@
+.btn-main {
+  display: inline-block;
+  padding: 15px 40px;
+
+  color: $white;
+  background: $primary;
+  border-radius: $radius;
+  
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 700;
+
+  transition: 0.5s background ease;
+  
+  @media (max-width: 767px) {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken($primary, 15%);
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  // min-width: 200px;
+  padding: 15px 40px;
+
+  // text-align: center;
+  color: $primary;
+  background-color: transparent;
+  border-radius: $radius;
+  border: 1px solid $primary;
+
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 700;
+
+  transition: 0.5s ease;
+  transition-property: color, background;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    background: $primary;
+    // background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

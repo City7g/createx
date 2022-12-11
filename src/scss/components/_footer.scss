@@ -1,0 +1,28 @@
+.footer {
+  color: $white;
+  background-color: #1E212C;
+
+  @media (max-width: $tablet-sm) {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+
+  &-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 80px;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 80px;
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.footer-bottom {
+  background: rgba($white, 0.05);
+}

@@ -1,0 +1,130 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  transition: 0.3s box-shadow ease, 0.3s background-color ease;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: $header-height;
+
+    @media (max-width: $hamb) {
+      height: $header-height-mob;
+    }
+  }
+
+  &--scrolled {
+    background-color: $white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    // backdrop-filter: saturate(50%) blur(8px);
+  }
+
+  &__consultation {
+    @media (max-width: 360px) {
+      display: none;
+    }
+  }
+  
+  &__auth {
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+}
+
+.header-logo {
+}
+
+.header-nav {
+  &__link {
+    margin-left: 24px;
+
+    transition: 0.3s color ease;
+
+    @media (max-width: $hamb) {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  @media (max-width: $hamb) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.3s all ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    width: 100%;
+    max-width: 300px;
+
+    background-color: $white;
+
+    &.show {
+      transform: translateX(0);
+    }
+  }
+}
+
+.header-hamb {
+  position: relative;
+  z-index: 11;
+
+  display: none;
+
+  width: 30px;
+  height: 30px;
+
+  & span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 25px;
+    height: 2px;
+    transform: translate(-50%, -50%);
+
+    background-color: $black;
+    transition: 0.3s all ease;
+  }
+
+  & span:first-child {
+    transform: translate(-50%, calc(-50% - 6px));
+  }
+
+  & span:last-child {
+    transform: translate(-50%, calc(-50% + 6px));
+  }
+
+  &.active span:first-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.active span:last-child {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  @media (max-width: $hamb) {
+    display: block;
+  }
+}

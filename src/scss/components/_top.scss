@@ -1,0 +1,32 @@
+.top {
+  background: #121739;
+  color: $white;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+  }
+
+  &-tel {
+    margin-left: auto;
+
+    @media (max-width: $tablet-sm) {
+      display: none;
+    }
+
+    &__link {
+      margin-left: 5px;
+    }
+  }
+
+  &__appointment {
+    margin-left: 70px;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}

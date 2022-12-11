@@ -1,0 +1,161 @@
+extends ../layout/main
+
+block content
+  section.section-first
+    .container
+      .section-first__wrap
+        .section-first__content
+          h1.title-h1 Enjoy studying with Createx Online Courses
+          .section-first__btns
+            button.btn-secondary About us
+            button.btn-main Explore courses
+          
+        .section-first__img
+          img(src="/img/first-img.svg", alt="")
+
+  section.section-why
+    .container
+      .section-why__wrap
+        .section-first__img
+          img(src="/img/why-img.jpg", alt="")
+          
+        .section-why__content
+          h4.title-h6.section-why__subtitle Who we are
+          h2.title-h2.section-why__title Why Createx?
+          ul.list-main
+            li A fermentum in morbi pretium aliquam adipiscing donec tempus.
+            li Vulputate placerat amet pulvinar lorem nisl.
+            li Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+            li Etiam duis lobortis in fames ultrices commodo nibh.
+            li Tincidunt sagittis neque sem ac eget.
+            li Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
+          button.btn-main.section-why__btn More about us
+
+  section.section-feature
+    .container
+      h4.title-h6.section-feature__subtitle Ready to learn?
+      h3.title-h2.section-feature__title Featured Courses
+      a(href="#").btn-secondary.section-feature__more View all courses 
+      .section-feature__list
+        .card-feature
+          img(src="/img/feature/item-1.jpg", alt="").card-feature__img
+          h5.card-feature__prof Marketing
+          h4.card-feature__title The Ultimate Google Ads Training Course
+          .card-feature__info
+            p.card-feature__price $100
+            p.card-feature__author by Jerome Bell
+
+        .card-feature
+          img(src="/img/feature/item-2.jpg", alt="").card-feature__img
+          h5(style="background: #5A87FC").card-feature__prof Management
+          h4.card-feature__title Prduct Management Fundamentals
+          .card-feature__info
+            p.card-feature__price $480
+            p.card-feature__author by Marvin McKinney
+
+        .card-feature
+          img(src="/img/feature/item-3.jpg", alt="").card-feature__img
+          h5(style="background: #F89828").card-feature__prof HR & Recruting
+          h4.card-feature__title HR  Management and Analytics
+          .card-feature__info
+            p.card-feature__price $200
+            p.card-feature__author by Leslie Alexander Li
+
+        .card-feature
+          img(src="/img/feature/item-4.jpg", alt="").card-feature__img
+          h5.card-feature__prof Marketing
+          h4.card-feature__title Brand Management & PR Communications
+          .card-feature__info
+            p.card-feature__price $530
+            p.card-feature__author by Kristin Watson
+    
+  section.section-how
+    .container
+      h4.title-h6 Our benefits
+      h2.title-h2 That’s how we do it
+
+      .tabs
+        a(href="#").tabs__item Experienced Tutors 
+        a(href="#").tabs__item Feedback & Support 
+        a(href="#").tabs__item 24/7 Online Library 
+        a(href="#").tabs__item Community
+
+  section.section-team
+    .container
+      h4.title-h6.section-team__title Best tutors are all here
+      h2.title-h2.section-team__title Meet our team
+
+      .section-team__team
+        each person in [1, 2, 3, 4]
+          .card-person
+            .card-person__image
+              img(src=`/img/team/person-${person}.png`, alt="")
+            
+            h4.card-person__name Dianne Russell
+            p.card-person__proffesion Founder and CEO
+      
+
+  section.section-posts
+    .container
+      h5.title-h6.section-posts__subtitle Our blog
+      h2.title-h2.section-posts__title Latest posts
+      a(href="#").btn-main.section-posts__more Go to blog
+
+      .section-posts__posts
+        each item in [1, 2, 3]
+          article.card-post
+            a(href="#").card-post__image
+              img(src=`/img/post/item-${item}.jpg`, alt="").card-post__img
+              p.card-post__type Podcast
+            .card-post__info
+              .card-post__category Marketing
+              .card-post__date September 4, 2020
+              .card-post__duration 36 min
+            h4.title-h4.card-post__title
+              a(href="#") What is traffic arbitrage and does it really make money? 
+            p.text-main.card-post__text Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...
+            a(href="#").card-post__link Listen
+  
+  section.section-event
+    .container
+      h4.title-h6.section-event__subtitle Our Events
+      h2.title-h2.section-event__title Lectures & workshops
+
+      .section-event__events
+        each item in [1, 2, 3]
+          .card-event
+            .card-event__day= Math.ceil(Math.random()*30)
+            .card-event__month August
+            .card-event__title Building a customer service department.
+            a(href="#").btn-main.card-event__more View more 
+            .card-event__time 11:00 – 14:00
+            .card-event__text Onine lecture
+
+      .section-event__bottom
+        h5.title-h3 Do you want more?
+        a(href="#").btn-main Explore all events
+
+  include ../section/certificate
+
+  section.section-team
+    .container
+      h4.title-h6.section-team__subtitle Best tutors are all here
+      h2.title-h2.section-team__title Meet our team
+
+      .section-team__team
+        each person in [1, 2, 3, 4]
+          .card-person
+            .card-person__image
+              img(src=`/img/team/person-${person}.png`, alt="").card-person__img
+            h4.card-person__name Dianne Russell
+            p.card-person__prof Founder and CEO
+  
+  section.section-subscibe
+    .container
+      .section-subscibe__wrap
+        h4.title-h6.section-subscibe__subtitle Don’t miss anything
+        h2.title-h2.section-subscibe__title Subscribe to the Createx School announcements
+
+        form.form-subscribe
+          input(type="email", placeholder="Your working email")
+          button.btn-main Subscribe

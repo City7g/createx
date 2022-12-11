@@ -1,0 +1,30 @@
+html {
+  scrollbar-color: $primary $white;
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: 'Lato';
+  // display: flex;
+  // flex-direction: column;
+
+  // background-color: $white;
+  // color: $black;
+}
+
+:focus {
+  outline: 2px solid $black;
+}
+
+::selection {
+  background-color: $black;
+  color: $white;
+}
+
+img::selection {
+  background-color: rgba($secondary, 0.3);
+}
+
+::-webkit-scrollbar-track {
+  width: 8px;
+}

@@ -1,0 +1,22 @@
+- const headerLinks = [{name: 'About Us', path: '/'}, {name: 'Courses', path: '/'}, {name: 'Events', path: '/ '}, {name: 'Blog', path: '/'}, {name: 'Contacts', path: '/'}]
+
+header.header
+  .container
+    a(href="/").header-logo
+      img(src="/img/logo.svg", alt="")
+    
+    nav.header-nav
+      each link in headerLinks
+        a(href=link.path).header-nav__link= link.name
+
+    button.btn-main.header__consultation Get consultation
+
+    .header-auth.header__auth
+      a(href="#") Log in
+      | /
+      a(href="#") Register  
+    
+    button.header-hamb
+      span
+      span
+      span
