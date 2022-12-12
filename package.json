@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "browser-sync": "^2.27.7",
     "gsap": "^3.9.1",
     "gulp": "^4.0.2",

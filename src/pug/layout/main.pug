@@ -1,4 +1,7 @@
 block variables
+  - let barba = 'home'
+
+include ../components/card/post
 
 doctype html
 html(lang="en")
@@ -8,10 +11,11 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title CreateX
     link(rel="stylesheet", href="main.css")
-  body
+  body(data-barba="wrapper")
     include ../components/header
 
-    block content
+    main(data-barba="container", data-barba-namespace=barba)
+      block content
 
     include ../components/footer
 

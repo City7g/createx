@@ -2,6 +2,7 @@
   &__image {
     position: relative;
     display: block;
+    height: 300px;
     margin-bottom: 16px;
     overflow: hidden;
     border-radius: $radius;
@@ -24,7 +25,9 @@
 
   &__img {
     width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
     transition: 0.3s transform ease;
   }
 

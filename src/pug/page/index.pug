@@ -102,19 +102,8 @@ block content
       a(href="#").btn-main.section-posts__more Go to blog
 
       .section-posts__posts
-        each item in [1, 2, 3]
-          article.card-post
-            a(href="#").card-post__image
-              img(src=`/img/post/item-${item}.jpg`, alt="").card-post__img
-              p.card-post__type Podcast
-            .card-post__info
-              .card-post__category Marketing
-              .card-post__date September 4, 2020
-              .card-post__duration 36 min
-            h4.title-h4.card-post__title
-              a(href="#") What is traffic arbitrage and does it really make money? 
-            p.text-main.card-post__text Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...
-            a(href="#").card-post__link Listen
+        each item in [1, 3, 5]
+          +card-post(item)
   
   section.section-event
     .container

@@ -10,12 +10,14 @@
 @import './base/container';
 @import './base/button';
 @import './base/input';
+@import './base/checkbox';
 @import './base/popup';
 @import './base/list';
 
 @import './components/header';
 @import './components/footer';
 @import './components/form';
+@import './components/pagination';
 @import './components/card/post';
 @import './components/card/person';
 @import './components/card/event';
@@ -30,3 +32,5 @@
 @import './section/event';
 @import './section/certificate';
 @import './section/process';
+@import './section/blog';
+@import './section/newsletter';
