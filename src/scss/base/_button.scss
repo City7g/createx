@@ -19,13 +19,13 @@
   }
 
   &:hover,
-  &:focus,
+  &:focus-visible,
   &:active {
     color: $white;
     // background: darken($primary, 15%);
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 2px solid $black;
   }
 
@@ -60,13 +60,13 @@
 
   &:hover,
   &:active,
-  &:focus {
+  &:focus-visible {
     color: $white;
     background: $primary;
     // background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 2px solid $black;
   }
 

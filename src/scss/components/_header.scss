@@ -164,15 +164,16 @@
   }
 
   body.menu & span:first-child {
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-225deg);
   }
 
   body.menu & span:nth-child(2) {
     opacity: 0;
+    transform: translate(calc(-50% + 20px), -50%);
   }
 
   body.menu & span:last-child {
-    transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(225deg);
   }
 
   @media (max-width: $hamb) {
