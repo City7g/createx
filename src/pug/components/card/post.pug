@@ -5,9 +5,15 @@ mixin card-post(index)
       p.card-post__type Podcast
     .card-post__info
       .card-post__category Marketing
-      .card-post__date September 4, 2020
-      .card-post__duration 36 min
+      .card-post__date
+        include ../../../img/svg/calendar.svg
+        | September 4, 2020
+      .card-post__duration
+        include ../../../img/svg/clock.svg
+        | 36 min
     h4.title-h4.card-post__title
       a(href="#") What is traffic arbitrage and does it really make money? 
     p.text-main.card-post__text Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...
-    a(href="#").card-post__link Listen
+    a(href="#").card-post__link
+      | Listen
+      include ../../../img/svg/red-arrow-next.svg

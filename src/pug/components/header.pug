@@ -1,22 +1,26 @@
-- const headerLinks = [{name: 'About Us', path: '/'}, {name: 'Courses', path: '/'}, {name: 'Events', path: '/ '}, {name: 'Blog', path: '/blog.html'}, {name: 'Contacts', path: '/'}]
+- const headerLinks = [{name: 'About Us', path: '/'}, {name: 'Courses', path: '/courses.html'}, {name: 'Events', path: '/ '}, {name: 'Blog', path: '/blog.html'}, {name: 'Contacts', path: '/'}]
 
 header.header
   .container
-    a(href="/").header-logo
-      img(src="/img/logo.svg", alt="")
-    
-    nav.header-nav
-      each link in headerLinks
-        a(href=link.path).header-nav__link= link.name
+    .header__wrap
+      a(href="/").header-logo
+        img(src="/img/logo.svg", alt="").header-logo__img
+      
+      nav.header-nav.header__nav
+        each link in headerLinks
+          a(href=link.path).header-nav__link= link.name
 
-    button.btn-main.header__consultation Get consultation
+      button.btn-main.header__consultation Get consultation
 
-    .header-auth.header__auth
-      a(href="#") Log in
-      | /
-      a(href="#") Register  
-    
-    button.header-hamb
-      span
-      span
-      span
+      .header-auth.header__auth
+        include ../../img/svg/auth.svg
+        a(href="#").header-auth__login Log in
+        span.header-auth__separator /
+        a(href="#").header-auth__register Register
+
+      .header-mobile
+      
+      button.header-hamb
+        span
+        span
+        span

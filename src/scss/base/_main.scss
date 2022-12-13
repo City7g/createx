@@ -1,15 +1,28 @@
 html {
   scrollbar-color: $primary $white;
   scrollbar-width: thin;
+  scrollbar-gutter: stable;
 }
 
 body {
   font-family: 'Lato';
-  // display: flex;
-  // flex-direction: column;
+  background-color: $white;
+  color: $black;
+}
 
-  // background-color: $white;
-  // color: $black;
+body.menu {
+  @media (max-width: $hamb) {
+    overflow: hidden;
+  }
+}
+
+a {
+  color: #424551;
+
+  &:hover {
+    transition: 0.3s color ease;
+    color: $primary;
+  }
 }
 
 :focus {

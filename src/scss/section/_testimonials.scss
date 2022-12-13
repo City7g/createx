@@ -1,0 +1,25 @@
+.section-testimonials {
+  padding: 80px 0;
+  background: #F4F5F7;
+
+  @media (max-width: 991px) {
+    padding: 50px;
+  }
+
+  &__slider {
+    display: flex;
+    gap: 40px;
+    overflow: auto;
+    scrollbar-width: none;
+
+    & > * {
+      width: 100%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.testimonial {
+  padding: 64px 105px;
+  background: $white;
+}

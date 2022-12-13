@@ -1,29 +1,11 @@
 import development from "./development.js";
+import pageAnimation from "./page-animation.js"; 
 import { showPopup, closePopup } from "./popup.js";
 import hamburger from "./base/hamburger.js";
-// import barba from '@barba/core'
-// import gsap from 'gsap'
 
 development();
 hamburger();
-
-// barba.init({
-//   transitions: [{
-//     name: 'opacity-transition',
-//     leave(data) {
-//       return gsap.to(data.current.container, {
-//         opacity: 0,
-//         duration: 0.3
-//       });
-//     },
-//     enter(data) {
-//       return gsap.from(data.next.container, {
-//         opacity: 0,
-//         duration: 0.3
-//       });
-//     }
-//   }]
-// })
+// pageAnimation();
 
 // Header Scrolled
 window.addEventListener("scroll", () => {
