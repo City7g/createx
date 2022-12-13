@@ -1,0 +1,37 @@
+#sing-in.popup.show
+  .popup__wrap
+    .popup__content
+      h3.title-h3.popup__title Sign in
+      p.text-small.gray-700.popup__description Sign in to your account using email and password provided during registration.
+
+      form.form-sing
+        label.label-input.form-sing__input
+          h5.label-input__title Email
+          input(type="email", placeholder="Your working email", name="email") 
+        label.label-input.form-sing__input
+          h5.label-input__title Password
+          input(type="password", placeholder="Your working password", name="password")
+        .form-sing__block
+          label.label-checkbox
+            input(type="checkbox", name="agree")
+            h5 Keep me signed in  
+          a(href="#") Forgot password? 
+        button(type="submit").btn-main.form-sing__btn Sign in 
+
+      .asd
+        p.text-small.gray-800 Don't have an account?
+          a(href="#", data-modal="sing-up") Sign up
+      
+      .sing-with
+        p.text-small.gray-700 Or sign in with
+        .sing-with__socials
+          a(href="#")
+            include ../../img/svg/facebook.svg 
+          a(href="#")
+            include ../../img/svg/google.svg 
+          a(href="#")
+            include ../../img/svg/twitter.svg 
+          a(href="#")
+            include ../../img/svg/linkedin.svg 
+
+      button.popup__close

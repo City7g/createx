@@ -69,6 +69,15 @@
   }
 }
 
+.text-small {
+  font-size: 14px;
+  line-height: 1.5;
+
+  @media (max-width: $tablet-sm) {
+    font-size: 12px;
+  }
+}
+
 .text-big {
   font-size: 46px;
   line-height: 1.2;
@@ -92,4 +101,12 @@
 .text-extraexsmall {
   font-size: 10px;
   line-height: 1.5;
+}
+
+.gray-700 {
+  color: #787A80;
+}
+
+.gray-800 {
+  color: #424551;
 }

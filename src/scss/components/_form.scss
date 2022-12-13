@@ -20,3 +20,43 @@
     transform: translateY(-50%);
   }
 }
+
+.form-sing {
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px 20px;
+
+    @media (max-width: 575px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__input ~ &__input,
+  &__block {
+    margin-top: 20px;
+
+    @media (max-width: 991px) {
+      margin-top: 15px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: 24px;
+
+    @media (max-width: 991px) {
+      margin-top: 12px;
+    }
+  }
+
+  & a {
+    color: $primary;
+
+    &:hover {
+      color: darken($primary, 0.15);
+    }
+  }
+}

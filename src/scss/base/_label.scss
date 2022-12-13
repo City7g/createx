@@ -1,0 +1,17 @@
+.label-input {
+  display: block;
+
+  &__title {
+    margin-bottom: 8px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

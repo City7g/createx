@@ -19,7 +19,9 @@
   },
   "devDependencies": {
     "gulp-sass": "^5.0.0",
+    "gulp-util": "^3.0.8",
     "sass": "^1.43.4",
+    "vinyl-ftp": "^0.6.1",
     "webpack-stream": "^7.0.0"
   }
 }

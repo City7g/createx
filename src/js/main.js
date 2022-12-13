@@ -1,5 +1,5 @@
 import development from "./development.js";
-import pageAnimation from "./page-animation.js"; 
+import pageAnimation from "./page-animation.js";
 import { showPopup, closePopup } from "./popup.js";
 import hamburger from "./base/hamburger.js";
 
@@ -17,6 +17,15 @@ window.addEventListener("scroll", () => {
 });
 
 // Popup
+document.querySelectorAll('button[data-popup], a[data-popup]').forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault()
+    document.querySelector(`#${item.getAttribute('data-popup')}`).classList.add('show')
+    document.body.classList.add('modal')
+  })
+})
+
+// Form
 document.querySelectorAll("form").forEach((item) => {
   item.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -24,10 +33,6 @@ document.querySelectorAll("form").forEach((item) => {
     console.log(formData);
     showPopup(".popup");
   });
-
-  // document.querySelector(".popup").addEventListener("scroll", (e) => {
-  //   console.log(e);
-  // });
 });
 
 window.addEventListener("click", (e) => {
@@ -35,6 +40,9 @@ window.addEventListener("click", (e) => {
     e.target.classList.contains("popup") ||
     e.target.classList.contains("popup__close")
   ) {
-    document.querySelectorAll(".popup").forEach((item) => closePopup(item));
+    document.querySelectorAll(".popup").forEach(item => {
+      item.classList.remove('show')
+      document.body.classList.remove('modal')
+    });
   }
 });
