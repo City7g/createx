@@ -33,10 +33,11 @@ footer.footer
 
       .footer__newsletter
         h5.title-h6.footer__title SIGN UP TO OUR NEWSLETTER
-          form
-            input(type="email", placelder="Email address")
-            button Send
-        p.text-extraexsmall *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+        form.form-newsletter
+          input(type="email", placeholder="Email address").input-newsletter
+          button.form-newsletter__btn
+            include ../../img/svg/white-arrow-send.svg  
+        p.text-extraexsmall.footer__textik *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
 
   .footer-bottom
     .container
