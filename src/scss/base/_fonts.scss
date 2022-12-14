@@ -3,6 +3,8 @@
 @include font-face('Lato', 'Lato-Bold', 700);
 @include font-face('Lato', 'Lato-Black', 900);
 
+@include font-face('Icomoon', 'icomoon', 400);
+
 // Main Fonts
 .title-h1 {
   font-size: 64px;

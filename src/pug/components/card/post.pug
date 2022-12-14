@@ -2,18 +2,20 @@ mixin card-post(index)
   article.card-post
     a(href="/single-post.html").card-post__image
       img(src=`/img/post/item-${index}.jpg`, alt="").card-post__img
-      p.card-post__type Podcast
+      p.card-post__type
+        span.icon-mic
+        | Podcast
     .card-post__info
       .card-post__category Marketing
       .card-post__date
-        include ../../../img/svg/calendar.svg
+        span.icon-calendar
         | September 4, 2020
       .card-post__duration
-        include ../../../img/svg/clock.svg
+        span.icon-clock
         | 36 min
     h4.title-h4.card-post__title
       a(href="#") What is traffic arbitrage and does it really make money? 
     p.text-main.card-post__text Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...
     a(href="#").card-post__link
       | Listen
-      include ../../../img/svg/red-arrow-next.svg
+      span.icon-arrow-right

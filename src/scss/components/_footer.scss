@@ -102,7 +102,7 @@
     line-height: 1.6;
     color: rgba($white, 0.6);
 
-    & svg {
+    & [class^="icon-"] {
       margin-right: 10px;
       opacity: 0.6;
     }
@@ -131,6 +131,10 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
+
+    & [class^="icon-"] {
+      color: #FF3F3A;
+    }
   }
 
   &__top {

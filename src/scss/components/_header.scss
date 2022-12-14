@@ -126,7 +126,7 @@
   display: flex;
   align-items: center;
 
-  & svg {
+  & [class^="icon-"] {
     margin-right: 10px;
   }
 

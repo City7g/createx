@@ -93,11 +93,11 @@
     line-height: 1.6;
     font-weight: 700;
 
-    & svg {
+    & [class^="icon-"] {
       transition: 0.3s transform ease;
     }
 
-    &:hover svg {
+    &:hover [class^="icon-"] {
       transform: translateX(5px);
     }
   }

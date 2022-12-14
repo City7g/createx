@@ -25,18 +25,18 @@ footer.footer
       .footer-column
         h5.footer-column__title CONTACT US
         a(href="#").footer-column__link
-          include ../../img/svg/phone.svg
+          span.icon-iphone
           | (405) 555-0128
         a(href="#").footer-column__link
-          include ../../img/svg/mail.svg
+          span.icon-mail
           | hello@createx.com
 
       .footer__newsletter
         h5.title-h6.footer__title SIGN UP TO OUR NEWSLETTER
         form(novalidate).form-newsletter
-          input(type="email", placeholder="Email address").input-newsletter
+          input(type="email", placeholder="Email address", name="email").input-newsletter
           button.form-newsletter__btn
-            include ../../img/svg/white-arrow-send.svg  
+            span.icon-arrow-right
         p.text-extraexsmall.footer__textik *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
 
   .footer-bottom
@@ -44,6 +44,6 @@ footer.footer
       .footer-bottom__wrap
         p.footer-bottom__info
           | © All rights reserved. Made with
-          include ../../img/svg/heart.svg
+          span.icon-heart
           | by Createx Studio 
         a(href="#").footer-bottom__top GO TO TOP

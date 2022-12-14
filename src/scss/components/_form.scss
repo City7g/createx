@@ -17,7 +17,14 @@
     position: absolute;
     top: 50%;
     right: 14px;
+    color: white;
     transform: translateY(-50%);
+    // ! remove
+    // transition: 0.3s transform ease;
+
+    // &:hover {
+    //   transform: translateY(-50%) rotate(-90deg);
+    // }
   }
 }
 

@@ -1,5 +1,5 @@
 select {
-  padding: 11px 16px;
+  padding: 11px 35px 11px 16px;
   border-radius: $radius;
   border: 1px solid #D7DADD;
   background-color: $white;
@@ -9,12 +9,26 @@ select {
   background-repeat: no-repeat;
   appearance: none;
 
-  &:focus {
-    background-position: center right 29px;
-  }
+  // &:focus {
+  //   background-position: center right 29px;
+  // }
+}
+
+select:optional {
+  color: white;
+  background-color: red;
 }
 
 option {
   font-family: 'Lato';
   font-weight: 400;
+  // background-color: red;
+  padding: 5px;
+  // color: red;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: red;
+  }
 }
