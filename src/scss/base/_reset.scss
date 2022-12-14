@@ -24,13 +24,12 @@ button {
 
 select {
   border: none;
+  font-family: inherit;
 }
 
-input {
+:where(input) {
   font-family: inherit;
   border: none;
-  // border-radius: 0;
-  accent-color: $primary;
 }
 
 img {

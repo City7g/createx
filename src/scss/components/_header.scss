@@ -14,6 +14,10 @@
 
     height: 92px;
 
+    @media (max-width: 1399px) {
+      gap: 20px;
+    }
+
     @media (max-width: $hamb) {
       height: 70px;
     }
@@ -31,6 +35,10 @@
 
   &__nav {
     margin-left: 24px;
+
+    @media (max-width: 1399px) {
+      margin-left: 15px;
+    }
 
     @media (max-width: 1199px) {
       margin-left: 10px;

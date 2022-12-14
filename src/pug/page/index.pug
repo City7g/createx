@@ -13,6 +13,20 @@ block content
         .section-first__img
           img(src="/img/first-img.svg", alt="")
 
+      ul.section-first__list
+        li
+          span 1200
+          p Students graduated
+        li
+          span 84
+          p Completed courses
+        li
+          span 16
+          p Qualified tutors
+        li
+          span 5
+          p Years of experience
+
   section.section-why
     .container
       .section-why__wrap
@@ -149,6 +163,6 @@ block content
         h4.title-h6.section-subscibe__subtitle Don’t miss anything
         h2.title-h2.section-subscibe__title Subscribe to the Createx School announcements
 
-        form.form-subscribe
+        form(novalidate).form-subscribe
           input(type="email", placeholder="Your working email")
           button.btn-main Subscribe

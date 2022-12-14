@@ -1,0 +1,20 @@
+select {
+  padding: 11px 16px;
+  border-radius: $radius;
+  border: 1px solid #D7DADD;
+  background-color: $white;
+  background-image: url('/img/svg/gray-arrow-down.svg');
+  background-position: center right 18px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  appearance: none;
+
+  &:focus {
+    background-position: center right 29px;
+  }
+}
+
+option {
+  font-family: 'Lato';
+  font-weight: 400;
+}

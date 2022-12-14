@@ -1,7 +1,7 @@
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
+:where([type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea) {
   width: 100%;
   padding: 15px 12px;
 
@@ -15,7 +15,7 @@ textarea {
   @media (max-width: 767px) {
     font-size: 14px;
     padding: 10px 8px;
-  } 
+  }
 
   &::placeholder {
     color: #9A9CA5;

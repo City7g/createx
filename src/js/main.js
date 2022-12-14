@@ -20,8 +20,22 @@ window.addEventListener("scroll", () => {
 document.querySelectorAll('button[data-popup], a[data-popup]').forEach(item => {
   item.addEventListener('click', e => {
     e.preventDefault()
-    document.querySelector(`#${item.getAttribute('data-popup')}`).classList.add('show')
-    document.body.classList.add('modal')
+    if(document.querySelector(`#${item.getAttribute('data-popup')}`)) {
+      document.querySelector(`#${item.getAttribute('data-popup')}`).classList.add('show')
+      document.body.classList.add('modal')
+    }
+  })
+})
+
+// Change type password
+document.querySelectorAll('.label-input__show').forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault()
+    if(item.previousElementSibling.type === 'password') {
+      item.previousElementSibling.type = 'text'
+    } else {
+      item.previousElementSibling.type = 'password'
+    }
   })
 })
 
@@ -31,7 +45,6 @@ document.querySelectorAll("form").forEach((item) => {
     e.preventDefault();
     const formData = new FormData(item)
     console.log(formData);
-    showPopup(".popup");
   });
 });
 

@@ -1,0 +1,58 @@
+extends ../layout/main
+
+block content
+  .single
+    .container
+      .single__wrap
+        .single__content
+          h1.title-h2.single__title HR statistics: job search,  interviews, hiring and recruiting
+          img(src="/img/post/item-4.jpg", alt="").single__img
+          h3 Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod. 
+          p At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.
+          p Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.
+          p Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque amet non fringilla blandit:
+          ul
+            li A fermentum in morbi pretium aliquam adipiscing donec tempus.
+            li Vulputate placerat amet pulvinar lorem nisl.
+            li Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+            li Etiam duis lobortis in fames ultrices commodo nibh.
+          p Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.
+        aside.aside
+          form(novalidate).form-search.aside__form
+            input(type="text", name="search", placeholder="Search blog...")
+            button(type="submit").form-search__btn
+              include ../../img/svg/search.svg 
+          h4.title-h6.aside__title Author
+          .author
+            a(href="#")
+              img(src="/img/author.jpg", alt="")
+            h5.title-h4.gray-800
+              a(href="#") Kristin Watson
+            p.text-small.gray-700 Curator of Marketing Course
+            .author__socials
+              include ../../img/svg/twitter.svg
+          h4.title-h6.aside__title Trending Articles
+          article
+            a(href="#") 
+              img(src="/img/post/item-1.jpg", alt="")
+            p.gray-700
+              include ../../img/svg/calendar.svg
+              | September 4, 2020
+            h5.title-h5
+              a(href="#") What is traffic arbitrage and does it really make money?
+          article
+            a(href="#") 
+              img(src="/img/post/item-3.jpg", alt="")
+            p.gray-700
+              include ../../img/svg/calendar.svg
+              | July 15, 2020
+            h5.title-h5
+              a(href="#") Startup: how to build a team that will live longer than a year
+          article
+            a(href="#") 
+              img(src="/img/post/item-5.jpg", alt="")
+            p.gray-700
+              include ../../img/svg/calendar.svg
+              | August 2, 2020
+            h5.title-h5
+              a(href="#") What to do if you want to get feedback on the product

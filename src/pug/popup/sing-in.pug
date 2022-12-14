@@ -1,16 +1,18 @@
-#sing-in.popup.show
+#sing-in.popup
   .popup__wrap
     .popup__content
       h3.title-h3.popup__title Sign in
       p.text-small.gray-700.popup__description Sign in to your account using email and password provided during registration.
 
-      form.form-sing
+      form(novalidate).form-sing
         label.label-input.form-sing__input
           h5.label-input__title Email
           input(type="email", placeholder="Your working email", name="email") 
         label.label-input.form-sing__input
           h5.label-input__title Password
           input(type="password", placeholder="Your working password", name="password")
+          .label-input__show
+            include ../../img/svg/eyes.svg
         .form-sing__block
           label.label-checkbox
             input(type="checkbox", name="agree")
