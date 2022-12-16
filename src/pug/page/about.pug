@@ -1,0 +1,100 @@
+extends ../layout/main
+
+block variables
+  - barba = 'about'
+
+block content
+  section.about-first
+    .container
+      .about-first__wrap
+        .about-first__content
+          h4.title-h6.about-first__subtitle About us
+          h2.title-h2.about-first__title Createx Online School
+          h5.title-h5.about-first__heading Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts.
+          p.text-main.about-first__text We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.
+          .about-first__btns
+            a(href="#").btn-secondary.about-first__btn Explore events 
+            a(href="#").btn-main.about-first__btn Browse courses
+        .about-first__image
+          img(src="/img/about-img.svg", alt="").about-first__img
+
+  section.about-video
+    .container
+      .about-video__wrap
+        .watch-video.about-video__watch
+          .watch-video__play
+            span.icon-play
+          | Watch Video
+        .about-video__image
+          img(src="/img/about-video.jpg", alt="").about-video__img
+        .about-video__content
+          p.text-big.about-video__item
+            span.text-display-4 1200
+            | students graduated  
+          p.text-big.about-video__item
+            span.text-display-4 84
+            | completed courses  
+          p.text-big.about-video__item
+            span.text-display-4 16
+            | completed courses  
+          p.text-big.about-video__item
+            span.text-display-4 5
+            | years of experience  
+
+  section.section-values
+    .container
+      .section-values__wrap
+        h4.title-h6.section-values__subtitle We always stand for
+        h2.title-h2.section-values__title Our core values
+
+        ul.values-list.section-values__list
+          li.values-list__item
+            img(src="/img/values/item-1.svg", alt="").values-list__img
+            h4.title-h4.values-list__title Structured Approach
+            p.gray-700.values-list__text Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris. 
+          li.values-list__item
+            img(src="/img/values/item-2.svg", alt="").values-list__img
+            h4.title-h4.values-list__title Professional Feedbacks
+            p.gray-700.values-list__text Culpa nostrud commodo ea consequat reprehenderit aliquip. 
+          li.values-list__item
+            img(src="/img/values/item-3.svg", alt="").values-list__img
+            h4.title-h4.values-list__title Efficiency
+            p.gray-700.values-list__text Viverra scelerisque consequat net. Adipisicing esse consequat. 
+          li.values-list__item
+            img(src="/img/values/item-4.svg", alt="").values-list__img
+            h4.title-h4.values-list__title Flexible Shedule
+            p.gray-700.values-list__text Aute eiusmod dolore dolore deserunt veniam ad deserunt. 
+
+  section
+    .container
+      .__wrap
+        h4.title-h6 our main directions
+        h2.title-h2 What do we teach
+
+  include ../section/do-it
+
+  section.section-team
+    .container
+      .section-team__wrap
+        h4.title-h6 Best tutors are all here
+        h2.title-h2 Meet our team
+
+        .section-team__list
+          each person in [1, 2, 3, 4, 5, 6, 7, 8]
+            +person(person)
+
+
+
+  include ../section/testimonials
+
+  section.student-work
+    .container
+      .student-work__wrap
+        h4.title-h6.student-work__subtitle best jobs for you
+        h2.title-h2.student-work__title Our students work here
+        .student-work__list
+          each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+            img(src=`/img/student-work/item-${item}.png`, alt="").student-work__img
+
+  include ../section/last-posts
+  include ../section/subscribe

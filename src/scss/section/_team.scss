@@ -19,6 +19,22 @@
     }
   }
 
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 60px;
+    margin-top: 60px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 30px;
+    }
+
+    @media (max-width: 575px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
   &__subtitle {
     margin-bottom: 8px;
     text-transform: uppercase;
