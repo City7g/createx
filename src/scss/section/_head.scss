@@ -1,0 +1,14 @@
+.section-head {
+  padding: 190px 0 120px;
+  background: linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
+  text-align: center;
+
+  &__subtitle {
+    margin-bottom: 12px;
+    color: $primary;
+
+    @media (max-width: 991px) {
+      margin-bottom: 8px;
+    }
+  }
+}
