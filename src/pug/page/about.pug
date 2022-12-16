@@ -18,6 +18,29 @@ block content
         .about-first__image
           img(src="/img/about-img.svg", alt="").about-first__img
 
+  section.about-video
+    .container
+      .about-video__wrap
+        .watch-video.about-video__watch
+          .watch-video__play
+            span.icon-play
+          | Watch Video
+        .about-video__image
+          img(src="/img/about-video.jpg", alt="").about-video__img
+        .about-video__content
+          p.text-big.about-video__item
+            span.text-display-4 1200
+            | students graduated  
+          p.text-big.about-video__item
+            span.text-display-4 84
+            | completed courses  
+          p.text-big.about-video__item
+            span.text-display-4 16
+            | completed courses  
+          p.text-big.about-video__item
+            span.text-display-4 5
+            | years of experience  
+
   section.section-values
     .container
       .section-values__wrap
@@ -47,6 +70,8 @@ block content
       .__wrap
         h4.title-h6 our main directions
         h2.title-h2 What do we teach
+
+  include ../section/do-it
 
   section.section-team
     .container

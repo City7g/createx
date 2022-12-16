@@ -28,3 +28,66 @@
     margin-top: 12px;
   }
 }
+
+.do-it-list {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(#9A9CA5, 0.5);
+    content: '';
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 44px;
+
+    @media (max-width: 991px) {
+      padding-left: 25px;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 1;
+      top: 5px;
+      left: 0;
+      display: block;
+      width: 9px;
+      height: 9px;
+      background-color: $primary;
+      border-radius: 50%;
+      box-shadow: 0 0 0 8px $white;
+      content: '';
+    }
+  }
+
+  &__item~&__item {
+    margin-top: 32px;
+
+    @media (max-width: 991px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__step {
+    margin-bottom: 2px;
+    color: #787A80;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 900;
+  }
+
+  &__text {
+    margin-top: 8px;
+    color: #787A80;
+
+    @media (max-width: 991px) {
+      margin-top: 6px;
+    }
+  }
+}

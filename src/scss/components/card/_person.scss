@@ -40,20 +40,36 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    transform: translateY(200px);
-    transition: 0.3s transform ease;
-  }
-
-  &__image:hover &__socials {
-    transform: translateY(0);
   }
 
   &__social {
     color: rgba($white, 0.6);
+    transform: translateY(200px);
+    transition: 0.3s transform ease;
 
     &:hover {
       color: $white;
     }
+    
+    &:nth-last-child(2) {
+      transition-delay: 0.02s;
+    }
+
+    &:nth-last-child(3) {
+      transition-delay: 0.04s;
+    }
+
+    &:nth-last-child(4) {
+      transition-delay: 0.06s;
+    }
+
+    &:nth-last-child(5) {
+      transition-delay: 0.08s;
+    }
+  }
+
+  &__image:hover &__social {
+    transform: translateY(0);
   }
 
   &__img {
