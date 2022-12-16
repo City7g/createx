@@ -1,11 +1,33 @@
 extends ../layout/main
 
+mixin single-share
+  .single-share.single-info__share
+    p.single-share__text Share:
+    a(href="#").single-share__link
+      span.icon-facebook 
+    a(href="#").single-share__link
+      span.icon-twitter 
+    a(href="#").single-share__link
+      span.icon-linkedin
+
 block content
   .single
     .container
       .single__wrap
         .single__content
+          .single-category
+            span.icon-files
+            | Article |
+            a(href="#").single-category__link HR & Recruting 
           h1.title-h2.single__title HR statistics: job search,  interviews, hiring and recruiting
+          .single-info
+            .single-info__date
+              span.icon-calendar
+              | August 3, 2020
+            .single-info__time
+              span.icon-clock
+              | 4 min read
+            +single-share
           img(src="/img/post/item-4.jpg", alt="").single__img
           h3 Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod. 
           p At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.
@@ -17,6 +39,15 @@ block content
             li Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
             li Etiam duis lobortis in fames ultrices commodo nibh.
           p Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.
+          .single-bottom
+            .single-tag
+              .single-tag__text Tags:
+              a(href="#").single-tag__item #learning
+              a(href="#").single-tag__item #HR
+              a(href="#").single-tag__item #self-development
+            +single-share
+
+
         aside.aside
           form(novalidate).form-search.aside__form
             input(type="text", name="search", placeholder="Search blog...")
@@ -30,7 +61,12 @@ block content
               a(href="#") Kristin Watson
             p.text-small.gray-700 Curator of Marketing Course
             .author__socials
-              span.icon-twitter
+              a(href="#")
+                span.icon-instagram 
+              a(href="#")
+                span.icon-twitter 
+              a(href="#")
+                span.icon-linkedin 
           h4.title-h6.aside__title Trending Articles
           article
             a(href="#") 
@@ -56,3 +92,4 @@ block content
               | August 2, 2020
             h5.title-h5
               a(href="#") What to do if you want to get feedback on the product
+          h4.title-h6.aside__title Tags

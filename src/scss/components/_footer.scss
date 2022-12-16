@@ -75,6 +75,23 @@
   }
 }
 
+.footer-socials {
+  margin-top: 38px;
+
+  @media (max-width: 991px) {
+    margin-top: 24px;
+  }
+
+  &__link {
+    font-size: 20px;
+    color: rgba($white, 0.6);
+  }
+
+  &__link ~ &__link {
+    margin-left: 12px;
+  }
+}
+
 .footer-column {
   display: flex;
   flex-direction: column;
