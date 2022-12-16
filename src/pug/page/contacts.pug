@@ -1,0 +1,60 @@
+extends ../layout/main
+
+block variables
+  - barba = 'contacts'
+
+block content
+  section.section-map
+    .container
+      .section-map__wrap
+        .section-map__content
+          h4.title-h6.section-map__subtitle Contact info
+          h2.title-h2.section-map__title Get in touch
+          .section-map__asd
+            h5 Follow us:
+            .asd
+              a(href="#")
+                span.icon-facebook 
+              a(href="#")
+                span.icon-twitter 
+              a(href="#")
+                span.icon-youtube 
+              a(href="#")
+                span.icon-telegram 
+              a(href="#")
+                span.icon-instagram 
+              a(href="#")
+                span.icon-linkedin
+        .section-map__image
+          img(src="/img/map.jpg", alt="").section-map__img
+        
+
+  section.section-question
+    .container
+      .section-question__wrap
+        .section-question__image
+          img(src="/img/question-img.svg", alt="").section-question__img
+        .section-question__content
+          h4.title-h6.section-question__subtitle Any questions?
+          h1.title-h2.section-question__title Drop us a line
+
+          form(novalidate).form-question
+            label.label-input
+              h5.label-input__title First Name*
+              input(type="text", placeholder="Your first name", name="first")  
+            label.label-input
+              h5.label-input__title Last Name*
+              input(type="text", placeholder="Your last name", name="last")  
+            label.label-input
+              h5.label-input__title Email*
+              input(type="email", placeholder="Your working email", name="email")  
+            label.label-input
+              h5.label-input__title Phone
+              input(type="text", placeholder="Your phone number", name="phone")  
+            label.label-input.form-question__textarea
+              h5.label-input__title Message*
+              textarea(placeholder="Your message", name="message")
+            label.label-checkbox
+              input(type="checkbox", name="agree")
+              h5 Keep me signed in  
+            button(type="submit").btn-main Send message

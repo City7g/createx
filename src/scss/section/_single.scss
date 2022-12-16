@@ -27,14 +27,20 @@
 
   &-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 40px;
 
     @media (max-width: 991px) {
       gap: 16px;
       margin-bottom: 24px;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     &__date,
@@ -48,6 +54,10 @@
 
     &__share {
       margin-left: auto;
+
+      @media (max-width: 767px) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -70,6 +80,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
   }
 
@@ -148,6 +159,10 @@ aside article,
       object-fit: cover;
       border-radius: $radius;
     }
+  }
+
+  &>p > span {
+    margin-right: 8px;
   }
 
   &~article {
