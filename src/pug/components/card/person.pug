@@ -1,0 +1,13 @@
+mixin person(index)
+  .card-person
+    .card-person__image
+      img(src=`/img/team/person-${index}.png`, alt="").card-person__img
+      .card-person__socials
+        a(href="#", target="_blank").card-person__social
+          span.icon-facebook
+        a(href="#", target="_blank").card-person__social
+          span.icon-instagram
+        a(href="#", target="_blank").card-person__social
+          span.icon-linkedin
+    h4.card-person__name Dianne Russell
+    p.card-person__prof Founder and CEO
