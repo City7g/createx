@@ -22,9 +22,11 @@
 @import './components/footer';
 @import './components/form';
 @import './components/pagination';
+
 @import './components/card/post';
 @import './components/card/person';
 @import './components/card/event';
+@import './components/card/course';
 
 @import './section/first';
 @import './section/feature';
@@ -45,5 +47,6 @@
 @import './section/head';
 
 @import './page/about';
+@import './page/course';
 @import './page/contact';
 @import './page/event';

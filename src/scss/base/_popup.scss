@@ -26,23 +26,23 @@
 
     width: 100%;
     max-width: 486px;
-    padding: 48px;
+    max-height: 80vh;
+    overflow: auto;
     margin: 0 auto;
 
     background: $white;
     border-radius: $radius;
     animation: popup-show 0.4s;
-
-    @media (max-width: 991px) {
-      padding: 24px;
-    }
   }
 
   &__content {
     max-height: 80vh;
-    // overflow: auto;
+    padding: 48px;
     overscroll-behavior: contain;
-    scrollbar-width: thin;
+
+    @media (max-width: 991px) {
+      padding: 24px;
+    }
   }
 
   &__title,
@@ -96,9 +96,9 @@
     border-radius: $radius;
     transition: 0.3s transform ease;
 
-    &:hover {
-      transform: translate(50%, -50%) rotate(-180deg);
-    }
+    // &:hover {
+    //   transform: translate(50%, -50%) rotate(-180deg);
+    // }
 
     @media (max-width: 767px) {
       // top: -20px;

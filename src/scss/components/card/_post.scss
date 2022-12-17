@@ -30,7 +30,7 @@
     display: block;
     object-fit: cover;
     transition: 0.3s transform ease;
-    transform: scale(1);
+    transform: scale(1.01);
   }
 
   &__image:hover &__img {

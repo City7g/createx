@@ -4,6 +4,10 @@ html {
   scrollbar-gutter: stable;
 }
 
+* {
+  scrollbar-width: thin;
+}
+
 body {
   font-family: 'Lato';
   background-color: $white;

@@ -1,42 +1,27 @@
 extends ../layout/main
 
 block content
-  section.section-feature
+  section.section-courses
     .container
-      h4.title-h6.section-feature__subtitle Ready to learn?
-      h3.title-h2.section-feature__title Featured Courses
-      a(href="#").btn-secondary.section-feature__more View all courses 
-      .section-feature__list
-        .card-feature
-          img(src="/img/feature/item-1.jpg", alt="").card-feature__img
-          h5.card-feature__prof Marketing
-          h4.card-feature__title The Ultimate Google Ads Training Course
-          .card-feature__info
-            p.card-feature__price $100
-            p.card-feature__author by Jerome Bell
+      h4.title-h6.section-courses__subtitle Enjoy your studying!
+      h1.title-h2.section-courses__title Enjoy your studying!
+      .section-courses__courses
+        each course in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+          .course
+            a(href="/single-course.html").course__image
+              img(src=`/img/course/item-${course}.jpg`, alt="").course__img
+            .course__content
+              h5.course__category HR & Recruting
+              h4.course__title
+                a(href="#") The Ultimate Google Ads Training Course
+              .course__info
+                p.course__price $100
+                p.course__author by Jerome Bell
 
-        .card-feature
-          img(src="/img/feature/item-2.jpg", alt="").card-feature__img
-          h5(style="background: #5A87FC").card-feature__prof Management
-          h4.card-feature__title Prduct Management Fundamentals
-          .card-feature__info
-            p.card-feature__price $480
-            p.card-feature__author by Marvin McKinney
-
-        .card-feature
-          img(src="/img/feature/item-3.jpg", alt="").card-feature__img
-          h5(style="background: #F89828").card-feature__prof HR & Recruting
-          h4.card-feature__title HR  Management and Analytics
-          .card-feature__info
-            p.card-feature__price $200
-            p.card-feature__author by Leslie Alexander Li
-
-        .card-feature
-          img(src="/img/feature/item-4.jpg", alt="").card-feature__img
-          h5.card-feature__prof Marketing
-          h4.card-feature__title Brand Management & PR Communications
-          .card-feature__info
-            p.card-feature__price $530
-            p.card-feature__author by Kristin Watson
+      a(href="#").section-courses__more
+        span.icon-convert
+        | Load more 
   
+  include ../section/testimonials
   include ../section/certificate
+  include ../section/subscribe
