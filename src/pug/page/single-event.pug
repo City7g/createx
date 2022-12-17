@@ -25,3 +25,14 @@ block content
     .container
       .event-join__wrap
         h3.title-h3.event-join__title 20% discount for early birds!
+
+        form(novalidate)
+          label.label-input
+            h5.label-input__title Full name
+            input(type="name", placeholder="Your full name", name="name") 
+          label.label-input
+            h5.label-input__title Email
+            input(type="email", placeholder="Your working email", name="email") 
+          label.label-input
+            h5.label-input__title Phone
+            input(type="tel", placeholder="Your phone number", name="phone") 

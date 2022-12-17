@@ -10,20 +10,32 @@ block content
         .section-map__content
           h4.title-h6.section-map__subtitle Contact info
           h2.title-h2.section-map__title Get in touch
-          .section-map__asd
-            h5 Follow us:
-            .asd
-              a(href="#")
+          .map-social
+            span.icon-chat.map-social__icon
+            h5.map-social__title Talk to us:
+            a(href="#").map-social__link hello@createx.com
+          .map-social
+            span.icon-iphone.map-social__icon
+            h5.map-social__title Call us:
+            a(href="#").map-social__link (405) 555-0128
+          .map-social
+            span.icon-pin.map-social__icon
+            h5.map-social__title Address:
+            a(href="#").map-social__link 2464 Royal Ln. Mesa, New Jersey 45463, USA
+          .map-follow
+            h5.map-follow__title Follow us:
+            .map-follow__list
+              a(href="#").map-follow__link
                 span.icon-facebook 
-              a(href="#")
+              a(href="#").map-follow__link
                 span.icon-twitter 
-              a(href="#")
+              a(href="#").map-follow__link
                 span.icon-youtube 
-              a(href="#")
+              a(href="#").map-follow__link
                 span.icon-telegram 
-              a(href="#")
+              a(href="#").map-follow__link
                 span.icon-instagram 
-              a(href="#")
+              a(href="#").map-follow__link
                 span.icon-linkedin
         .section-map__image
           img(src="/img/map.jpg", alt="").section-map__img
@@ -56,5 +68,5 @@ block content
               textarea(placeholder="Your message", name="message")
             label.label-checkbox
               input(type="checkbox", name="agree")
-              h5 Keep me signed in  
+              h5 I agree to receive communications from Createx Online School
             button(type="submit").btn-main Send message
