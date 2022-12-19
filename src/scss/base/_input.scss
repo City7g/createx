@@ -4,6 +4,8 @@
   input[type="tel"],
   textarea) {
   width: 100%;
+  min-width: 315px;
+  max-width: 100%;
   padding: 15px 12px;
 
   font-size: 16px;
@@ -12,6 +14,10 @@
   border: 1px solid #D7DADD;
   background-color: $white;
   border-radius: $radius;
+
+  @media (max-width: 1199px) {
+    min-width: 240px;
+  }
 
   @media (max-width: 767px) {
     font-size: 14px;

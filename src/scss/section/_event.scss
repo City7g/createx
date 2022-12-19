@@ -23,16 +23,19 @@
     }
   }
 
-  &__bottom {
+  &__footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-top: 60px;
+    gap: 10px 40px;
+    margin-top: 80px;
 
     @media (max-width: 991px) {
-      gap: 20px;
       margin-top: 30px;
+    }
+
+    @media (max-width: 575px) {
+      flex-direction: column;
     }
   }
 }

@@ -42,6 +42,17 @@
       grid-template-columns: 1fr;
       margin-top: 30px;
     }
+
+    @media (max-width: 575px) {
+      display: flex;
+      scroll-snap-type: x mandatory;
+      overflow: auto;
+
+      & > * {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+      }
+    }
   }
 }
 

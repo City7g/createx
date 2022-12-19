@@ -362,6 +362,10 @@
     left: 0;
     color: $primary;
     font-size: 20px;
+
+    @media (max-width: 991px) {
+      font-size: 18px;
+    }
   }
 
   &__title,
@@ -514,13 +518,14 @@
     gap: 20px;
     scroll-snap-type: x mandatory;
     overflow: auto;
+    scrollbar-width: none;
 
     & > * {
       flex: 0 0 calc(50% - 10px);
       // scroll-snap-stop: always;
       // scroll-snap-align: center;
 
-      @media (max-width: 575px) {
+      @media (max-width: 767px) {
         flex-basis: 100%;
       }
     }

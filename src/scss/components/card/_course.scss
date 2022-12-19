@@ -14,6 +14,7 @@
     overflow: hidden;
     margin: -1px -1px 0;
     border-radius: $radius $radius 0 0;
+    background: $secondary;
   }
 
   &__img {
@@ -21,6 +22,11 @@
     width: 100%;
     transform: scale(1.01);
     transition: 0.3s transform ease;
+    
+    @media (max-width: 991px) {
+      max-width: 315px;
+      margin: 0 auto;
+    }
   }
 
   &__image:hover &__img {
