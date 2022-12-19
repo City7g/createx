@@ -8,6 +8,20 @@ html {
   scrollbar-width: thin;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background:red;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary;
+}
+
 body {
   font-family: 'Lato';
   background-color: $white;

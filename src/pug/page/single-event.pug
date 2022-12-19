@@ -6,33 +6,61 @@ block content
       h3.title-h6.section-head__subtitle Online lecture
       h1.title-h2.section-head__title Formation of the organizational structure of the company in the face of uncertainty
   
-  .as
+  .course-about
     .container
-      .__wrap
-        .__content
-          h2.title-h2 About the course
-          p.text-main Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque
-          h3.title-h3 You will learn:
-          ul.list-main
-            li A fermentum in morbi pretium aliquam adipiscing donec tempus.
-            li Vulputate placerat amet pulvinar lorem nisl.
-            li Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
-            li Etiam duis lobortis in fames ultrices commodo nibh.
-            li Fringilla in nec risus congue venenatis pretium posuere nec.
-            li Cursus eu pretium, vulputate tempus quam massa sed at.
+      .course-about__wrap
+        .course-about__content
+          h2.title-h2.course-about__title We will talk about:
+          each item in [1, 2, 3, 4]
+            .accordion
+              span.icon-minus.accordion__minus
+              span.icon-plus.accordion__plus
+              h5.accordion__subtitle=`Lesson ${item}.`
+              h4.title-h4.accordion__title Aliquet lectus urna viverra in odio.
+              p.text-main.gray-800.accordion__text Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.
+        .course-info
+          .course-info__item
+            h5.course-info__subtitle Time
+            h4.course-info__title August 5, 11:00 – 14:00
+            p.gray-700.course-info__text Metus turpis sit lorem lacus, in elit tellus lacus.
+          .course-info__item
+            h5.course-info__subtitle Price
+            h4.course-info__title Free
+            p.gray-700.course-info__text Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.
+          .course-info__item
+            a(href="#").course-info__link Event on Facebook
+          a(href="#").btn-main.course-info__btn Join the course 
   
-  .event-join
+  section.course-curator
     .container
-      .event-join__wrap
-        h3.title-h3.event-join__title 20% discount for early birds!
+      .course-curator__wrap
+        .course-curator__image
+          img(src="/img/speaker.png", alt="").course-curator__img
+        .course-curator__content
+          h4.title-h6.course-curator__title Speaker
+          h3.title-h2.course-curator__name Kathryn Murphy
+          h5.course-curator__prof Analyst and Marketing specialist in IT company
+          p.text-main.course-curator__text Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. 
+          .course-curator__socials
+            a(href="#").course-curator__social
+              span.icon-facebook
+            a(href="#").course-curator__social
+              span.icon-instagram
+            a(href="#").course-curator__social
+              span.icon-twitter
+            a(href="#").course-curator__social
+              span.icon-linkedin 
+              
+  section.course-whom
+    .container
+      .course-whom__wrap
+        .course-whom__content
+          h4.title-h6.course-whom__subtitle For whom?
+          h2.title-h2.course-whom__title Who will benefit from the course:
+        .course-whom__list
+          ul.list-main
+            li.title-h4 Specialists with more than 1 year of active work experience
+            li.title-h4 Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces
+            li.title-h4 Professional designers who want to feel more confident in UX    
 
-        form(novalidate)
-          label.label-input
-            h5.label-input__title Full name
-            input(type="name", placeholder="Your full name", name="name") 
-          label.label-input
-            h5.label-input__title Email
-            input(type="email", placeholder="Your working email", name="email") 
-          label.label-input
-            h5.label-input__title Phone
-            input(type="tel", placeholder="Your phone number", name="phone") 
+  include ../section/testimonials

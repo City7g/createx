@@ -1,8 +1,12 @@
 mixin card-event(index)
   .card-event
-    .card-event__day= Math.ceil(Math.random()*30)
+    - let randomDate = Math.ceil(Math.random()*30)
+      if(randomDate > 9)
+        .card-event__day= randomDate
+      else
+        .card-event__day= `0${randomDate}`
     .card-event__month August
     .card-event__title Building a customer service department.
-    a(href="#").btn-secondary.card-event__more View more 
+    a(href="/single-event.html").btn-secondary.card-event__more View more 
     .card-event__time 11:00 – 14:00
     .card-event__text Onine lecture
