@@ -15,7 +15,15 @@
     }
 
     @media (max-width: 450px) {
-      grid-template-columns: 1fr;
+      display: flex;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+      overflow: auto;
+
+      & > * {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+      }
     }
   }
 
