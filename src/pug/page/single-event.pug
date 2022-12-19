@@ -61,6 +61,20 @@ block content
           ul.list-main
             li.title-h4 Specialists with more than 1 year of active work experience
             li.title-h4 Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces
-            li.title-h4 Professional designers who want to feel more confident in UX    
+            li.title-h4 Professional designers who want to feel more confident in UX
+
+  .course-newsletter
+    .container
+      .course-newsletter__wrap
+        .course-newsletter__image
+          img(src="/img/course-newsletter-img.svg", alt="").course-newsletter__image
+        .course-newsletter__content
+          h4.title-h3 Don’t want to miss the best events?<br>Subscribe to our newsletter!
+          form
+            input(type="email", placeholder="Your working email")
+            label.label-checkbox
+              input(type="checkbox")
+              h5 I agree to receive communications from Createx Online School 
+            button(type="submit").btn-main Subscribe
 
   include ../section/testimonials
