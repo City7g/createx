@@ -33,8 +33,12 @@ document.querySelectorAll('.label-input__show').forEach(item => {
     e.preventDefault()
     if(item.previousElementSibling.type === 'password') {
       item.previousElementSibling.type = 'text'
+      item.querySelector('span').classList.add('icon-closed-eye')
+      item.querySelector('span').classList.remove('icon-eye')
     } else {
       item.previousElementSibling.type = 'password'
+      item.querySelector('span').classList.add('icon-eye')
+      item.querySelector('span').classList.remove('icon-closed-eye')
     }
   })
 })
