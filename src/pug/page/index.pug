@@ -47,52 +47,76 @@ block content
 
   section.section-feature
     .container
-      h4.title-h6.section-feature__subtitle Ready to learn?
-      h3.title-h2.section-feature__title Featured Courses
-      a(href="#").btn-secondary.section-feature__more View all courses 
+      .section-feature__header
+        h4.title-h6.section-feature__subtitle Ready to learn?
+        h3.title-h2.section-feature__title Featured Courses
+        a(href="#").btn-secondary.section-feature__more View all courses 
       .section-feature__list
         .card-feature
-          img(src="/img/feature/item-1.jpg", alt="").card-feature__img
-          h5.card-feature__prof Marketing
-          h4.card-feature__title The Ultimate Google Ads Training Course
-          .card-feature__info
-            p.card-feature__price $100
-            p.card-feature__author by Jerome Bell
+          a(href="/single-course.html").card-feature__image
+            img(src="/img/feature/item-1.jpg", alt="").card-feature__img
+          .card-feature__content
+            h5.card-feature__prof Marketing
+            h4.card-feature__title The Ultimate Google Ads Training Course
+            .card-feature__info
+              p.card-feature__price $100
+              p.card-feature__author by Jerome Bell
 
         .card-feature
-          img(src="/img/feature/item-2.jpg", alt="").card-feature__img
-          h5(style="background: #5A87FC").card-feature__prof Management
-          h4.card-feature__title Prduct Management Fundamentals
-          .card-feature__info
-            p.card-feature__price $480
-            p.card-feature__author by Marvin McKinney
+          a(href="/single-course.html").card-feature__image
+            img(src="/img/feature/item-2.jpg", alt="").card-feature__img
+          .card-feature__content
+            h5(style="background: #5A87FC").card-feature__prof Management
+            h4.card-feature__title Prduct Management Fundamentals
+            .card-feature__info
+              p.card-feature__price $480
+              p.card-feature__author by Marvin McKinney
 
         .card-feature
-          img(src="/img/feature/item-3.jpg", alt="").card-feature__img
-          h5(style="background: #F89828").card-feature__prof HR & Recruting
-          h4.card-feature__title HR  Management and Analytics
-          .card-feature__info
-            p.card-feature__price $200
-            p.card-feature__author by Leslie Alexander Li
+          a(href="/single-course.html").card-feature__image
+            img(src="/img/feature/item-3.jpg", alt="").card-feature__img
+          .card-feature__content
+            h5(style="background: #F89828").card-feature__prof HR & Recruting
+            h4.card-feature__title HR  Management and Analytics
+            .card-feature__info
+              p.card-feature__price $200
+              p.card-feature__author by Leslie Alexander Li
 
         .card-feature
-          img(src="/img/feature/item-4.jpg", alt="").card-feature__img
-          h5.card-feature__prof Marketing
-          h4.card-feature__title Brand Management & PR Communications
-          .card-feature__info
-            p.card-feature__price $530
-            p.card-feature__author by Kristin Watson
+          a(href="/single-course.html").card-feature__image
+            img(src="/img/feature/item-4.jpg", alt="").card-feature__img
+          .card-feature__content
+            h5.card-feature__prof Marketing
+            h4.card-feature__title Brand Management & PR Communications
+            .card-feature__info
+              p.card-feature__price $530
+              p.card-feature__author by Kristin Watson
     
   section.section-how
     .container
-      h4.title-h6 Our benefits
-      h2.title-h2 That’s how we do it
+      h4.title-h6.section-how__subtitle Our benefits
+      h2.title-h2.section-how__title That’s how we do it
 
       .tabs
-        a(href="#").tabs__item Experienced Tutors 
-        a(href="#").tabs__item Feedback & Support 
-        a(href="#").tabs__item 24/7 Online Library 
-        a(href="#").tabs__item Community
+        a(href="#").tabs__item.active
+          span.icon-star
+          | Experienced Tutors
+        a(href="#").tabs__item
+          span.icon-like
+          | Feedback & Support 
+        a(href="#").tabs__item
+          span.icon-layouts
+          | 24/7 Online Library 
+        a(href="#").tabs__item
+          span.icon-chat
+          | Community
+      
+      .tab
+        .tab__content
+          h2.title-h3.tab__title Only practicing tutors
+          p.text-main.gray-800.tab__text Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+        .tab__image
+          img(src="/img/how-item-1.svg", alt="").tab__img
       
   include ../section/last-posts
   

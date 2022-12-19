@@ -38,6 +38,7 @@
     padding: 0 150px;
     overflow: auto;
     scrollbar-width: none;
+    scroll-snap-type: y mandatory;
 
     @media (max-width: 1199px) {
       gap: 160px;
@@ -56,6 +57,7 @@
     & > * {
       width: 100%;
       flex-shrink: 0;
+      scroll-snap-align: start;
     }
   }
 }

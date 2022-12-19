@@ -126,6 +126,25 @@ block content
         .course-learn__image
           img(src="/img/course-learn-img.svg", alt="")
 
-    
-
   include ../section/testimonials
+
+  section.course-register
+    .container
+      .course-register__wrap
+        .course-register__image
+          img(src="/img/course-register-img.svg", alt="").course-register__image
+        .course-register__content
+          h4.title-h6.course-register__subtitle Leave a request now and get 20% off!
+          h2.title-h2.course-register__title Register for the course
+
+          form
+            label.label-input
+              h5.label-input__title Full Name
+              input(type="text", placeholder="Your full name", name="name")
+            label.label-input
+              h5.label-input__title Email
+              input(type="email", placeholder="Your working email", name="email")
+            label.label-input
+              h5.label-input__title Phone
+              input(type="text", placeholder="Your phone number", name="phone")
+            button(type="submit").btn-main Join the course

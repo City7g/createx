@@ -5,6 +5,33 @@
     padding: 40px 0;
   }
 
+  &__header {
+    margin-bottom: 60px;
+
+    @media (max-width: 991px) {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: flex-end;
+      gap: 8px 40px;
+    }
+  }
+
+  &__more {
+    @media (max-width: 991px) {
+      margin-top: 15px;
+    }
+
+    @media (min-width: 992px) {
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+    }
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -19,23 +46,43 @@
 }
 
 .card-feature {
-  position: relative;
-  padding: 32px 32px 32px 246px;
+  display: grid;
+  grid-template-columns: 214px 1fr;
   background-color: $white;
   border: 1px solid #E5E8ED;
   border-radius: $radius;
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 
   @media (max-width: 575px) {
-    padding: 246px 32px 32px 32px;
+    grid-template-columns: 1fr;
+  }
+
+  &__image {
+    margin: -1px;
+    border-radius: $radius 0 0 $radius;
+    overflow: hidden;
+    
+    @media (max-width: 991px) {
+      border-radius: $radius $radius 0 0;
+    }
   }
 
   &__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 214px;
+    display: block;
+    width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // width: 214px;
+  }
+
+  &__content {
+    padding: 32px;
+
+    @media (max-width: 991px) {
+      padding: 16px;
+    }
   }
 
   &__prof {
@@ -47,6 +94,10 @@
     background: #03CEA4;
     border-radius: $radius;
     color: $white;
+
+    @media (max-width: 991px) {
+      margin-bottom: 12px;
+    }
   }
 
   &__title {
@@ -54,6 +105,11 @@
     font-size: 20px;
     line-height: 1.5;
     font-weight: 700;
+
+    @media (max-width: 991px) {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
   }
 
   &__info {
@@ -67,6 +123,10 @@
     font-size: 18px;
     line-height: 1.5;
     font-weight: 700;
+
+    @media (max-width: 991px) {
+      font-size: 16px;
+    }
   }
 
   &__author {
@@ -74,6 +134,10 @@
     color: #787A80;
     font-size: 18px;
     line-height: 1.5;
+
+    @media (max-width: 991px) {
+      font-size: 16px;
+    }
 
     &::before {
       position: absolute;
