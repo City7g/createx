@@ -5,11 +5,11 @@ section.section-newsletter
         img(src="/img/newsletter-image.svg", alt="").section-newsletter__img
       
       .section-newsletter__content
-        h3.title-h2 Want to get the best articles weekly? Subscribe to our newsletter!
+        h3.title-h3.section-newsletter__title Want to get the best articles weekly? Subscribe to our newsletter!
 
-        form(novalidate)
+        form(novalidate).form-newsletter
           input(type="email", placeholder="Your working email", name="email")
-          label
+          label.form-newsletter__agree.label-checkbox
             input(type="checkbox", name="agree")
             p I agree to receive communications from Createx Online School 
-          button(type="submit").btn-main Subscribe
+          button(type="submit").btn-main.form-newsletter__btn Subscribe

@@ -10,7 +10,7 @@
   }
 }
 
-.form-newsletter {
+.form-footer {
   position: relative;
 
   &__btn {
@@ -25,6 +25,37 @@
     // &:hover {
     //   transform: translateY(-50%) rotate(-90deg);
     // }
+  }
+}
+
+.form-newsletter {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-auto-flow: dense;
+  gap: 24px;
+
+  @media (max-width: 991px) {
+    gap: 16px;
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__btn {
+    grid-column: 2 / 3;
+
+    @media (max-width: 575px) {
+      grid-column: auto;
+    }
+  }
+  
+  &__agree {
+    grid-column: 1 / -1;
+    
+    @media (max-width: 575px) {
+      grid-column: auto;
+    }
   }
 }
 
