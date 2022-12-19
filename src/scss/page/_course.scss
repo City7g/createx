@@ -300,6 +300,14 @@
     }
   }
 
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+  }
+
   &__list {
     margin-top: 32px;
 
@@ -310,7 +318,38 @@
 }
 
 .accordion {
+  position: relative;
   padding-left: 40px;
+
+  @media (max-width: 991px) {
+    padding-left: 30px;
+  }
+
+  &~& {
+    margin-top: 24px;
+
+    @media (max-width: 991px) {
+      margin-top: 16px;
+    }
+  }
+
+  &__minus,
+  &__plus {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    color: $primary;
+    font-size: 20px;
+  }
+
+  &:not(.active) &__minus,
+  &.active &__plus {
+    display: none;
+  }
+
+  &:not(.active) &__text {
+    display: none;
+  }
   
   &__subtitle {
     color: $primary;

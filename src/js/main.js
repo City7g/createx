@@ -63,3 +63,16 @@ window.addEventListener("click", (e) => {
     });
   }
 });
+
+document.querySelectorAll('.accordion').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.accordion').forEach(i => {
+      if(i === item) {
+        console.log(i);
+        i.classList.toggle('active')
+      } else {
+        i.classList.remove('active')
+      }
+    })
+  })
+})
