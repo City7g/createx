@@ -41,6 +41,10 @@ block content
           h3.title-h2.course-curator__name Kathryn Murphy
           h5.course-curator__prof Analyst and Marketing specialist in IT company
           p.text-main.course-curator__text Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. 
+          .course-curator__logos
+            img(src="/img/student-work/item-8.png", alt="").course-curator__logo
+            img(src="/img/student-work/item-10.png", alt="").course-curator__logo
+            img(src="/img/student-work/item-3.png", alt="").course-curator__logo
           .course-curator__socials
             a(href="#").course-curator__social
               span.icon-facebook
@@ -69,13 +73,13 @@ block content
         .course-newsletter__image
           img(src="/img/course-newsletter-img.svg", alt="").course-newsletter__img
         .course-newsletter__content
-          h4.title-h3 Don’t want to miss the best events?<br>Subscribe to our newsletter!
-          form
+          h4.title-h3.course-newsletter__title Don’t want to miss the best events?<br>Subscribe to our newsletter!
+          form(novalidate).form-newsletter
             input(type="email", placeholder="Your working email")
-            label.label-checkbox
+            label.label-checkbox.form-newsletter__agree
               input(type="checkbox")
               h5 I agree to receive communications from Createx Online School 
-            button(type="submit").btn-main Subscribe
+            button(type="submit").btn-main.form-newsletter__btn Subscribe
 
   .course-request
     .container
@@ -97,5 +101,3 @@ block content
           p.text-main.course-request__text * You will receive a link to the online lecture in an email after registration.
         .course-request__image
           img(src="/img/event-request-img.svg", alt="").course-request__img
-
-  include ../section/testimonials

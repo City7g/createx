@@ -8,7 +8,7 @@
   &__wrap {
     display: grid;
     grid-template-columns: auto 1fr;
-    align-items: flex-end;
+    align-items: center;
     gap: 40px 160px;
 
     @media (max-width: 1199px) {

@@ -1,7 +1,10 @@
 .section-first {
   padding: 180px 0 50px;
 
-  background: linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
+  background-image: url('/img/first-bg-dots.png'), url('/img/first-bg-circle.png'), linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
+  background-position: top 82% right -20px, 20px 20px, cover;
+  background-repeat: no-repeat;
+  background-size: auto;
 
   @media (max-width: 1399px) {
     padding: 150px 0 50px;

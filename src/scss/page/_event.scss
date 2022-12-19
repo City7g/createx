@@ -46,6 +46,11 @@
 .section-events {
   padding: 180px 0 90px;
 
+  background-image: url('/img/about-bg-dots.png'), url('/img/about-bg-circle.png');
+  background-position: -50px 150px, right -135px bottom 150px;
+  background-repeat: no-repeat;
+  background-size: auto;
+
   @media (max-width: 991px) {
     padding: 90px 0 50px;
   }
