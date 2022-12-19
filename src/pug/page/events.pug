@@ -1,13 +1,13 @@
 extends ../layout/main
 
 block variables
-  - barba = 'blog'
+  - barba = 'events'
 
 block content
-  section.section-blog
+  section.section-events
     .container
-      h4.title-h6.section-blog__subtitle Our blog
-      h1.title-h2.section-blog__title Createx School Journal
+      h4.title-h6.section-events__subtitle Our blog
+      h1.title-h2.section-events__title Createx School Journal
 
       // .section-blog__filters
         .tabs
@@ -26,10 +26,10 @@ block content
         .section-blog__search
           input(type="text", placeholder="Search blog...")
 
-      .section-blog__posts
+      .section-events__event
         each item in [1, 2, 3, 4, 5, 6, 7, 8]
-          +card-post(item)
-
+          +card-event(item)
+      
       +pagination
-  
-  include ../section/newsletter
+
+  include ../section/subscribe

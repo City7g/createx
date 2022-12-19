@@ -1,0 +1,15 @@
+section.section-newsletter
+  .container
+    .section-newsletter__wrap
+      .section-newsletter__image
+        img(src="/img/newsletter-image.svg", alt="").section-newsletter__img
+      
+      .section-newsletter__content
+        h3.title-h2 Want to get the best articles weekly? Subscribe to our newsletter!
+
+        form(novalidate)
+          input(type="email", placeholder="Your working email", name="email")
+          label
+            input(type="checkbox", name="agree")
+            p I agree to receive communications from Createx Online School 
+          button(type="submit").btn-main Subscribe

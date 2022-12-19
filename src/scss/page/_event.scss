@@ -39,6 +39,39 @@
   }
 }
 
+.section-events {
+  padding: 180px 0 90px;
+
+  @media (max-width: 991px) {
+    padding: 90px 0 50px;
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 8px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  & .card-event {
+    border: 1px solid #E5E8ED;
+  }
+}
+
 .timer {
   display: flex;
   gap: 24px;

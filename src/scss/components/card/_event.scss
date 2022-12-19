@@ -6,6 +6,24 @@
   padding: 32px 40px;
   background: $white;
   border-radius: $radius;
+  transition: 0.3s box-shadow ease;
+
+  &:hover {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  }
+
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
+
+  &~& {
+    margin-top: 24px;
+
+    @media (max-width: 991px) {
+      margin-top: 16px;
+    }
+  }
 
   &__day {
     align-self: center;
@@ -33,5 +51,22 @@
 
   &__more {
     grid-row: span 2;
+  }
+
+  @media (max-width: 991px) {
+    &__title,
+    &__more,
+    &__text {
+      grid-column: 1 / -1;
+    }
+
+    &__time {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    &__more {
+      grid-row: 5 / 6;
+    }
   }
 }
