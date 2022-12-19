@@ -124,3 +124,21 @@
     grid-column: 1 / -1;
   }
 }
+
+.form-request {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  @media (max-width: 991px) {
+    gap: 16px;
+  }
+
+  &__btn {
+    margin-top: 16px;
+
+    @media (max-width: 991px) {
+      margin-top: 12px;
+    }
+  }
+}

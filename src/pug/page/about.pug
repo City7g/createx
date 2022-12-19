@@ -1,6 +1,8 @@
+
 extends ../layout/main
 
 block variables
+  - const colorVariables = [{name: 'Marketing', color: '#03CEA4'}, {name: 'Management', color: '#5A87FC'}, {name: 'HR & Recruting', color: '#F89828'}, {name: 'Design', color: '#F52F6E'}, {name: 'Development', color: '#7772F1'}]
   - barba = 'about'
 
 block content
@@ -65,11 +67,27 @@ block content
             h4.title-h4.values-list__title Flexible Shedule
             p.gray-700.values-list__text Aute eiusmod dolore dolore deserunt veniam ad deserunt. 
 
-  section
+  section.about-teach
     .container
-      .__wrap
-        h4.title-h6 our main directions
-        h2.title-h2 What do we teach
+      .about-teach__wrap
+        h4.title-h6.about-teach__subtitle our main directions
+        h2.title-h2.about-teach__title What do we teach
+
+        .about-teach__list
+          each course in [1, 2, 3, 4, 5]
+            .course
+              a(href="/single-course.html").course__image
+                img(src=`/img/course/about-${course}.jpg`, alt="").course__img
+              .course__content
+                - let randomCategory = Math.floor(Math.random()*5)
+                h5(style=`background: ${colorVariables[randomCategory].color}`).course__category= colorVariables[randomCategory].name
+                p.gray-700.course__text Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.
+                a(href="#").course__check Check courses
+                  span.icon-arrow-right
+
+          .course-soon
+            h4.title-h4 New studying program coming soon...
+
 
   include ../section/do-it
 

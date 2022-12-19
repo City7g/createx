@@ -322,13 +322,13 @@
     }
   }
 
-  &__title {
-    margin-bottom: 60px;
+  // &__title {
+  //   margin-bottom: 60px;
 
-    @media (max-width: 991px) {
-      margin-bottom: 30px;
-    }
-  }
+  //   @media (max-width: 991px) {
+  //     margin-bottom: 30px;
+  //   }
+  // }
 
   &__list {
     margin-top: 32px;
@@ -549,6 +549,11 @@
 }
 
 .course-newsletter {
+  @media (max-width: 991px) {
+    background: linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
+    padding: 30px 20px;
+  }
+
   &__wrap {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -556,5 +561,65 @@
     padding: 60px 105px;
     background: linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
     border-radius: $radius;
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 0;
+      background: none;
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.course-request {
+  padding: 90px 0;
+
+  @media (max-width: 991px) {
+    padding: 50px 0;
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 135px;
+
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px;
+    }
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 8px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    margin-top: 24px;
+
+    @media (max-width: 991px) {
+      margin-top: 16px;
+    }
   }
 }

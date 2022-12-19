@@ -67,7 +67,7 @@ block content
     .container
       .course-newsletter__wrap
         .course-newsletter__image
-          img(src="/img/course-newsletter-img.svg", alt="").course-newsletter__image
+          img(src="/img/course-newsletter-img.svg", alt="").course-newsletter__img
         .course-newsletter__content
           h4.title-h3 Don’t want to miss the best events?<br>Subscribe to our newsletter!
           form
@@ -76,5 +76,26 @@ block content
               input(type="checkbox")
               h5 I agree to receive communications from Createx Online School 
             button(type="submit").btn-main Subscribe
+
+  .course-request
+    .container
+      .course-request__wrap
+        .course-request__content
+          h4.title-h6.course-request__subtitle Don’t miss the event
+          h2.title-h2.course-request__title Leave a request
+          form.form-request
+            label.label-input
+              h5.label-input__title Full Name
+              input(type="text", placeholder="Your full name", name="name") 
+            label.label-input
+              h5.label-input__title Email
+              input(type="email", placeholder="Your working email", name="email") 
+            label.label-input
+              h5.label-input__title Phone
+              input(type="tel", placeholder="Your phone number", name="phone") 
+            button(type="submit").btn-main Join the event
+          p.text-main.course-request__text * You will receive a link to the online lecture in an email after registration.
+        .course-request__image
+          img(src="/img/event-request-img.svg", alt="").course-request__img
 
   include ../section/testimonials

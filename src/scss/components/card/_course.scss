@@ -96,4 +96,39 @@
       content: '|';
     }
   }
+
+  &__check {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 700;
+
+    @media (max-width: 991px) {
+      margin-top: 12px;
+    }
+
+    & [class^="icon-"],
+    & [class*=" icon-"] {
+      color: $primary;
+      transition: 0.3s transform ease;
+    }
+
+    &:hover [class^="icon-"],
+    &:hover [class*=" icon-"] {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.course-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 70px;
+  background: #F4F5F7;
+  border-radius: $radius;
+  text-align: center;
 }
