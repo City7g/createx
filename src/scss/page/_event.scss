@@ -5,6 +5,10 @@
     padding: 50px 0;
   }
 
+  &__title {
+    font-weight: 900;
+  }
+
   &__wrap {
     display: grid;
     grid-template-columns: 1fr auto;
