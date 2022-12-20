@@ -9,22 +9,38 @@ block content
       h4.title-h6.section-events__subtitle Our blog
       h1.title-h2.section-events__title Createx School Journal
 
-      // .section-blog__filters
-        .tabs
-          a(href="#") All
-          a(href="#") Articles
-          a(href="#") Videos
-          a(href="#") Podcasts
+      .filters
+        .filter-select
+          .filter-select__title Event category
+          select.filter-select__select
+            option all themes 
+            option Marketing 
+            option Development 
+            option Design
+            option HR & Recruting
 
-        select
-          option all themes 
-          option Marketing 
-          option Development 
-          option Design
-          option HR & Recruting
+        .filter-select
+          .filter-select__title Sort by
+          select.filter-select__select
+            option newest
+            option old
         
-        .section-blog__search
+        .filter-select
+          .filter-select__title Show
+          select.select-short.filter-select__select
+            option 6
+            option(selected) 9
+            option 12
+          .filter-select__text events per page
+        
+        form.form-search.section-blog__search
           input(type="text", placeholder="Search blog...")
+          button(type="submit").form-search__btn
+            span.icon-search.gray-600
+
+        .filter-grid
+          button.icon-list.filter-grid__item.active
+          button.icon-grid.filter-grid__item
 
       .section-events__event
         each item in [1, 2, 3, 4, 5, 6, 7, 8]

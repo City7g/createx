@@ -3,11 +3,13 @@ select {
   border-radius: $radius;
   border: 1px solid #D7DADD;
   background-color: $white;
-  background-image: url('/img/svg/gray-arrow-down.svg');
+  background-image: url('/img/icons/arrow-down.svg');
   background-position: center right 18px;
   background-size: auto;
   background-repeat: no-repeat;
   appearance: none;
+  width: 160px;
+  color: #424551;
 
   // &:focus {
   //   background-position: center right 29px;
@@ -15,20 +17,28 @@ select {
 }
 
 select:optional {
-  color: white;
-  background-color: red;
+  // color: white;
+  // background-color: red;
+  // border: 1px solid red;
 }
 
 option {
   font-family: 'Lato';
   font-weight: 400;
   // background-color: red;
-  padding: 5px;
+  padding: 55px;
+  height: 100px;
   // color: red;
+  border: 1px solid red;
 
   &:hover,
   &:focus,
   &:active {
     background-color: red;
   }
+}
+
+.select-short {
+  width: 72px;
+  background-image: url('/img/icons/select.svg');
 }

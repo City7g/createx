@@ -9,7 +9,7 @@ block content
       h4.title-h6.section-blog__subtitle Our blog
       h1.title-h2.section-blog__title Createx School Journal
 
-      .section-blog__filters
+      .filters
         .tabs
           a(href="#").active
             | All
@@ -30,12 +30,27 @@ block content
             | Development
             sup 3
 
-        //- select
-        //-   option all themes 
-        //-   option Marketing 
-        //-   option Development 
-        //-   option Design
-        //-   option HR & Recruting
+        .filter-select
+          .filter-select__title Event category
+          select.filter-select__select
+            option all themes 
+            option Marketing 
+            option Development 
+            option Design
+            option HR & Recruting
+
+        .filter-select
+          .filter-select__title Sort by
+          select.filter-select__select
+            option newest
+            option old
+        
+        .filter-select
+          .filter-select__title Show
+          select.filter-select__select
+            option 6
+            option(selected) 9
+            option 12
         
         form.form-search.section-blog__search
           input(type="text", placeholder="Search blog...")
