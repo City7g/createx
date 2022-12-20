@@ -1,6 +1,53 @@
 input[type=checkbox],
 input[type=radio] {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  appearance: none;
   width: 16px;
   height: 16px;
-  accent-color: $primary;
+  // accent-color: $primary;
+  // background-image: #000;
+  border: 1px solid;
+  border-color: #B3B7BC;
+  background-color: white;
+  border-radius: 3px;
+  // background-color: $primary;
+  transition: 0.3s ease;
+  transition-property: background-color, border-color;
+
+  &::before {
+  //   width: 16px;
+  //   height: 16px;
+  //   display: block;
+  //   background-color: $primary;
+     transform: scale(0);
+  //   // opacity: 0;
+  //   background-image: url('/img/icons/checkbox.svg');
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: auto;
+  //   content: '';
+    transition: 0.3s transform ease;
+    // transition-property: background-color, border-color;
+    content: "\e943";
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'icomoon' !important;
+    color: $white;
+    transition-delay: 0.1s;
+  }
+
+  &:checked {
+    border-color: $primary;
+    background-color: $primary;
+  }
+
+  &:checked::before {
+    transform: scale(1);
+    opacity: 1;
+    // border-color: $primary;
+    // background-color: $primary;
+  }
 }

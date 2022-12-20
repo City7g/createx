@@ -68,7 +68,6 @@ document.querySelectorAll('.accordion').forEach(item => {
   item.addEventListener('click', () => {
     document.querySelectorAll('.accordion').forEach(i => {
       if(i === item) {
-        console.log(i);
         i.classList.toggle('active')
       } else {
         i.classList.remove('active')
@@ -84,3 +83,17 @@ document.querySelectorAll('.tabs a').forEach(item => {
     item.classList.add('active')
   })
 })
+
+// document.querySelector('.slider-navigation__prev').addEventListener('click', () => {
+//   console.log(document.querySelector('.slider-navigation__prev'));
+//   document.querySelector('.section-testimonials__slider').scrollTo({left: 1, top: 0, behavior: 'smooth'})
+// })
+// document.querySelector('.slider-navigation__next').addEventListener('click', () => {
+//   console.log(document.querySelector('.slider-navigation__prev'));
+//   document.querySelector('.section-testimonials__slider').scrollTo({left: 1000, top: 0, behavior: 'smooth'})
+// })
+// document.querySelectorAll('.slider-pagination__item').forEach((item, index) => {
+//   item.addEventListener('click', () => {
+//     document.querySelector('.section-testimonials__slider').scrollTo({left: index * 1000, top: 0, behavior: 'smooth'})
+//   })
+// })

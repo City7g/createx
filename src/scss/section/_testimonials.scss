@@ -141,7 +141,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   margin-top: 60px;
 
   @media (max-width: 991px) {
@@ -150,11 +150,12 @@
 
   &__item {
     width: 30px;
-    height: 3px;
+    height: 2px;
     background-color: #B3B7BC;
     border-radius: 2px;
     cursor: pointer;
     transition: 0.3s background-color ease;
+    border: 2px solid transparent;
 
     &.active,
     &:hover {
