@@ -116,6 +116,10 @@
   line-height: 1.3;
   font-weight: 900;
   letter-spacing: 1px;
+
+  @media (max-width: $tablet-sm) {
+    font-size: 36px;
+  }
 }
 
 .text-extraexsmall {

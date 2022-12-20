@@ -20,6 +20,14 @@
 
 .label-checkbox {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
+
+  @media (max-width: 991px) {
+    gap: 9px;
+  }
+
+  & input {
+    margin-top: 4px;
+  }
 }

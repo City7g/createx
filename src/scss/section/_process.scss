@@ -45,6 +45,12 @@
       margin-bottom: 15px;
     }
   }
+
+  &__item {
+    @media (max-width: 991px) {
+      padding-left: 30px;
+    }
+  }
   
   &__item:not(:last-child) &__number {
     &::after {

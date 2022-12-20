@@ -36,6 +36,14 @@
 
     & .tabs {
       grid-template-columns: repeat(6, 1fr);
+
+      @media (max-width: 575px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media (max-width: 350px) {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 991px) {

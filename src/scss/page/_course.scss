@@ -299,11 +299,12 @@
   &__logos {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 40px;
     margin-top: 40px;
 
     @media (max-width: 991px) {
-      gap: 24px;
+      gap: 12px 24px;
       margin-top: 24px;
     }
   }
@@ -530,15 +531,14 @@
     gap: 20px;
     scroll-snap-type: x mandatory;
     overflow: auto;
-    scrollbar-width: none;
 
     & > * {
       flex: 0 0 calc(50% - 10px);
-      // scroll-snap-stop: always;
-      // scroll-snap-align: center;
+      scroll-snap-align: start;
 
-      @media (max-width: 767px) {
+      @media (max-width: 1199px) {
         flex-basis: 100%;
+        scroll-snap-align: center;
       }
     }
   }
