@@ -9,28 +9,12 @@
   @media (max-width: 1399px) {
     gap: 20px;
   }
+}
 
-  & .tabs {
-    grid-template-columns: repeat(6, 1fr);
-
-    @media (max-width: 575px) {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media (max-width: 350px) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  @media (max-width: 991px) {
-    margin-bottom: 30px;
-  }
-
-  @media (max-width: 991px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+.filter-tab {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .filter-select {
