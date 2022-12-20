@@ -76,6 +76,11 @@
     width: 100%;
     display: block;
     transition: 0.3s transform ease;
+
+    @media (max-width: 575px) {
+      max-width: 200px;
+      margin: 0 auto;
+    }
   }
 
   &__image:hover &__img {
