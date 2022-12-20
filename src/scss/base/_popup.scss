@@ -23,13 +23,10 @@
 
   &__wrap {
     position: relative;
-
     width: 100%;
     max-width: 486px;
     max-height: 80vh;
-    overflow: auto;
     margin: 0 auto;
-
     background: $white;
     border-radius: $radius;
     animation: popup-show 0.4s;
@@ -39,6 +36,8 @@
     max-height: 80vh;
     padding: 48px;
     overscroll-behavior: contain;
+    overflow: auto;
+    scrollbar-width: none;
 
     @media (max-width: 991px) {
       padding: 24px;

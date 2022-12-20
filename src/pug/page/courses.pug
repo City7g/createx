@@ -5,6 +5,36 @@ block content
     .container
       h4.title-h6.section-courses__subtitle Enjoy your studying!
       h1.title-h2.section-courses__title Enjoy your studying!
+
+      
+      .filters
+        .tabs.filter-tab
+          a(href="#").active
+            | All
+          a(href="#")
+            span.icon-files
+            | Articles
+          a(href="#") 
+            span.icon-play
+            | Videos
+          a(href="#")
+            span.icon-mic
+            | Podcasts
+
+        .filter-select
+          .filter-select__title Blog category
+          select.filter-select__select
+            option all themes 
+            option Marketing 
+            option Development 
+            option Design
+            option HR & Recruting
+        
+        form.form-search.filter-search
+          input(type="text", placeholder="Search blog...")
+          button(type="submit").form-search__btn
+            span.icon-search.gray-600
+
       .section-courses__courses
         each course in [1, 2, 3, 4, 5, 6, 7, 8, 9]
           .course
