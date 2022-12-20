@@ -1,23 +1,25 @@
 extends ../layout/main
 
+block variables
+  - barba = 'courses'
+
 block content
   section.section-courses
     .container
       h4.title-h6.section-courses__subtitle Enjoy your studying!
       h1.title-h2.section-courses__title Enjoy your studying!
-
       
       .filters
-        .tabs.filter-tab
-          a(href="#").active
+        .filter-tab
+          a(href="#").tab.active
             | All
-          a(href="#")
+          a(href="#").tab
             span.icon-files
             | Articles
-          a(href="#") 
+          a(href="#").tab
             span.icon-play
             | Videos
-          a(href="#")
+          a(href="#").tab
             span.icon-mic
             | Podcasts
 

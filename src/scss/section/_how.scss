@@ -36,86 +36,50 @@
     text-align: center;
   }
 
+  &__tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 400px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__tab {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 135px;
+    margin-top: 60px;
+
+    @media (max-width: 1199px) {
+      gap: 30px 80px;
+    }
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+      margin-top: 30px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+
+      @media (max-width: 991px) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
   &__btn {
     margin-top: 48px;
 
     @media (max-width: 991px) {
       margin-bottom: 30px;
-    }
-  }
-}
-
-.tabs {
-  display: flex;
-  
-  @media (max-width: 991px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  }
-
-  @media (max-width: 575px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 350px) {
-    grid-template-columns: 1fr;
-  }
-
-  & > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 10px;
-    color: #9A9CA5;
-    font-size: 16px;
-    line-height: 1.6;
-    font-weight: 700;
-    border-radius: $radius;
-    transition: 0.3s color ease;
-    border: 1px solid transparent;
-
-    @media (max-width: 767px) {
-      padding: 8px 12px;
-      font-size: 14px;
-    }
-
-    &:hover {
-      color: $primary;
-    }
-
-    &.active {
-      color: $primary;
-      border: 1px solid $primary;
-    }
-
-    & > sup {
-      margin-left: -5px;
-    }
-  }
-}
-
-.tab {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 135px;
-  margin-top: 60px;
-
-  @media (max-width: 1199px) {
-    gap: 30px 80px;
-  }
-
-  @media (max-width: 991px) {
-    grid-template-columns: 1fr;
-    margin-top: 30px;
-  }
-
-  &__title {
-    margin-bottom: 24px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 16px;
     }
   }
 }

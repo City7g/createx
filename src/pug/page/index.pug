@@ -50,7 +50,7 @@ block content
       .section-feature__header
         h4.title-h6.section-feature__subtitle Ready to learn?
         h3.title-h2.section-feature__title Featured Courses
-        a(href="#").btn-secondary.section-feature__more View all courses 
+        a(href="/courses.html").btn-secondary.section-feature__more View all courses 
       .section-feature__list
         .card-feature
           a(href="/single-course.html").card-feature__image
@@ -97,21 +97,21 @@ block content
       h4.title-h6.section-how__subtitle Our benefits
       h2.title-h2.section-how__title That’s how we do it
 
-      .tabs
-        a(href="#").tabs__item.active
+      .section-how__tabs
+        a(href="#").tab.active
           span.icon-star
           | Experienced Tutors
-        a(href="#").tabs__item
+        a(href="#").tab
           span.icon-like
           | Feedback & Support 
-        a(href="#").tabs__item
+        a(href="#").tab
           span.icon-layouts
           | 24/7 Online Library 
-        a(href="#").tabs__item
+        a(href="#").tab
           span.icon-chat
           | Community
       
-      .tab
+      .section-how__tab
         .tab__content
           h2.title-h3.tab__title Only practicing tutors
           p.text-main.gray-800.tab__text Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
@@ -141,7 +141,7 @@ block content
       h2.title-h2.section-team__title Meet our team
 
       .section-team__team
-        each person in [1, 2, 3, 4]
+        each person in [1, 2, 3, 4, 1, 2, 3, 4]
           +person(person)
   
   include ../section/testimonials

@@ -76,10 +76,10 @@ document.querySelectorAll('.accordion').forEach(item => {
   })
 })
 
-document.querySelectorAll('.tabs a').forEach(item => {
+document.querySelectorAll('.tab').forEach(item => {
   item.addEventListener('click', e => {
     e.preventDefault()
-    document.querySelectorAll('.tabs a').forEach(i => i.classList.remove('active'))
+    document.querySelectorAll('.tab').forEach(i => i.classList.remove('active'))
     item.classList.add('active')
   })
 })

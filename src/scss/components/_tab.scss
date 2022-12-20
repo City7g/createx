@@ -1,0 +1,32 @@
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 10px;
+  color: #9A9CA5;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 700;
+  border-radius: $radius;
+  transition: 0.3s color ease;
+  border: 1px solid transparent;
+
+  @media (max-width: 767px) {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    color: $primary;
+  }
+
+  &.active {
+    color: $primary;
+    border: 1px solid $primary;
+  }
+
+  & > sup {
+    margin-left: -5px;
+  }
+}

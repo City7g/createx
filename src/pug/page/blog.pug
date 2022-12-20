@@ -10,16 +10,16 @@ block content
       h1.title-h2.section-blog__title Createx School Journal
 
       .filters
-        .tabs.filter-tab
-          a(href="#").active
+        .filter-tab
+          a(href="#").tab.active
             | All
-          a(href="#")
+          a(href="#").tab
             span.icon-files
             | Articles
-          a(href="#") 
+          a(href="#").tab
             span.icon-play
             | Videos
-          a(href="#")
+          a(href="#").tab
             span.icon-mic
             | Podcasts
 
@@ -32,7 +32,7 @@ block content
             option Design
             option HR & Recruting
         
-        form.form-search.section-blog__search
+        form.form-search.filter-search
           input(type="text", placeholder="Search blog...")
           button(type="submit").form-search__btn
             span.icon-search.gray-600
