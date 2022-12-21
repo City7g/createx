@@ -8,6 +8,7 @@
   &__wrap {
     display: grid;
     grid-template-columns: 1fr auto;
+    align-items: center;
     gap: 50px 100px;
 
     @media (max-width: 1399px) {
@@ -19,12 +20,16 @@
     }
   }
 
-  &__image {
+  &--absolute &__wrap {
+    align-items: flex-start;
+  }
+
+  &--absolute &__image {
     position: relative;
     width: 705px;
   }
 
-  &__img--absolute {
+  &--absolute &__img {
     position: absolute;
     top: 0;
     left: 0;
