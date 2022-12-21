@@ -2,6 +2,16 @@
   color: $white;
   background-color: #1E212C;
 
+  & a:hover {
+    color: $white;
+  }
+
+  & a:focus-visible,
+  & button:focus-visible {
+    color: $white;
+    outline-color: $white;
+  }
+
   &__wrap {
     display: grid;
     grid-template-columns: 1fr auto auto auto 1fr;
@@ -85,10 +95,6 @@
   &__link {
     font-size: 22px;
     color: rgba($white, 0.6);
-
-    &:hover {
-      color: $white;
-    }
   }
 
   &__link ~ &__link {

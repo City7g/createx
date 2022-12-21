@@ -53,6 +53,7 @@
     justify-content: center;
     align-items: center;
     gap: 14px;
+    max-width: max-content;
     width: 100%;
     margin: 80px auto 0;
     font-size: 16px;
@@ -368,6 +369,10 @@
     width: 600px;
     margin-top: 32px;
 
+    @media (max-width: 1199px) {
+      width: auto;
+    }
+
     @media (max-width: 991px) {
       margin-top: 0;
     }
@@ -569,6 +574,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px 40px;
     margin-top: 80px;
 

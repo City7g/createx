@@ -6,7 +6,7 @@
   margin-bottom: 60px;
 
   @media (max-width: 1399px) {
-    gap: 20px;
+    gap: 20px 25px;
   }
 
   @media (max-width: 1199px) {
@@ -14,10 +14,15 @@
   }
 }
 
-.filter-tab {
+.filter-tab,
+.filter-category {
   display: flex;
   align-items: center;
   gap: 12px;
+
+  @media (max-width: 1199px) {
+    gap: 4px 6px;
+  }
 
   @media (min-width: 992px) {
     margin-right: auto;
@@ -29,6 +34,25 @@
 
   & > .tab {
     flex-grow: 1;
+  }
+}
+
+.filter-category {
+  @media (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 370px) {
+    grid-template-columns: 1fr;
   }
 }
 
