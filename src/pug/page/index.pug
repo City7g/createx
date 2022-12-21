@@ -30,8 +30,8 @@ block content
   section.section-why
     .container
       .section-why__wrap
-        .section-first__img
-          img(src="/img/why-img.jpg", alt="")
+        .section-why__image
+          img(src="/img/why-img.jpg", alt="").section-why__img
           
         .section-why__content
           h4.title-h6.section-why__subtitle Who we are
@@ -43,7 +43,7 @@ block content
             li Etiam duis lobortis in fames ultrices commodo nibh.
             li Tincidunt sagittis neque sem ac eget.
             li Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
-          button.btn-main.section-why__btn More about us
+          button.btn-main.btn-small.section-why__btn More about us
 
   section.section-feature
     .container
@@ -91,6 +91,26 @@ block content
             .card-feature__info
               p.card-feature__price $530
               p.card-feature__author by Kristin Watson
+
+        .card-feature
+          a(href="/single-course.html").card-feature__image
+            img(src="/img/feature/item-5.jpg", alt="").card-feature__img
+          .card-feature__content
+            h5.card-feature__prof Marketing
+            h4.card-feature__title Brand Management & PR Communications
+            .card-feature__info
+              p.card-feature__price $530
+              p.card-feature__author by Kristin Watson
+        
+        .card-feature
+          a(href="/single-course.html").card-feature__image
+            img(src="/img/feature/item-6.jpg", alt="").card-feature__img
+          .card-feature__content
+            h5.card-feature__prof Marketing
+            h4.card-feature__title Brand Management & PR Communications
+            .card-feature__info
+              p.card-feature__price $530
+              p.card-feature__author by Kristin Watson
     
   section.section-how
     .container
@@ -127,7 +147,7 @@ block content
 
       .section-event__events
         each item in [1, 2, 3]
-          +card-event(item)
+          +event(item)
 
       .section-event__footer
         h5.title-h3 Do you want more?
@@ -137,8 +157,14 @@ block content
 
   section.section-team
     .container
-      h4.title-h6.section-team__subtitle Best tutors are all here
-      h2.title-h2.section-team__title Meet our team
+      .section-team__header
+        h4.title-h6.section-team__subtitle Best tutors are all here
+        h2.title-h2.section-team__title Meet our team
+        .slider
+          .slider-navigation__prev
+            span.icon-arrow-left
+          .slider-navigation__next
+            span.icon-arrow-right
 
       .section-team__team
         each person in [1, 2, 3, 4, 1, 2, 3, 4]

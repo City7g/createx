@@ -95,6 +95,7 @@
     font-weight: 700;
 
     & [class^="icon-"] {
+      color: $primary;
       transition: 0.3s transform ease;
     }
 

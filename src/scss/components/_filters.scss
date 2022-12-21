@@ -16,6 +16,10 @@
   align-items: center;
   gap: 2px;
 
+  @media (min-width: 992px) {
+    margin-right: auto;
+  }
+
   @media (max-width: 991px) {
     flex: 0 0 100%;
   }
@@ -64,8 +68,14 @@
 }
 
 .filter-search {
+  flex-basis: 315px;
+
   @media (max-width: 991px) {
     flex: 0 0 100%;
     order: 2;
+  }
+
+  & input[type=text] {
+    font-size: 14px;
   }
 }

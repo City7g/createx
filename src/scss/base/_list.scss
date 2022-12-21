@@ -1,12 +1,12 @@
 .list-main {
   & li {
     position: relative;
-    padding-left: 30px;
+    padding-left: 31px;
 
     &::after {
       position: absolute;
       left: 0;
-      top: 3px;
+      top: 5px;
       display: block;
       width: 16px;
       height: 16px;
@@ -25,6 +25,7 @@
 
 .list-main {
   & li~li {
+    line-height: 26px;
     margin-top: 12px;
   }
 }

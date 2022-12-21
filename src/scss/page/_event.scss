@@ -76,8 +76,22 @@
     }
   }
 
-  & .card-event {
+  & .event {
     border: 1px solid #E5E8ED;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 575px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 

@@ -1,14 +1,14 @@
 .section-why {
-  padding: 50px 0;
+  margin: 180px 0;
 
   @media (max-width: 991px) {
-    padding: 40px 0;
+    padding: 90px 0;
   }
 
   &__wrap {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 40px 130px;
+    grid-template-columns: auto 1fr;
+    gap: 40px 135px;
 
     @media (max-width: 1199px) {
       gap: 40px 80px;
@@ -17,6 +17,10 @@
     @media (max-width: 991px) {
       grid-template-columns: 1fr;
     }
+  }
+
+  &__img {
+    display: block;
   }
 
   &__subtitle {

@@ -1,4 +1,4 @@
-.card-event {
+.event {
   display: grid;
   grid-template-columns: 57px 100px 1fr auto;
   align-items: flex-start;
@@ -47,7 +47,7 @@
   &__time {
     color: #787A80;
     font-size: 16px;
-    line-height: 1.6; 
+    line-height: 1.6;
   }
 
   &__more {
@@ -59,6 +59,7 @@
   }
 
   @media (max-width: 991px) {
+
     &__title,
     &__more,
     &__text {
@@ -72,6 +73,69 @@
 
     &__more {
       grid-row: 5 / 6;
+    }
+  }
+}
+
+.event-card {
+  padding: 24px;
+  background: $white;
+  border: 1px solid #E5E8ED;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: $radius;
+
+  @media (max-width: 991px) {
+    padding: 16px;
+  }
+
+  &__date {
+    margin-bottom: 4px;
+    color: $primary;
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 700;
+
+    @media (max-width: 991px) {
+      margin-bottom: 3px;
+      font-size: 24px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    color: #1E212C;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+
+    @media (max-width: 991px) {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__time {
+    margin-bottom: 20px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__time,
+  &__text {
+    color: #787A80;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  &__more {
+    width: 100%;
+    margin-top: 51px;
+    text-align: center;
+
+    @media (max-width: 991px) {
+      margin-top: 30px;
     }
   }
 }

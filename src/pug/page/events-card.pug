@@ -39,12 +39,12 @@ block content
             span.icon-search
 
         .filter-grid
-          a(href="/events.html").icon-list.filter-grid__item.active
-          a(href="/events-card.html").icon-grid.filter-grid__item
+          a(href="/events.html").icon-list.filter-grid__item
+          a(href="/events-card.html").icon-grid.filter-grid__item.active
 
-      .section-events__event
-        each item in [1, 2, 3, 4, 5, 6, 7, 8]
-          +event(item)
+      .section-events__grid
+        each item in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+          +event-card(item)
       
       +pagination
 
