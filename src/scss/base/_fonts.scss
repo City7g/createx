@@ -15,6 +15,7 @@
 
   @media (max-width: 1199px) {
     font-size: 50px;
+    line-height: 65px;
   }
 
   @media (max-width: $tablet-sm) {
@@ -30,6 +31,7 @@
 
   @media (max-width: 1199px) {
     font-size: 35px;
+    line-height: 46px;
   }
 }
 
@@ -42,6 +44,7 @@
 
   @media (max-width: 991px) {
     font-size: 22px;
+    line-height: 27px;
   }
 }
 
@@ -52,7 +55,8 @@
   font-weight: 700;
 
   @media (max-width: $tablet-sm) {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 
@@ -62,7 +66,7 @@
   font-weight: 700;
 
   @media (max-width: $tablet-sm) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -76,6 +80,7 @@
 
   @media (max-width: 1199px) {
     font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -84,6 +89,11 @@
   line-height: 1.5;
   line-height: 30px;
   font-weight: 700;
+
+  @media (max-width: 991px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .text-main {
@@ -93,6 +103,7 @@
 
   @media (max-width: $tablet-sm) {
     font-size: 14px;
+    line-height: 22px;
   }
 }
 

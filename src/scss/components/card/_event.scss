@@ -1,9 +1,9 @@
 .event {
   display: grid;
-  grid-template-columns: 57px 120px 1fr auto;
+  grid-template-columns: auto 120px 1fr auto;
+  grid-auto-flow: dense;
   align-items: flex-start;
   gap: 4px 20px;
-  grid-column-gap: 20px 100px 20px;
   padding: 32px 40px;
   background: $white;
   border-radius: $radius;
@@ -14,9 +14,13 @@
   }
 
   @media (max-width: 991px) {
-    grid-template-columns: auto 1fr;
-    gap: 4px 10px;
+    grid-template-columns: auto 100px 1fr;
+    gap: 4px 12px;
     padding: 16px 20px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: auto 1fr;
   }
 
   &~& {
@@ -27,9 +31,13 @@
     }
   }
 
+  & > * {
+    grid-row: 1 / 2;
+  }
+
   &__day {
     align-self: center;
-    grid-row: span 2;
+    grid-row: 1 / 3;
     color: $primary;
     font-size: 48px;
     line-height: 1.3;
@@ -46,6 +54,7 @@
 
   &__text,
   &__time {
+    grid-row: 2 / 3;
     color: #787A80;
     font-size: 16px;
     line-height: 1.6;
@@ -55,24 +64,22 @@
     grid-row: span 2;
 
     @media (max-width: 991px) {
-      justify-self: flex-start;
+      text-align: center;
+      grid-column: 1 / -1;
+      grid-row: auto;
+      margin-top: 20px;
     }
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     &__title,
-    &__more,
     &__text {
       grid-column: 1 / -1;
+      grid-row: auto;
     }
 
-    &__time {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-    }
-
-    &__more {
-      grid-row: 5 / 6;
+    &__title {
+      margin-top: 10px;
     }
   }
 }

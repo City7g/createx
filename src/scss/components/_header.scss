@@ -26,7 +26,6 @@
   &--scrolled {
     background-color: $white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    // backdrop-filter: saturate(50%) blur(8px);
   }
 
   &__consultation {
@@ -47,9 +46,6 @@
     @media (max-width: $hamb) {
       margin-left: 0;
     }
-  }
-  
-  &__auth {
   }
 }
 
@@ -79,7 +75,8 @@
       margin-bottom: 8px;
     }
 
-    &:hover {
+    &:hover,
+    &.active {
       color: $primary;
     }
   }

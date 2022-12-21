@@ -131,6 +131,10 @@
   &__img {
     width: 100%;
     margin-bottom: 40px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 24px;
+    }
   }
 
   &__content {

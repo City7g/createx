@@ -2,12 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 60px;
 
   @media (max-width: 1399px) {
     gap: 20px;
+  }
+
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
   }
 }
 
@@ -33,6 +36,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 
   @media (max-width: 991px) {
     flex: 1 0 calc(50% - 10px);
@@ -68,7 +72,7 @@
 }
 
 .filter-search {
-  flex-basis: 315px;
+  flex: 1 1 315px;
 
   @media (max-width: 991px) {
     flex: 0 0 100%;

@@ -13,34 +13,12 @@ select {
   font-size: 14px;
   line-height: 1.5;
 
-  // &:focus {
-  //   background-position: center right 29px;
-  // }
+  @media (max-width: 991px) {
+    padding: 10px 15px;
+  }
 
   &:focus {
     outline: 1px solid black;
-  }
-}
-
-select:optional {
-  // color: white;
-  // background-color: red;
-  // border: 1px solid red;
-}
-
-option {
-  font-family: 'Lato';
-  font-weight: 400;
-  // background-color: red;
-  padding: 55px;
-  height: 100px;
-  // color: red;
-  border: 1px solid red;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: red;
   }
 }
 

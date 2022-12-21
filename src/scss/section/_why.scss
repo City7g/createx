@@ -1,8 +1,12 @@
 .section-why {
   margin: 180px 0;
 
+  @media (max-width: 1199px) {
+    margin: 120px 0;
+  }
+
   @media (max-width: 991px) {
-    padding: 90px 0;
+    margin: 90px 0;
   }
 
   &__wrap {
@@ -10,7 +14,9 @@
     grid-template-columns: auto 1fr;
     gap: 40px 135px;
 
-    @media (max-width: 1199px) {
+    @media (max-width: 1399px) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
       gap: 40px 80px;
     }
 
@@ -43,7 +49,7 @@
     margin-top: 48px;
 
     @media (max-width: 991px) {
-      margin-bottom: 30px;
+      margin-top: 30px;
     }
   }
 }

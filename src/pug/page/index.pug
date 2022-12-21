@@ -17,19 +17,22 @@ block content
         .section-first__img
           img(src="/img/first-img.svg", alt="")
 
-      ul.section-first__list
-        li
-          span 1200
-          p Students graduated
-        li
-          span 84
-          p Completed courses
-        li
-          span 16
-          p Qualified tutors
-        li
-          span 5
-          p Years of experience
+      .first-list
+        .first-list__item
+          span.first-list__value 1200
+          p.first-list__text Students graduated
+        .first-list__dot
+        .first-list__item
+          span.first-list__value 84
+          p.first-list__text Completed courses
+        .first-list__dot
+        .first-list__item
+          span.first-list__value 16
+          p.first-list__text Qualified tutors
+        .first-list__dot
+        .first-list__item
+          span.first-list__value 5
+          p.first-list__text Years of experience
 
   section.section-why
     .container
