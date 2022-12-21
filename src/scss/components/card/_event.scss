@@ -1,8 +1,9 @@
 .event {
   display: grid;
-  grid-template-columns: 57px 100px 1fr auto;
+  grid-template-columns: 57px 120px 1fr auto;
   align-items: flex-start;
   gap: 4px 20px;
+  grid-column-gap: 20px 100px 20px;
   padding: 32px 40px;
   background: $white;
   border-radius: $radius;
@@ -59,7 +60,6 @@
   }
 
   @media (max-width: 991px) {
-
     &__title,
     &__more,
     &__text {

@@ -131,15 +131,13 @@ block content
           span.icon-chat
           | Community
       
-      .section-how__tab
-        .tab__content
-          h2.title-h3.tab__title Only practicing tutors
-          p.text-main.gray-800.tab__text Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
-        .tab__image
-          img(src="/img/how-item-1.svg", alt="").tab__img
+      .tab-content.section-how__tab
+        .tab-content__content
+          h2.title-h3.tab-content__title Only practicing tutors
+          p.text-main.gray-800.tab-content__text Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+        .tab-content__image
+          img(src="/img/how-item-1.svg", alt="").tab-content__img
       
-  include ../section/last-posts
-  
   section.section-event
     .container
       h4.title-h6.section-event__subtitle Our Events
@@ -150,9 +148,10 @@ block content
           +event(item)
 
       .section-event__footer
-        h5.title-h3 Do you want more?
+        h5.title-h4 Do you want more?
         a(href="#").btn-main Explore all events
 
+  include ../section/last-posts
   include ../section/certificate
 
   section.section-team

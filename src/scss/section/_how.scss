@@ -1,18 +1,8 @@
 .section-how {
-  margin: 180px 0;
+  margin: 180px 0 120px;
 
   @media (max-width: 991px) {
-    padding: 90px 0;
-  }
-
-  &__wrap {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 40px 130px;
-
-    @media (max-width: 991px) {
-      grid-template-columns: 1fr;
-    }
+    margin: 90px 0 60px;
   }
 
   &__subtitle {
@@ -51,35 +41,38 @@
   }
 
   &__tab {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 135px;
     margin-top: 60px;
 
-    @media (max-width: 1199px) {
-      gap: 30px 80px;
-    }
-
     @media (max-width: 991px) {
-      grid-template-columns: 1fr;
       margin-top: 30px;
     }
+  }
+}
 
-    &__title {
-      margin-bottom: 24px;
+.tab-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 135px;
 
-      @media (max-width: 991px) {
-        margin-bottom: 16px;
-      }
+  @media (max-width: 1399px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 80px;
+  }
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 16px;
     }
   }
 
-  &__btn {
-    margin-top: 48px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 30px;
-    }
+  &__img {
+    display: block;
   }
 }

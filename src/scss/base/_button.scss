@@ -1,6 +1,6 @@
 .btn-main {
   display: inline-block;
-  padding: 15px 32px;
+  padding: 13px 40px;
 
   color: $white;
   // background: $primary;
@@ -17,6 +17,10 @@
   @media (max-width: 767px) {
     font-size: 14px;
     padding: 10px 20px;
+  }
+
+  &.btn-small {
+    padding: 12px 32px;
   }
 
   &:hover,
@@ -60,6 +64,10 @@
     padding: 10px 20px;
   }
 
+  &.btn-small {
+    padding: 11px 31px;
+  }
+
   &:hover,
   &:active,
   &:focus-visible {
@@ -79,7 +87,6 @@
 }
 
 .btn-small {
-  padding: 11px 32px;
   font-size: 14px;
   line-height: 22px;
 }
