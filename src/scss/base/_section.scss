@@ -1,0 +1,9 @@
+.section {
+  &__subtitle {
+    margin-bottom: 8px;
+    
+    @media (max-width: 991px) {
+      margin-bottom: 6px;
+    }
+  }
+}

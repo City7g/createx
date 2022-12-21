@@ -27,7 +27,8 @@
       content: '';
     }
 
-    &:hover::after {
+    // &:hover::after {
+    &::after {
       opacity: 1;
     }
   }
@@ -44,6 +45,7 @@
 
   &__social {
     color: rgba($white, 0.6);
+    font-size: 20px;
     transform: translateY(200px);
     transition: 0.3s transform ease;
 
@@ -68,7 +70,8 @@
     }
   }
 
-  &__image:hover &__social {
+  // &__image:hover &__social {
+  &__image &__social {
     transform: translateY(0);
   }
 
@@ -83,7 +86,8 @@
     }
   }
 
-  &__image:hover &__img {
+  // &__image:hover &__img {
+  &__image &__img {
     transform: scale(1.04);
   }
 

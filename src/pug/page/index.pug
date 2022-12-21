@@ -5,6 +5,10 @@ block content
     .container
       .section-first__wrap
         .section-first__content
+          .play-showreel
+            .play-showreel
+              span.icon-play
+            p.play-showreel__text Play showreel
           h1.title-h1 Enjoy studying with Createx Online Courses
           .section-first__btns
             button.btn-secondary About us
@@ -151,24 +155,25 @@ block content
         h5.title-h4 Do you want more?
         a(href="#").btn-main Explore all events
 
-  include ../section/last-posts
   include ../section/certificate
 
   section.section-team
     .container
-      .section-team__header
-        h4.title-h6.section-team__subtitle Best tutors are all here
-        h2.title-h2.section-team__title Meet our team
-        .slider
-          .slider-navigation__prev
-            span.icon-arrow-left
-          .slider-navigation__next
-            span.icon-arrow-right
+      //- .section-team__header
+      h4.title-h6.section-team__subtitle Best tutors are all here
+      h2.title-h2.section-team__title Meet our team
+      //- a(href="/courses.html").btn-secondary.section-feature__more View all courses 
+      //- .slider
+      //-   .slider-navigation__prev
+      //-     span.icon-arrow-left
+      //-   .slider-navigation__next
+      //-     span.icon-arrow-right
 
       .section-team__team
         each person in [1, 2, 3, 4, 1, 2, 3, 4]
           +person(person)
   
   include ../section/testimonials
+  include ../section/last-posts
   
   include ../section/subscribe

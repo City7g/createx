@@ -1,8 +1,8 @@
 .section-posts {
-  padding: 50px 0;
+  margin: 120px 0 180px;
 
   @media (max-width: 991px) {
-    padding: 40px 0;
+    margin: 60px 0;
   }
 
   &__header {
