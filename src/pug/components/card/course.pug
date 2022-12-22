@@ -1,0 +1,34 @@
+mixin course-horizontal(index)
+  .course-horizontal
+    a(href="/single-course.html").course-horizontal__image
+      img(src=`/img/feature/item-${index}.jpg`, alt="").course-horizontal__img
+    .course-horizontal__content
+      h5.course-horizontal__prof Marketing
+      h4.course-horizontal__title Brand Management & PR Communications
+      .course-horizontal__info
+        p.course-horizontal__price $530
+        p.course-horizontal__author by Kristin Watson
+      
+mixin course-vertical(index)
+  .course-vertical
+    a(href="/single-course.html").course-vertical__image
+      img(src=`/img/course/item-${index}.jpg`, alt="").course-vertical__img
+    .course-vertical__content
+      h5.course-vertical__category HR & Recruting
+      h4.course-vertical__title
+        a(href="/single-course.html") The Ultimate Google Ads Training Course
+      .course-vertical__info
+        p.course-vertical__price $100
+        p.course-vertical__author by Jerome Bell
+
+mixin course-teach(index)
+  .course-vertical
+    a(href="/single-course.html").course-vertical__image
+      img(src=`/img/course/about-${index}.jpg`, alt="").course-vertical__img
+    .course-vertical__content
+      h5.course-vertical__category HR & Recruting
+      h4.course-vertical__title
+        a(href="/single-course.html") The Ultimate Google Ads Training Course
+      .course-vertical__info
+        p.course-vertical__price $100
+        p.course-vertical__author by Jerome Bell

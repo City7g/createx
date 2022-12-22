@@ -30,33 +30,15 @@ block content
           a(href="#").tab
             | Development
             sup 3
-
-        //- .filter-select
-        //-   .filter-select__title Blog category
-        //-   select.filter-select__select
-        //-     option all themes 
-        //-     option Marketing 
-        //-     option Development 
-        //-     option Design
-        //-     option HR & Recruting
         
-        form.form-search.filter-search
+        form(novalidate).form-search.filter-search
           input(type="text", placeholder="Search course...")
           button(type="submit").form-search__btn
             span.icon-search.gray-600
 
       .section-courses__courses
         each course in [1, 2, 3, 4, 5, 6, 7, 8, 9]
-          .course
-            a(href="/single-course.html").course__image
-              img(src=`/img/course/item-${course}.jpg`, alt="").course__img
-            .course__content
-              h5.course__category HR & Recruting
-              h4.course__title
-                a(href="/single-course.html") The Ultimate Google Ads Training Course
-              .course__info
-                p.course__price $100
-                p.course__author by Jerome Bell
+          +course-vertical(course)
 
       a(href="#").section-courses__more
         span.icon-convert

@@ -76,15 +76,7 @@ block content
 
         .about-teach__list
           each course in [1, 2, 3, 4, 5]
-            .course
-              a(href="/single-course.html").course__image
-                img(src=`/img/course/about-${course}.jpg`, alt="").course__img
-              .course__content
-                - let randomCategory = Math.floor(Math.random()*5)
-                h5(style=`background: ${colorVariables[randomCategory].color}`).course__category= colorVariables[randomCategory].name
-                p.gray-700.course__text Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.
-                a(href="#").course__check Check courses
-                  span.icon-arrow-right
+            +course-teach(course)
 
           .course-soon
             h4.title-h4 New studying program coming soon...

@@ -35,7 +35,7 @@
   &__posts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px 30px;
+    gap: 30px;
 
     @media (max-width: 991px) {
       grid-template-columns: repeat(2, 1fr);

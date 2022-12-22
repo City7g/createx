@@ -59,65 +59,8 @@ block content
         h3.title-h2.section-feature__title Featured Courses
         a(href="/courses.html").btn-secondary.section-feature__more View all courses 
       .section-feature__list
-        .card-feature
-          a(href="/single-course.html").card-feature__image
-            img(src="/img/feature/item-1.jpg", alt="").card-feature__img
-          .card-feature__content
-            h5.card-feature__prof Marketing
-            h4.card-feature__title The Ultimate Google Ads Training Course
-            .card-feature__info
-              p.card-feature__price $100
-              p.card-feature__author by Jerome Bell
-
-        .card-feature
-          a(href="/single-course.html").card-feature__image
-            img(src="/img/feature/item-2.jpg", alt="").card-feature__img
-          .card-feature__content
-            h5(style="background: #5A87FC").card-feature__prof Management
-            h4.card-feature__title Prduct Management Fundamentals
-            .card-feature__info
-              p.card-feature__price $480
-              p.card-feature__author by Marvin McKinney
-
-        .card-feature
-          a(href="/single-course.html").card-feature__image
-            img(src="/img/feature/item-3.jpg", alt="").card-feature__img
-          .card-feature__content
-            h5(style="background: #F89828").card-feature__prof HR & Recruting
-            h4.card-feature__title HR  Management and Analytics
-            .card-feature__info
-              p.card-feature__price $200
-              p.card-feature__author by Leslie Alexander Li
-
-        .card-feature
-          a(href="/single-course.html").card-feature__image
-            img(src="/img/feature/item-4.jpg", alt="").card-feature__img
-          .card-feature__content
-            h5.card-feature__prof Marketing
-            h4.card-feature__title Brand Management & PR Communications
-            .card-feature__info
-              p.card-feature__price $530
-              p.card-feature__author by Kristin Watson
-
-        .card-feature
-          a(href="/single-course.html").card-feature__image
-            img(src="/img/feature/item-5.jpg", alt="").card-feature__img
-          .card-feature__content
-            h5.card-feature__prof Marketing
-            h4.card-feature__title Brand Management & PR Communications
-            .card-feature__info
-              p.card-feature__price $530
-              p.card-feature__author by Kristin Watson
-        
-        .card-feature
-          a(href="/single-course.html").card-feature__image
-            img(src="/img/feature/item-6.jpg", alt="").card-feature__img
-          .card-feature__content
-            h5.card-feature__prof Marketing
-            h4.card-feature__title Brand Management & PR Communications
-            .card-feature__info
-              p.card-feature__price $530
-              p.card-feature__author by Kristin Watson
+        each course in [1, 2, 3, 4, 5, 6]
+          +course-horizontal(course)
     
   section.section-how
     .container
@@ -152,7 +95,7 @@ block content
 
       .section-event__events
         each item in [1, 2, 3]
-          +event(item)
+          +event-list(item)
 
       .section-event__footer
         h5.title-h4 Do you want more?

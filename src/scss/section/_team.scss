@@ -43,7 +43,6 @@
     gap: 30px;
     scroll-snap-type: x mandatory;
     overflow: auto;
-    scrollbar-width: none;
 
     @media (max-width: 991px) {
       gap: 20px;

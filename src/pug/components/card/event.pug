@@ -1,24 +1,24 @@
-mixin event(index)
-  .event
+mixin event-list(index)
+  .event-list
     - let randomDate = Math.ceil(Math.random()*30)
       if(randomDate > 9)
-        .event__day= randomDate
+        .event-list__day= randomDate
       else
-        .event__day= `0${randomDate}`
-    .event__month August
-    .event__time 11:00 – 14:00
-    .event__title Building a customer service department.
-    .event__text Onine lecture
-    a(href="/single-event.html").btn-secondary.btn-small.event__more View more 
+        .event-list__day= `0${randomDate}`
+    .event-list__month August
+    .event-list__time 11:00 – 14:00
+    .event-list__title Building a customer service department.
+    .event-list__text Onine lecture
+    a(href="/single-event.html").btn-secondary.btn-small.event-list__more View more 
 
-mixin event-card(index)
-  .event-card
+mixin event-grid(index)
+  .event-grid
     - let randomDate = Math.ceil(Math.random()*30)
       if(randomDate > 9)
-        .event-card__date= `${randomDate} Aug`
+        .event-grid__date= `${randomDate} Aug`
       else
-        .event-card__date= `0${randomDate} Aug`
-    .event-card__time 11:00 – 14:00
-    .event-card__title Building a customer service department.
-    .event-card__text Onine master-class
-    a(href="/single-event.html").btn-secondary.event-card__more View more 
+        .event-grid__date= `0${randomDate} Aug`
+    .event-grid__time 11:00 – 14:00
+    .event-grid__title Building a customer service department.
+    .event-grid__text Onine master-class
+    a(href="/single-event.html").btn-secondary.event-grid__more View more 

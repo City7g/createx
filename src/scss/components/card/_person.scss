@@ -1,4 +1,4 @@
-.card-person {
+.person {
   text-align: center;
 
   &__image {
@@ -27,8 +27,8 @@
       content: '';
     }
 
-    // &:hover::after {
-    &::after {
+    &:hover::after {
+    // &::after {
       opacity: 1;
     }
   }
@@ -70,8 +70,8 @@
     }
   }
 
-  // &__image:hover &__social {
-  &__image &__social {
+  &__image:hover &__social {
+  // &__image &__social {
     transform: translateY(0);
   }
 
@@ -86,8 +86,8 @@
     }
   }
 
-  // &__image:hover &__img {
-  &__image &__img {
+  &__image:hover &__img {
+  // &__image &__img {
     transform: scale(1.04);
   }
 
