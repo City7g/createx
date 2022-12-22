@@ -205,6 +205,10 @@
 
 .course-curator {
   padding: 90px 0;
+  background-image: url('/img/bg/shapes.svg'), url('/img/bg/circles.svg');
+  background-position: right 9% top 73px, 12% 21px;
+  background-repeat: no-repeat;
+  background-size: auto;
 
   @media (max-width: 991px) {
     padding: 50px 0;
@@ -342,6 +346,10 @@
 
 .course-whom {
   padding: 90px 0;
+  background-image: url('/img/bg/arrow-down.svg');
+  background-position: bottom 38px right 5%;
+  background-repeat: no-repeat;
+  background-size: auto;
 
   @media (max-width: 991px) {
     padding: 50px 0;

@@ -1,6 +1,9 @@
 .section-head {
   padding: 192px 0 120px;
-  background: linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
+  background-image: url('/img/bg/white-circles.svg'), url('/img/bg/white-shapes-right.svg'), linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom -146px left -112px, 30% 50%, center;
   text-align: center;
 
   @media (max-width: 991px) {

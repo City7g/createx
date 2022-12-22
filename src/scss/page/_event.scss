@@ -105,7 +105,11 @@
 
 .event-interested {
   padding: 100px 0 180px;
-  background: #F4F5F7;
+  background-color: #F4F5F7;
+  background-image: url('/img/bg/white-circles.svg');
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: auto;
 
   @media (max-width: 991px) {
     padding: 50px 0;

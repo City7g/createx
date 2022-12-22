@@ -135,6 +135,15 @@
   &__textarea {
     grid-column: 1 / -1;
   }
+
+  &__btn,
+  &__checkbox {
+    margin-top: 20px;
+
+    @media (max-width: 991px) {
+      margin-top: 12px;
+    }
+  }
 }
 
 .form-request {
