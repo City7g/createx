@@ -35,7 +35,10 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    // ? Right
     gap: 30px;
+    // ! Figma bag
+    gap: 31px 30px;
     margin-top: 60px;
 
     @media (max-width: 1199px) {

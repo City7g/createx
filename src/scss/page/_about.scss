@@ -1,5 +1,5 @@
 .about-first {
-  padding: 150px 0 80px;
+  padding: 152px 0 80px;
 
   @media (max-width: 1399px) {
     padding: 150px 0 50px;
@@ -11,9 +11,9 @@
 
   &__wrap {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 40px 180px;
+    grid-template-columns: 1fr auto;
+    align-items: flex-end;
+    gap: 165px;
 
     @media (max-width: 1399px) {
       gap: 40px 60px;
@@ -49,6 +49,8 @@
   }
 
   &__img {
+    display: block;
+    
     @media (max-width: 991px) {
       // max-width: 400px;
       margin: 0 auto;
@@ -73,7 +75,7 @@
 }
 
 .about-video {
-  padding: 90px 0;
+  padding: 100px 0 90px;
 
   @media (max-width: 991px) {
     padding: 50px 0;
@@ -84,6 +86,8 @@
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 32px 135px;
+    // ! Figma bag container
+    gap: 32px 125px;
 
     @media (max-width: 1199px) {
       grid-template-columns: repeat(2, 1fr);
@@ -97,6 +101,10 @@
 
   &__watch {
     grid-column: 1 / -1;
+  }
+
+  &__img {
+    display: block;
   }
 
   &__item {
@@ -146,7 +154,10 @@
 .watch-video {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
 
   @media (max-width: 991px) {
     gap: 12px;
@@ -212,7 +223,7 @@
 .values-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px 0;
+  gap: 40px 90px;
 
   @media (max-width: 991px) {
     grid-template-columns: repeat(2, 1fr);
@@ -223,12 +234,6 @@
   }
 
   &__item {
-    padding: 0 45px;
-
-    @media (max-width: 991px) {
-      padding: 0 25px;
-    }
-
     &:not(:first-child) {
       position: relative;
       
@@ -258,10 +263,10 @@
   }
 
   &__img {
-    margin-bottom: 24px;
+    margin-bottom: 17px;
 
     @media (max-width: 991px) {
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
   }
 

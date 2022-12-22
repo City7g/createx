@@ -35,7 +35,7 @@
     position: relative;
     display: flex;
     gap: 300px;
-    padding: 0 100px;
+    padding: 0 105px;
     overflow: auto;
     // scrollbar-width: none;
     scroll-snap-type: x mandatory;
@@ -63,7 +63,7 @@
 }
 
 .testimonial {
-  padding: 64px 105px;
+  padding: 64px 105px 57px 163px;
   background: $white;
 
   @media (max-width: 991px) {
@@ -72,6 +72,10 @@
 
   @media (max-width: 575px) {
     padding: 25px 30px;
+  }
+
+  &__text {
+    // padding-left: 38px;
   }
 
   &__author {
@@ -88,6 +92,7 @@
 
   &__img {
     grid-row: span 2;
+    display: block;
   }
 
   &__name {
@@ -141,8 +146,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  margin-top: 60px;
+  gap: 12px;
+  margin-top: 57px;
 
   @media (max-width: 991px) {
     margin-top: 30px;

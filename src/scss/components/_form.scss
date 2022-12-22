@@ -115,8 +115,8 @@
     transition: 0.3s color ease;
 
     &:hover,
-    &:focus {
-      color: $black;
+    &:focus-visible {
+      color: $black !important;
       outline-offset: 3px;
     }
   }

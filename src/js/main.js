@@ -1,9 +1,8 @@
-import development from "./development.js";
-import pageAnimation from "./page-animation.js";
-import { showPopup, closePopup } from "./popup.js";
-import hamburger from "./base/hamburger.js";
+import development from "./development.js"
+import pageAnimation from "./page-animation.js"
+import hamburger from "./base/hamburger.js"
 
-development();
+// development();
 hamburger();
 // pageAnimation();
 
@@ -20,7 +19,7 @@ window.addEventListener("scroll", () => {
 document.querySelectorAll('button[data-popup], a[data-popup]').forEach(item => {
   item.addEventListener('click', e => {
     e.preventDefault()
-    if(document.querySelector(`#${item.getAttribute('data-popup')}`)) {
+    if (document.querySelector(`#${item.getAttribute('data-popup')}`)) {
       document.querySelector(`#${item.getAttribute('data-popup')}`).classList.add('show')
       document.body.classList.add('modal')
     }
@@ -31,7 +30,7 @@ document.querySelectorAll('button[data-popup], a[data-popup]').forEach(item => {
 document.querySelectorAll('.label-input__show').forEach(item => {
   item.addEventListener('click', e => {
     e.preventDefault()
-    if(item.previousElementSibling.type === 'password') {
+    if (item.previousElementSibling.type === 'password') {
       item.previousElementSibling.type = 'text'
       item.querySelector('span').classList.add('icon-closed-eye')
       item.querySelector('span').classList.remove('icon-eye')
@@ -67,7 +66,7 @@ window.addEventListener("click", (e) => {
 document.querySelectorAll('.accordion').forEach(item => {
   item.addEventListener('click', () => {
     document.querySelectorAll('.accordion').forEach(i => {
-      if(i === item) {
+      if (i === item) {
         i.classList.toggle('active')
       } else {
         i.classList.remove('active')

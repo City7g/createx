@@ -53,16 +53,9 @@
     gap: 5px 12px;
     margin-bottom: 8px;
 
-    & > div:not(:first-child) {
-      // position: relative;
-
-      &::before {
-        // position: absolute;
-        // top: 0;
-        // left: -15px;
-        content: '|';
-        margin-right: 4px;
-      }
+    &>div:not(:first-child)::before {
+      content: '|';
+      margin-right: 1px;
     }
   }
 
@@ -78,6 +71,11 @@
 
     @media (max-width: 991px) {
       gap: 6px;
+    }
+
+    & [class^="icon-"],
+    & [class*=" icon-"] {
+      font-size: 15px;
     }
   }
 

@@ -1,6 +1,7 @@
 .course-horizontal {
   display: grid;
-  grid-template-columns: 214px 1fr;
+  grid-template-columns: 212px 1fr;
+  grid-template-rows: 212px;
   background-color: $white;
   border: 1px solid #E5E8ED;
   border-radius: $radius;
@@ -8,11 +9,13 @@
 
 
   @media (max-width: 1199px) {
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 178px 1fr;
+    grid-template-rows: 178px;
   }
 
   @media (max-width: 767px) {
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 148px 1fr;
+    grid-template-rows: 148px;
   }
 
   @media (max-width: 575px) {
@@ -182,6 +185,24 @@
     }
   }
 
+  &__badge {
+    padding: 1px 8px;
+    margin-bottom: 20px;
+    width: max-content;
+    font-size: 16px;
+    line-height: 1.6;
+    line-height: 26px;
+    font-weight: 700;
+    background: #03CEA4;
+    border-radius: $radius;
+    color: $white;
+
+    @media (max-width: 991px) {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+  }
+
   &__title {
     margin-bottom: 20px;
     font-size: 20px;
@@ -229,6 +250,7 @@
     margin-top: 20px;
     font-size: 16px;
     line-height: 1.6;
+    line-height: 26px;
     font-weight: 700;
 
     @media (max-width: 991px) {
