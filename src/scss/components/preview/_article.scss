@@ -3,8 +3,16 @@
   grid-template-columns: 100px 1fr;
   gap: 20px;
 
+  @media (max-width: 575px) {
+    gap: 12px;
+  }
+
+  @media (max-width: 359px) {
+    grid-template-columns: 80px 1fr;
+  }
+
   &__image {
-    height: 100px;
+    aspect-ratio: 1 / 1;
     border-radius: $radius;
     overflow: hidden;
   }

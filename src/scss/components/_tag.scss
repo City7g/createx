@@ -20,5 +20,7 @@
     color: $white;
     background-color: $primary;
     border-color: $primary;
+    transition: 0.3s ease;
+    transition-property: background-color, border-color;
   }
 }

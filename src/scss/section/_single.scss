@@ -101,8 +101,9 @@
 
   &-tag {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     gap: 12px;
 
     &__text {
@@ -226,6 +227,11 @@ aside article,
     align-items: center;
     flex-wrap: wrap;
     gap: 12px;
+    margin-top: 31px;
+
+    @media (max-width: 991px) {
+      margin-top: 20px;
+    }
   }
 
   & > [class*="-preview"] ~ [class*="-preview"] {
@@ -239,4 +245,31 @@ aside article,
 
 .single-blog {
   padding: 120px 0 180px;
+
+  @media (max-width: 991px) {
+    padding: 60px 0;
+  }
+
+  &__posts {
+    display: flex;
+    gap: 30px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+
+    @media (max-width: 991px) {
+      gap: 20px;
+    }
+
+    & > * {
+      flex: 0 0 calc(100% / 3 - 20px);
+
+      @media (max-width: 991px) {
+        flex-basis: calc(50% - 10px);
+      }
+
+      @media (max-width: 575px) {
+        flex-basis: 100%;
+      }
+    }
+  }
 }
