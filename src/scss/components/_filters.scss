@@ -96,14 +96,10 @@
 }
 
 .filter-search {
-  flex: 1 1 315px;
+  flex: 0 1 285px;
 
   @media (max-width: 991px) {
     flex: 0 0 100%;
     order: 2;
-  }
-
-  & input[type=text] {
-    font-size: 14px;
   }
 }
