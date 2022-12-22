@@ -41,51 +41,16 @@ block content
               a(href="#").single-tag__item #self-development
             +single-share
 
-
         aside.aside
           form(novalidate).form-search.aside__form
             input(type="text", name="search", placeholder="Search blog...").input-small
             button(type="submit").form-search__btn
               span.icon-search
           h4.title-h6.aside__title Author
-          .author
-            a(href="#")
-              img(src="/img/author.jpg", alt="")
-            h5.title-h4.gray-800
-              a(href="#") Kristin Watson
-            p.text-small.gray-700 Curator of Marketing Course
-            .author__socials
-              a(href="#")
-                span.icon-instagram 
-              a(href="#")
-                span.icon-twitter 
-              a(href="#")
-                span.icon-linkedin 
+          +author-preview
           h4.title-h6.aside__title Trending Articles
-          article
-            a(href="#") 
-              img(src="/img/post/item-1.jpg", alt="")
-            p.gray-700
-              span.icon-calendar
-              | September 4, 2020
-            h5.title-h5
-              a(href="#") What is traffic arbitrage and does it really make money?
-          article
-            a(href="#") 
-              img(src="/img/post/item-3.jpg", alt="")
-            p.gray-700
-              span.icon-calendar
-              | July 15, 2020
-            h5.title-h5
-              a(href="#") Startup: how to build a team that will live longer than a year
-          article
-            a(href="#") 
-              img(src="/img/post/item-5.jpg", alt="")
-            p.gray-700
-              span.icon-calendar
-              | August 2, 2020
-            h5.title-h5
-              a(href="#") What to do if you want to get feedback on the product
+          each article in [1, 3, 5]
+            +article-preview(article)
           h4.title-h6.aside__title Tags
           a(href="#").single-tag__item #learning
           a(href="#").single-tag__item #HR

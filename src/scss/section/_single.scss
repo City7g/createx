@@ -202,4 +202,12 @@ aside article,
       margin-top: 30px;
     }
   }
+
+  & > [class*="-preview"] ~ [class*="-preview"] {
+    margin-top: 24px;
+
+    @media (max-width: 991px) {
+      margin-top: 16px;
+    }
+  }
 }

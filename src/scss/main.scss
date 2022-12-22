@@ -24,11 +24,15 @@
 @import './components/pagination';
 @import './components/filters';
 @import './components/tab';
+@import './components/tag';
 
 @import './components/card/post';
 @import './components/card/person';
 @import './components/card/event';
 @import './components/card/course';
+
+@import './components/preview/article';
+@import './components/preview/author';
 
 @import './section/first';
 @import './section/feature';

@@ -1,0 +1,10 @@
+mixin article-preview(index)
+  .article-preview
+    a(href="#").article-preview__image
+      img(src=`/img/post/item-${index}.jpg`, alt="").article-preview__img
+    .article-preview__content
+      p.text-small.gray-700.article-preview__date
+        span.icon-calendar
+        | September 4, 2020
+      h3.title-h5.article-preview__prof
+        a(href="#") What is traffic arbitrage and does it really make money?
