@@ -2,7 +2,7 @@ import development from "./development.js"
 import pageAnimation from "./page-animation.js"
 import hamburger from "./base/hamburger.js"
 
-// development();
+development();
 hamburger();
 // pageAnimation();
 

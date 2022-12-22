@@ -20,8 +20,9 @@ block content
               span.icon-minus.accordion__minus
               span.icon-plus.accordion__plus
               h5.accordion__subtitle=`Lesson ${item}.`
-              h4.title-h4.accordion__title Aliquet lectus urna viverra in odio.
+              h4.title-lead.accordion__title Aliquet lectus urna viverra in odio.
               p.text-main.gray-800.accordion__text Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.
+        
         .course-info
           .course-info__item
             h5.course-info__subtitle Time
@@ -31,9 +32,9 @@ block content
             h5.course-info__subtitle Price
             h4.course-info__title Free
             p.gray-700.course-info__text Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.
-          .course-info__item
-            a(href="#").course-info__link Event on Facebook
-          a(href="#").btn-main.course-info__btn Join the course 
+          //- .course-info__item
+          a(href="#").course-info__link Event on Facebook
+          a(href="#").btn-main.btn-small.course-info__btn Join the event
   
   section.course-curator
     .container
@@ -64,12 +65,12 @@ block content
       .course-whom__wrap
         .course-whom__content
           h4.title-h6.course-whom__subtitle For whom?
-          h2.title-h2.course-whom__title Who will benefit from the course:
+          h2.title-h2.course-whom__title Who will benefit from the event:
         .course-whom__list
           ul.list-main
-            li.title-h4 Specialists with more than 1 year of active work experience
-            li.title-h4 Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces
-            li.title-h4 Professional designers who want to feel more confident in UX
+            li.title-bold Specialists with more than 1 year of active work experience
+            li.title-bold Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces
+            li.title-bold Professional designers who want to feel more confident in UX
 
   .course-newsletter
     .container
@@ -83,7 +84,7 @@ block content
             button(type="submit").btn-main.form-newsletter__btn Subscribe
             label.label-checkbox.form-newsletter__agree
               input(type="checkbox")
-              h5 I agree to receive communications from Createx Online School 
+              h5.text-main I agree to receive communications from Createx Online School
 
   .course-request
     .container
@@ -93,15 +94,29 @@ block content
           h2.title-h2.course-request__title Leave a request
           form(novalidate).form-request
             label.label-input
-              h5.label-input__title Full Name
+              h5.text-main.label-input__title Full Name
               input(type="text", placeholder="Your full name", name="name") 
             label.label-input
-              h5.label-input__title Email
+              h5.text-main.label-input__title Email
               input(type="email", placeholder="Your working email", name="email") 
             label.label-input
-              h5.label-input__title Phone
+              h5.text-main.label-input__title Phone
               input(type="tel", placeholder="Your phone number", name="phone") 
-            button(type="submit").btn-main Join the event
+            button(type="submit").btn-main.form-request__btn Join the event
           p.text-main.course-request__text * You will receive a link to the online lecture in an email after registration.
         .course-request__image
           img(src="/img/event-request-img.svg", alt="").course-request__img
+
+  .event-interested
+    .container
+      .event-interested__head
+        h4.title-h6.event-interested__title Check other online events
+        h2.title-h2.event-interested__title You may be interested in
+
+      .event-interested__events
+        each item in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+          +event-grid(item)
+      
+      .event-interested__footer
+        h5.title-h4 Do you want more?
+        a(href="#").btn-main Explore all events

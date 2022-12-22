@@ -13,12 +13,13 @@ mixin event-list(index)
 
 mixin event-grid(index)
   .event-grid
-    - let randomDate = Math.ceil(Math.random()*30)
+    //- - let randomDate = Math.ceil(Math.random()*30)
+    - let randomDate = 5
       if(randomDate > 9)
         .event-grid__date= `${randomDate} Aug`
       else
         .event-grid__date= `0${randomDate} Aug`
     .event-grid__time 11:00 – 14:00
-    .event-grid__title Building a customer service department.
+    .event-grid__title Formation of the organizational structure of the company in the face of uncertainty.
     .event-grid__text Onine master-class
-    a(href="/single-event.html").btn-secondary.event-grid__more View more 
+    a(href="/single-event.html").btn-secondary.btn-small.event-grid__more View more 
