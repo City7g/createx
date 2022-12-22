@@ -24,20 +24,4 @@
       grid-template-columns: 1fr;
     }
   }
-
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
-    }
-  }
-
-  &__list {
-    margin-top: 60px;
-
-    @media (max-width: 991px) {
-      margin-top: 40px;
-    }
-  }
 }

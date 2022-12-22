@@ -29,14 +29,6 @@
     display: block;
   }
 
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
-    }
-  }
-
   &__title {
     margin-bottom: 40px;
 

@@ -11,7 +11,7 @@ block content
     .container
       .about-first__wrap
         .about-first__content
-          h4.title-h6.about-first__subtitle About us
+          h4.title-h6.about__subtitle About us
           h2.title-h2.about-first__title Createx Online School
           h5.title-bold.about-first__heading Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts.
           p.text-main.about-first__text We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.
@@ -47,8 +47,8 @@ block content
   section.section-values
     .container
       .section-values__wrap
-        h4.title-h6.section-values__subtitle We always stand for
-        h2.title-h2.section-values__title Our core values
+        h4.title-h6.section__subtitle We always stand for
+        h2.title-h2.section__title Our core values
 
         ul.values-list.section-values__list
           li.values-list__item
@@ -71,8 +71,8 @@ block content
   section.about-teach
     .container
       .about-teach__wrap
-        h4.title-h6.about-teach__subtitle our main directions
-        h2.title-h2.about-teach__title What do we teach
+        h4.title-h6.section__subtitle our main directions
+        h2.title-h2.section__title What do we teach
 
         .about-teach__list
           each course in [1, 2, 3, 4, 5]
@@ -87,8 +87,8 @@ block content
   section.section-team
     .container
       .section-team__wrap
-        h4.title-h6.section-team__subtitle Best tutors are all here
-        h2.title-h2.section-team__title Meet our team
+        h4.title-h6.section__subtitle Best tutors are all here
+        h2.title-h2.section__title Meet our team
 
         .section-team__team
           each person in [1, 2, 3, 4, 5, 6, 7, 8]
@@ -101,8 +101,8 @@ block content
   section.student-work
     .container
       .student-work__wrap
-        h4.title-h6.student-work__subtitle best jobs for you
-        h2.title-h2.student-work__title Our students work here
+        h4.title-h6.section__subtitle best jobs for you
+        h2.title-h2.section__title Our students work here
         .student-work__list
           each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
             img(src=`/img/student-work/item-${item}.png`, alt="").student-work__img

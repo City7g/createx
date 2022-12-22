@@ -9,25 +9,9 @@
     padding-top: 90px;
   }
 
-  &__title,
-  &__subtitle {
+  & .section__title,
+  & .section__subtitle {
     text-align: center;
-  }
-
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
-    }
-  }
-
-  &__title {
-    margin-bottom: 60px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 40px;
-    }
   }
 
   &__slider {
@@ -365,22 +349,6 @@
     }
   }
 
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
-    }
-  }
-
-  // &__title {
-  //   margin-bottom: 60px;
-
-  //   @media (max-width: 991px) {
-  //     margin-bottom: 30px;
-  //   }
-  // }
-
   &__list {
     width: 600px;
     margin-top: 32px;
@@ -495,22 +463,6 @@
       grid-template-columns: 1fr;
     }
   }
-
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
-    }
-  }
-
-  &__title {
-    margin-bottom: 60px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 30px;
-    }
-  }
 }
 
 .course-register {
@@ -546,14 +498,6 @@
     gap: 24px;
   }
 
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
-    }
-  }
-
   &__title {
     margin-bottom: 40px;
 
@@ -568,22 +512,6 @@
 
   @media (max-width: 991px) {
     padding: 60px 0 90px;
-  }
-
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
-    }
-  }
-
-  &__header {
-    margin-bottom: 60px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 30px;
-    }
   }
 
   &__slider {
@@ -679,14 +607,6 @@
 
     @media (max-width: 991px) {
       grid-template-columns: 1fr;
-    }
-  }
-
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
     }
   }
 

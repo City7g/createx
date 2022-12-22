@@ -20,14 +20,6 @@
     }
   }
 
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
-    }
-  }
-
   &__title {
     margin-bottom: 40px;
 
@@ -139,14 +131,6 @@
 
     @media (max-width: 991px) {
       grid-template-columns: 1fr;
-    }
-  }
-
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
     }
   }
 
