@@ -228,7 +228,8 @@
 
   &__image {
     position: relative;
-    margin-inline: 20px;
+    margin-left: 19px;
+    margin-right: 18px;
 
     &::before {
       position: absolute;
@@ -466,7 +467,7 @@
 }
 
 .course-learn {
-  padding: 90px 0;
+  padding: 90px 0 120px;
 
   @media (max-width: 991px) {
     padding: 50px 0;
@@ -514,9 +515,13 @@
 
   &__wrap {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 135px;
+    grid-template-columns: auto 1fr;
+    gap: 185px;
+
+    @media (max-width: 1399px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 120px;
+    }
 
     @media (max-width: 991px) {
       gap: 30px 80px;
@@ -551,10 +556,10 @@
 }
 
 .course-other {
-  padding: 90px 0;
+  padding: 120px 0 180px;
 
   @media (max-width: 991px) {
-    padding: 50px 0;
+    padding: 60px 0 90px;
   }
 
   &__subtitle {
@@ -575,12 +580,12 @@
 
   &__slider {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     scroll-snap-type: x mandatory;
     overflow: auto;
 
     & > * {
-      flex: 0 0 calc(50% - 10px);
+      flex: 0 0 calc(50% - 15px);
       scroll-snap-align: start;
 
       @media (max-width: 1199px) {

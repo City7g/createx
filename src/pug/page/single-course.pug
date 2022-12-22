@@ -92,14 +92,14 @@ block content
 
         form(novalidate).event-join__form
           label.label-input
-            h5.label-input__title Full name
-            input(type="text", placeholder="Your full name", name="name") 
+            h5.text-small.label-input__title Full name
+            input(type="text", placeholder="Your full name", name="name").input-small
           label.label-input
-            h5.label-input__title Email
-            input(type="email", placeholder="Your working email", name="email") 
+            h5.text-small.label-input__title Email
+            input(type="email", placeholder="Your working email", name="email").input-small
           label.label-input
-            h5.label-input__title Phone
-            input(type="tel", placeholder="Your phone number", name="phone")
+            h5.text-small.label-input__title Phone
+            input(type="tel", placeholder="Your phone number", name="phone").input-small
           button(type="submit").btn-main.btn-small Join the course
   
   section.course-whom
@@ -107,7 +107,7 @@ block content
       .course-whom__wrap
         .course-whom__content
           h4.title-h6.course-whom__subtitle For whom?
-          h2.title-h2.course-whom__title Who will benefit from the event:
+          h2.title-h2.course-whom__title Who will benefit from the course:
         .course-whom__list
           ul.list-main
             li.title-bold Specialists with more than 1 year of active work experience
@@ -122,11 +122,11 @@ block content
           h4.title-h6.course-learn__subtitle Course program
           h2.title-h2.course-learn__title What will you learn
 
-          each item in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+          each item in [1, 2, 3, 4, 5, 6, 7, 8]
             .accordion
               span.icon-minus.accordion__minus
               span.icon-plus.accordion__plus
-              h5.accordion__subtitle=`Lesson ${item}.`
+              h5.text-lead.accordion__subtitle=`Lesson ${item}.`
               h4.title-bold.accordion__title Aliquet lectus urna viverra in odio.
               p.text-main.gray-800.accordion__text Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.
         .course-learn__image
@@ -143,17 +143,17 @@ block content
           h4.title-h6.course-register__subtitle Leave a request now and get 20% off!
           h2.title-h2.course-register__title Register for the course
 
-          form(novalidate).course-register__form
+          form(novalidate).form-register.course-register__form
             label.label-input
-              h5.label-input__title Full Name
+              h5.text-main.label-input__title Full Name
               input(type="text", placeholder="Your full name", name="name")
             label.label-input
-              h5.label-input__title Email
+              h5.text-main.label-input__title Email
               input(type="email", placeholder="Your working email", name="email")
             label.label-input
-              h5.label-input__title Phone
+              h5.text-main.label-input__title Phone
               input(type="text", placeholder="Your phone number", name="phone")
-            button(type="submit").btn-main Join the course
+            button(type="submit").btn-main.form-register__btn Join the course
 
   section.course-other
     .container
@@ -162,46 +162,9 @@ block content
         h2.title-h2.course-other__title You may also like
       
       .course-other__slider
-        .card-feature
-          a(href="/single-course.html").card-feature__image
-            img(src="/img/feature/item-1.jpg", alt="").card-feature__img
-          .card-feature__content
-            h5.card-feature__prof Marketing
-            h4.card-feature__title The Ultimate Google Ads Training Course
-            .card-feature__info
-              p.card-feature__price $100
-              p.card-feature__author by Jerome Bell
-
-        .card-feature
-          a(href="/single-course.html").card-feature__image
-            img(src="/img/feature/item-2.jpg", alt="").card-feature__img
-          .card-feature__content
-            h5(style="background: #5A87FC").card-feature__prof Management
-            h4.card-feature__title Prduct Management Fundamentals
-            .card-feature__info
-              p.card-feature__price $480
-              p.card-feature__author by Marvin McKinney
-
-        .card-feature
-          a(href="/single-course.html").card-feature__image
-            img(src="/img/feature/item-3.jpg", alt="").card-feature__img
-          .card-feature__content
-            h5(style="background: #F89828").card-feature__prof HR & Recruting
-            h4.card-feature__title HR  Management and Analytics
-            .card-feature__info
-              p.card-feature__price $200
-              p.card-feature__author by Leslie Alexander Li
-
-        .card-feature
-          a(href="/single-course.html").card-feature__image
-            img(src="/img/feature/item-4.jpg", alt="").card-feature__img
-          .card-feature__content
-            h5.card-feature__prof Marketing
-            h4.card-feature__title Brand Management & PR Communications
-            .card-feature__info
-              p.card-feature__price $530
-              p.card-feature__author by Kristin Watson
+        each course in [1, 2, 3, 4]
+          +course-horizontal(course)
 
       .course-other__footer
-        h4.title-h3 Do you want more courses?
+        h4.title-h4 Do you want more courses?
         button.btn-main View all courses

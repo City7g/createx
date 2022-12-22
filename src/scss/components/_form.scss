@@ -154,3 +154,13 @@
     }
   }
 }
+
+.form-register {
+  &__btn {
+    margin-top: 16px;
+
+    @media (max-width: 991px) {
+      margin-top: 10px;
+    }
+  }
+}
