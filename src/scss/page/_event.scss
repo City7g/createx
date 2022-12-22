@@ -1,5 +1,5 @@
 .event-join {
-  padding: 80px 0;
+  padding: 90px 0;
 
   @media (max-width: 991px) {
     padding: 50px 0;
@@ -105,7 +105,11 @@
 
 .event-interested {
   padding: 100px 0 180px;
-  background: #F4F5F7;
+  background-color: #F4F5F7;
+  background-image: url('/img/bg/white-circles.svg');
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: auto;
 
   @media (max-width: 991px) {
     padding: 50px 0;
@@ -114,22 +118,6 @@
   &__subtitle,
   &__title {
     grid-column-start: 1;
-  }
-
-  &__header {
-    margin-bottom: 60px;
-
-    @media (max-width: 991px) {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    @media (min-width: 992px) {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: flex-end;
-      gap: 8px 40px;
-    }
   }
 
   &__events {
@@ -150,29 +138,11 @@
       }
     }
   }
-
-  &__footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 80px;
-
-    @media (max-width: 991px) {
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 380px) {
-      flex-direction: column;
-    }
-  }
 }
 
 .timer {
   display: flex;
-  gap: 24px;
+  gap: 25px;
 
   @media (max-width: 991px) {
     gap: 16px;

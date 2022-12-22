@@ -21,24 +21,8 @@
     margin: 0 auto;
   }
 
-  &__title,
-  &__subtitle {
+  & .section__title,
+  & .section__subtitle {
     text-align: center;
-  }
-  
-  &__title {
-    margin-bottom: 60px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 30px;
-    }
-  }
-
-  &__subtitle {
-    margin-bottom: 8px;
-
-    @media (max-width: 991px) {
-      margin-bottom: 6px;
-    }
   }
 }
