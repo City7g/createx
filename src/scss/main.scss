@@ -1,5 +1,6 @@
 @import '../fonts/Icomoon/style.css';
 
+@import './helper/settings';
 @import './helper/variables';
 @import './helper/colors';
 @import './helper/breakpoint';
@@ -41,10 +42,8 @@
 @import './section/author';
 @import './section/subscribe';
 @import './section/certificate';
-@import './section/process';
 @import './section/newsletter';
 @import './section/testimonials';
-@import './section/single';
 @import './section/head';
 
 @import './page/index';
@@ -53,3 +52,4 @@
 @import './page/contact';
 @import './page/event';
 @import './page/blog';
+@import './page/single';
