@@ -19,12 +19,13 @@
   }
 
   &:hover {
-    color: $primary;
+    color: #424551;
   }
 
   &.active {
     color: $primary;
     border: 1px solid $primary;
+    transition: none;
   }
 
   & > sup {
