@@ -1,0 +1,141 @@
+
+.section-author {
+  padding: 90px 0;
+  background-image: url('/img/bg/shapes.svg'), url('/img/bg/circles.svg');
+  background-position: right 9% top 73px, 12% 21px;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  @media (max-width: 991px) {
+    padding: 50px 0;
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 495px 1fr;
+    align-items: flex-start;
+    gap: 135px;
+
+    @media (max-width: 1199px) {
+      grid-template-columns: 395px 1fr;
+      gap: 30px 80px;
+    }
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__image {
+    position: relative;
+    margin-left: 19px;
+    margin-right: 18px;
+
+    &::before {
+      position: absolute;
+      // z-index: -1;
+      bottom: 0;
+      top: 20px;
+      left: -20px;
+      right: -20px;
+      display: block;
+      background-color: $secondary;
+      border-radius: $radius;
+      content: '';
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  &__content {
+    margin-top: 20px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 16px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__prof {
+    margin-bottom: 32px;
+    color: #787A80;
+    font-size: 20px;
+    line-height: 1.5;
+
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 32px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    & [class^="icon-"],
+    & [class*=" icon-"] {
+      color: $primary;
+    }
+  }
+
+  &__item ~ &__item {
+    margin-top: 4px;
+
+    @media (max-width: 991px) {
+      margin-top: 3px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+
+    @media (max-width: 991px) {
+      gap: 18px;
+      margin-top: 24px;
+    }
+  }
+
+  &__social {
+    font-size: 24px;
+    color: #787A80;
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+
+    @media (max-width: 991px) {
+      gap: 12px 24px;
+      margin-top: 24px;
+    }
+  }
+}

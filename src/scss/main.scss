@@ -37,25 +37,19 @@
 @import './components/preview/article';
 @import './components/preview/author';
 
-@import './section/first';
-@import './section/feature';
-@import './section/why';
-@import './section/how';
 @import './section/posts';
+@import './section/author';
 @import './section/subscribe';
-@import './section/team';
-@import './section/event';
 @import './section/certificate';
 @import './section/process';
-@import './section/blog';
 @import './section/newsletter';
 @import './section/testimonials';
 @import './section/single';
-@import './section/test';
-@import './section/do-it';
 @import './section/head';
 
+@import './page/index';
 @import './page/about';
 @import './page/course';
 @import './page/contact';
 @import './page/event';
+@import './page/blog';
