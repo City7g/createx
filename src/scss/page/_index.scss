@@ -42,6 +42,8 @@
   }
 
   &__img {
+    display: block;
+
     @media (max-width: 991px) {
       max-width: 400px;
       margin: 0 auto;
@@ -217,7 +219,7 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: if($pixel, 31px 30px, 30px);
+    gap: 30px;
 
     @media (max-width: 1199px) {
       grid-template-columns: 1fr;
@@ -240,7 +242,7 @@
   &__tabs {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 0px;
 
     @media (max-width: 991px) {
       grid-template-columns: repeat(2, 1fr);
@@ -248,6 +250,14 @@
 
     @media (max-width: 400px) {
       grid-template-columns: 1fr;
+    }
+  }
+
+  &__content {
+    margin-top: 60px;
+
+    @media (max-width: 991px) {
+      margin-top: 30px;
     }
   }
 }

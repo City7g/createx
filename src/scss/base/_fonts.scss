@@ -125,7 +125,7 @@
 
 .text-small {
   font-size: 14px;
-  line-height: if($pixel, 27px, 1.5);
+  line-height: if($pixel, 21px, 1.5);
 
   @media (max-width: $tablet-sm) {
     font-size: 12px;

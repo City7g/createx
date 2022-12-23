@@ -313,9 +313,13 @@
 
 .accordion {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
   padding-left: 40px;
 
   @media (max-width: 991px) {
+    gap: 4px;
     padding-left: 30px;
   }
 
@@ -340,20 +344,8 @@
     }
   }
 
-  &__title,
-  &__subtitle {
-    display: inline;
-  }
-
-  &__title {
-    margin-left: 6px;
-
-    @media (max-width: 991px) {
-      margin-left: 4px;
-    }
-  }
-
   &__text {
+    flex-basis: 100%;
     margin-top: 16px;
 
     @media (max-width: 991px) {

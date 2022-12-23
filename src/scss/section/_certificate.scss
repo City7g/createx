@@ -1,5 +1,9 @@
 .section-certificate {
   margin: 120px 0;
+  
+  &--absolute {
+    margin-bottom: if($pixel, 114px, null);
+  }
 
   @media (max-width: 991px) {
     margin: 60px 0;

@@ -156,8 +156,40 @@
   }
 }
 
-.student-work {
+.section-do-it {
   padding: 90px 0;
+
+  @media (max-width: 991px) {
+    padding: 50px 0;
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: flex-end;
+    gap: 210px;
+
+    @media (max-width: 1399px) {
+      gap: 150px;
+    }
+
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px 120px;
+    }
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__img {
+    display: block;
+  }
+}
+
+.student-work {
+  padding: 90px 0 100px;
   background-color: #F4F5F7;
 
   @media (max-width: 991px) {
@@ -174,15 +206,21 @@
     grid-template-columns: repeat(6, 1fr);
     justify-content: space-between;
     align-items: center;
-    gap: 20px 40px;
+    gap: 40px;
 
     @media (max-width: 991px) {
       grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
     }
 
     @media (max-width: 575px) {
       grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
+  }
+
+  & ~ .section-posts {
+    padding-top: 100px;
   }
 }
 
@@ -242,6 +280,29 @@
     @media (max-width: 991px) {
       margin-bottom: 6px;
     }
+  }
+}
+
+.about-team {
+  padding: 90px 0 120px;
+
+  @media (max-width: 991px) {
+    padding: 40px 0;
+  }
+
+  & .section__title,
+  & .section__subtitle {
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px 30px;
+  }
+
+  & ~ .section-testimonials {
+    padding-top: 100px !important;
   }
 }
 
