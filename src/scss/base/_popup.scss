@@ -8,9 +8,9 @@
   
   display: none;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
-  padding: 20px;
+  padding: 120px 20px 20px;
 
   background-color: rgba($black, 0.25);
   transition: 0.3s all ease;
@@ -34,7 +34,7 @@
 
   &__content {
     max-height: 80vh;
-    padding: 48px;
+    padding: 48px 48px 43px;
     overscroll-behavior: contain;
     overflow: auto;
     scrollbar-width: none;
@@ -50,11 +50,11 @@
   }
 
   &__title {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
     text-align: center;
 
     @media (max-width: 991px) {
-      margin-bottom: 6px;
+      margin-bottom: 12px;
     }
   }
 
@@ -85,8 +85,8 @@
 
   &__close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 36px;
+    right: 36px;
     transform: translate(50%, -50%);
     width: 30px;
     height: 30px;
@@ -116,7 +116,7 @@
       left: 50%;
       transform: translate(-50%, -50%) rotate(-45deg);
       width: 2px;
-      height: 15px;
+      height: 22px;
 
       background-color: #3D3D4B;
       content: '';
@@ -162,8 +162,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin-top: 16px;
+    gap: 12px;
+    margin-top: 15px;
+    font-size: 20px;
 
     @media (max-width: 991px) {
       gap: 10px;

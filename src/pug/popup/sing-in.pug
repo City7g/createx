@@ -1,24 +1,24 @@
 #sing-in.popup
   .popup__wrap
     .popup__content
-      h3.title-h3.popup__title Sign in
+      h4.title-h4.popup__title Sign in
       p.text-small.gray-700.popup__description Sign in to your account using email and password provided during registration.
 
       form(novalidate).form-sing
         label.label-input.form-sing__input
-          h5.label-input__title Email
-          input(type="email", placeholder="Your working email", name="email") 
+          h5.text-small.label-input__title Email
+          input(type="email", placeholder="Your working email", name="email").input-small
         label.label-input.form-sing__input
-          h5.label-input__title Password
-          input(type="password", placeholder="Your working password", name="password")
+          h5.text-small.label-input__title Password
+          input(type="password", placeholder="Your working password", name="password").input-small
           .label-input__show
             span.icon-eye
         .form-sing__block
           label.label-checkbox
             input(type="checkbox", name="agree")
-            h5 Keep me signed in  
-          a(href="#") Forgot password? 
-        button(type="submit").btn-main.form-sing__btn Sign in 
+            h5.text-small Keep me signed in  
+          a(href="#").text-small Forgot password? 
+        button(type="submit").btn-main.btn-small.form-sing__btn Sign in 
 
       .asd
         p.text-small.gray-800 Don't have an account?

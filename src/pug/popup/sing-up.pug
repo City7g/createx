@@ -1,36 +1,36 @@
 #sing-up.popup
   .popup__wrap
     .popup__content
-      h3.title-h3.popup__title Sign up
+      h4.title-h4.popup__title Sign up
       p.text-small.gray-700.popup__description Registration takes less than a minute but gives you full control over your studying.
 
       form(novalidate).form-sing
         label.label-input.form-sing__input
-          h5.label-input__title Full Name
-          input(type="email", placeholder="Your full name", name="name")
+          h5.text-small.label-input__title Full Name
+          input(type="email", placeholder="Your full name", name="name").input-small
 
         label.label-input.form-sing__input
-          h5.label-input__title Email
-          input(type="email", placeholder="Your working email", name="email")
+          h5.text-small.label-input__title Email
+          input(type="email", placeholder="Your working email", name="email").input-small
           
         label.label-input.form-sing__input
-          h5.label-input__title Password
-          input(type="password", placeholder="Your working password", name="password")
+          h5.text-small.label-input__title Password
+          input(type="password", placeholder="Your working password", name="password").input-small
           .label-input__show
             span.icon-eye
 
         label.label-input.form-sing__input
-          h5.label-input__title Confirm Password
-          input(type="password", placeholder="Confirm Password", name="confirm")
+          h5.text-small.label-input__title Confirm Password
+          input(type="password", placeholder="Confirm Password", name="confirm").input-small
           .label-input__show
             span.icon-eye
 
         .form-sing__block
           label.label-checkbox
             input(type="checkbox", name="agree")
-            h5 Remember me
+            h5.text-small Remember me
 
-        button(type="submit").btn-main.form-sing__btn Sign up
+        button(type="submit").btn-main.btn-small.form-sing__btn Sign up
 
       .asd
         p.text-small.gray-800 Already have an account? 
