@@ -114,30 +114,6 @@
   @media (max-width: 991px) {
     padding: 50px 0;
   }
-
-  &__subtitle,
-  &__title {
-    grid-column-start: 1;
-  }
-
-  &__events {
-    display: flex;
-    gap: 30px;
-    scroll-snap-type: x mandatory;
-    overflow: auto;
-
-    & > * {
-      flex: 0 0 calc(100% / 3 - 20px);
-      
-      @media (max-width: 991px) {
-        flex-basis: calc(50% - 15px);
-      }
-
-      @media (max-width: 575px) {
-        flex-basis: 100%;
-      }
-    }
-  }
 }
 
 .timer {

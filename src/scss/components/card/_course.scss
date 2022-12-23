@@ -9,8 +9,8 @@
 
 
   @media (max-width: 1199px) {
-    grid-template-columns: 178px 1fr;
-    grid-template-rows: 178px;
+    grid-template-columns: 158px 1fr;
+    grid-template-rows: 158px;
   }
 
   @media (max-width: 767px) {
@@ -20,6 +20,7 @@
 
   @media (max-width: 575px) {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
   &__image {
@@ -28,12 +29,9 @@
     overflow: hidden;
     background-color: $secondary;
     
-    @media (max-width: 991px) {
-      border-radius: $radius $radius 0 0;
-    }
-
     @media (max-width: 575px) {
-      max-height: 350px;
+      border-radius: $radius $radius 0 0;
+      max-height: 300px;
     }
   }
 
@@ -57,7 +55,7 @@
       padding: 24px;
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       padding: 16px;
     }
   }

@@ -1,0 +1,156 @@
+body .slider-mobile-2 {
+  @media (max-width: 991px) {
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+
+    &>* {
+      flex: 0 0 calc(50% - 10px);
+      scroll-snap-align: start;
+
+      @media (max-width: 575px) {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+body .slider-1 {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+
+  &>* {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+}
+
+body .slider-2 {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+
+  &>* {
+    flex: 0 0 calc(50% - 10px);
+    scroll-snap-align: start;
+
+    @media (max-width: 991px) {
+      flex-basis: 100%;
+    }
+  }
+}
+
+body .slider-3 {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+
+  &>* {
+    flex: 0 0 calc(100% / 3 - 20px);
+    scroll-snap-align: start;
+
+    @media (max-width: 1199px) {
+      flex-basis: calc(50% - 15px);
+    }
+
+    @media (max-width: 767px) {
+      flex-basis: 100%;
+    }
+  }
+}
+
+body .slider-4 {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+
+  &>* {
+    flex: 0 0 calc(25% - 90px / 3);
+    scroll-snap-align: start;
+
+    @media (max-width: 991px) {
+      flex-basis: calc(50% - 15px);
+    }
+
+    @media (max-width: 575px) {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.slider-navigation {
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+
+    @media (max-width: 991px) {
+      width: 36px;
+      height: 36px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+
+  &__next {
+    left: auto;
+    right: 0;
+  }
+}
+
+.slider-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 57px;
+
+  @media (max-width: 991px) {
+    margin-top: 30px;
+  }
+
+  &__item {
+    width: 30px;
+    height: 2px;
+    background-color: #B3B7BC;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s background-color ease;
+    border: 2px solid transparent;
+
+    &.active,
+    &:hover {
+      background-color: #424551;
+    }
+  }
+}
