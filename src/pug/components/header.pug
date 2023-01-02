@@ -9,9 +9,9 @@ header.header
       nav.header-nav.header__nav
         each link in headerLinks
           if(link.name === headerLink)
-            a(href=link.path).header-nav__link.active= link.name
+            a(href=link.path).title-h5.header-nav__link.active= link.name
           else
-            a(href=link.path).header-nav__link= link.name
+            a(href=link.path).title-h5.header-nav__link= link.name
 
       button.btn-main.header__consultation Get consultation
 

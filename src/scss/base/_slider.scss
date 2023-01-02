@@ -16,7 +16,7 @@ body .slider-mobile-2 {
   }
 }
 
-body .slider-1 {
+.slider-1 .slider__wrap {
   position: relative;
   display: flex;
   gap: 20px;
@@ -67,7 +67,11 @@ body .slider-3 {
   }
 }
 
-body .slider-4 {
+.slider {
+  position: relative;
+}
+
+.slider-4 .slider__wrap {
   position: relative;
   display: flex;
   gap: 30px;
@@ -89,18 +93,18 @@ body .slider-4 {
 }
 
 .slider-navigation {
+
   &__prev,
   &__next {
     position: absolute;
     top: 50%;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 48px;
     height: 48px;
     transform: translateY(-50%);
-    font-size: 20px;
+    font-size: 24px;
     transition: 0.3s ease;
     transition-property: background-color, color;
     border-radius: 50%;
@@ -122,9 +126,12 @@ body .slider-4 {
     }
   }
 
+  &__prev {
+    left: -117px;
+  }
+
   &__next {
-    left: auto;
-    right: 0;
+    right: -117px;
   }
 }
 
@@ -133,7 +140,7 @@ body .slider-4 {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  margin-top: 57px;
+  margin-top: 56px;
 
   @media (max-width: 991px) {
     margin-top: 30px;

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "Dianne Russell",
+    "position": "Founder and CEO",
+    "img": "person-1"
+  },
+  {
+    "id": 1,
+    "name": "Jerome Bell",
+    "position": "Founder and Program Director",
+    "img": "person-2"
+  },
+  {
+    "id": 2,
+    "name": "Kristin Watson",
+    "position": "Marketer, Curator of Marketing Course",
+    "img": "person-3"
+  },
+  {
+    "id": 3,
+    "name": "Marvin McKinney",
+    "position": "PM, Curator of Management Course",
+    "img": "person-4"
+  },
+  {
+    "id": 4,
+    "name": "Leslie Alexander Li",
+    "position": "Curator of HR & Recruting Course",
+    "img": "person-5"
+  },
+  {
+    "id": 5,
+    "name": "Kathryn Murphy",
+    "position": "Analyst and Marketing specialist",
+    "img": "person-6"
+  },
+  {
+    "id": 6,
+    "name": "Brooklyn Simmons",
+    "position": "Curator of Development Course",
+    "img": "person-7"
+  },
+  {
+    "id": 7,
+    "name": "Cody Fisher",
+    "position": "UX Designer, Curator of Design Course",
+    "img": "person-8"
+  }
+]

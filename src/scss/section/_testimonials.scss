@@ -10,11 +10,14 @@
   & .section__subtitle {
     text-align: center;
   }
+
+  &__slider {
+    margin: 0 105px;
+  }
 }
 
 .testimonial {
-  margin: 0 105px;
-  padding: 64px 105px 57px 163px;
+  padding: 64px 105px 57px 105px;
   background: $white;
 
   @media (max-width: 1199px) {
@@ -37,6 +40,7 @@
     grid-template-columns: repeat(2, auto);
     gap: 4px 20px;
     margin-top: 24px;
+    margin-left: 58px;
 
     @media (max-width: 991px) {
       margin-top: 12px;

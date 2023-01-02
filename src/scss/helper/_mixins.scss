@@ -27,3 +27,10 @@
     font-weight: $weight;
   }
 }
+
+@mixin line-clamp($count: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $count;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

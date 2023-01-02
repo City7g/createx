@@ -4,7 +4,7 @@ mixin course-horizontal(course)
       img(src=`/img/feature/${course.img}.jpg`, alt="").course-horizontal__img
     .course-horizontal__content
       h5.course-horizontal__prof(style="background: " + course.categoryColor)= course.category
-      h4.course-horizontal__title
+      h4.title-bold.course-horizontal__title
         a(href="/single-course.html")= course.title
       .course-horizontal__info
         p.course-horizontal__price= '$' + course.price
@@ -16,7 +16,7 @@ mixin course-vertical(course)
       img(src=`/img/course/${course.img}.jpg`, alt="").course-vertical__img
     .course-vertical__content
       h5.course-vertical__category(style="background: " + course.categoryColor)= course.category
-      h4.course-vertical__title
+      h4.title-bold.course-vertical__title
         a(href="/single-course.html")= course.title
       .course-vertical__info
         p.course-vertical__price= '$' + course.price
@@ -29,5 +29,5 @@ mixin course-teach(index)
     .course-vertical__content
       h5.course-vertical__badge Marketing
       p.gray-700.course-vertical__text Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.
-      a(href="/single-course.html").course-vertical__check Check courses
+      a.title-h5.course-vertical__check(href="/single-course.html") Check courses
         span.icon-arrow-right 

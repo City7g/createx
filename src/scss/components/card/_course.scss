@@ -77,12 +77,8 @@
 
   &__title {
     margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 1.5;
-    font-weight: 700;
 
     @media (max-width: 991px) {
-      font-size: 18px;
       margin-bottom: 12px;
     }
   }
@@ -198,13 +194,9 @@
 
   &__title {
     margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 1.5;
-    font-weight: 700;
 
     @media (max-width: 991px) {
       margin-bottom: 12px;
-      font-size: 18px;
     }
   }
 
@@ -241,10 +233,6 @@
     align-items: center;
     gap: 10px;
     margin-top: 20px;
-    font-size: 16px;
-    line-height: 1.6;
-    line-height: 26px;
-    font-weight: 700;
 
     @media (max-width: 991px) {
       margin-top: 12px;

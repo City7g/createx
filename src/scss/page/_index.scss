@@ -335,4 +335,16 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
+
+  & .slider-navigation__prev,
+  & .slider-navigation__next {
+    position: absolute;
+    top: -72px;
+    right: -12px;
+  }
+
+  & .slider-navigation__prev {
+    left: auto;
+    right: 35px;
+  }
 }

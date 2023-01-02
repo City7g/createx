@@ -4,20 +4,20 @@ section.section-testimonials
       h5.title-h6.section__subtitle TESTIMONIALS
       h2.title-h2.section__title What our students say
 
-      .section-testimonials__slider.slider-1
+      .section-testimonials__slider.slider.slider-1
+        .slider__wrap
+          each slide in [1, 2, 3, 4]
+            .testimonial
+              p.quotation.text-lead.testimonial__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+              .testimonial__author
+                img(src="/img/testimonail-author.png", alt="").testimonial__img
+                h4.testimonial__name Eleanor Pena
+                h5.testimonial__prof Position, Course
 
-        each slide in [1, 2, 3, 4]
-          .testimonial
-            p.text-lead.testimonial__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
-            .testimonial__author
-              img(src="/img/testimonail-author.png", alt="").testimonial__img
-              h4.testimonial__name Eleanor Pena
-              h5.testimonial__prof Position, Course
-
-      //- .slider-navigation__prev
-      //-   span.icon-arrow-left
-      //- .slider-navigation__next
-      //-   span.icon-arrow-right
+        .slider-navigation__prev
+          span.icon-arrow-left
+        .slider-navigation__next
+          span.icon-arrow-right
       
       .slider-pagination
         .slider-pagination__item.active

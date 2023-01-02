@@ -1,7 +1,7 @@
-mixin person(index)
+mixin person(person)
   .person
     .person__image
-      img(src=`/img/team/person-${index}.png`, alt="").person__img
+      img(src=`/img/team/${person.img}.png`, alt="").person__img
       .person__socials
         a(href="#", target="_blank").person__social
           span.icon-facebook
@@ -9,5 +9,5 @@ mixin person(index)
           span.icon-instagram
         a(href="#", target="_blank").person__social
           span.icon-linkedin
-    h4.title-bold.person__name Dianne Russell
-    p.text-main.person__prof Founder and CEO
+    h4.title-bold.person__name= person.name
+    p.text-main.person__prof= person.position

@@ -1,0 +1,79 @@
+[
+  {
+    "id": 0,
+    "title": "What is traffic arbitrage and does it really make money?",
+    "text": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+    "img": "item-1",
+    "type": "Podcast",
+    "category": "Marketing",
+    "data": "September 4, 2020",
+    "duration": "36 min"
+  },
+  {
+    "id": 1,
+    "title": "How to choose the first programming language for a beginner",
+    "text": "Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui...",
+    "img": "item-2",
+    "type": "Article",
+    "category": "Development",
+    "data": "September 1, 2020"
+  },
+  {
+    "id": 2,
+    "title": "Should you choose a creative profession if you are attracted to creativity?",
+    "text": "Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...",
+    "img": "item-3",
+    "type": "Video",
+    "category": "Design",
+    "data": "August 8, 2020",
+    "duration": "40 min"
+  },
+  {
+    "id": 3,
+    "title": "HR statistics: job search,  interviews, hiring and recruiting",
+    "text": "Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...",
+    "img": "item-4",
+    "type": "Article",
+    "category": "HR & Recruting",
+    "data": "August 3, 2020"
+  },
+  {
+    "id": 4,
+    "title": "What to do and who to talk to if you want to get feedback on the product",
+    "text": "Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus. Curabitur nisl tincidunt eros venenatis...",
+    "img": "item-5",
+    "type": "Article",
+    "category": "Management",
+    "data": "August 2, 2020",
+    "duration": "45 min"
+  },
+  {
+    "id": 5,
+    "title": "What are color profiles and how they work in graphic design",
+    "text": "Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...",
+    "img": "item-6",
+    "type": "Podcast",
+    "category": "Design",
+    "data": "July 28, 2020",
+    "duration": "36 min"
+  },
+  {
+    "id": 6,
+    "title": "Startup: how to build a team that will live longer than a year",
+    "text": "Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo scelerisque in nisi, urna...",
+    "img": "item-7",
+    "type": "Video",
+    "category": "Management",
+    "data": "July 15, 2020",
+    "duration": "45 min"
+  },
+  {
+    "id": 0,
+    "title": "How to get customers to love your business from the start",
+    "text": "Malesuada in augue mi feugiat morbi a aliquet enim. Elementum lacus, pellentesque etiam arcu tristique ac...",
+    "img": "item-8",
+    "type": "Article",
+    "category": "Marketing",
+    "data": "July 9, 2020"
+  }
+]

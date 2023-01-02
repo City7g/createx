@@ -1,21 +1,31 @@
-mixin post(index)
+mixin post(post)
   article.card-post
     a(href="/single-post.html").card-post__image
-      img(src=`/img/post/item-${index}.jpg`, alt="").card-post__img
+      img(src=`/img/post/${post.img}.jpg`, alt="").card-post__img
       p.card-post__type
-        span.icon-mic
-        | Podcast
+        if(post.type == 'Podcast')
+          span.icon-mic
+        if(post.type == 'Article')
+          span.icon-files
+        if(post.type == 'Video')
+          span.icon-play
+        = post.type
     .card-post__info
-      .card-post__category Marketing
+      .card-post__category= post.category
       .card-post__date
         span.icon-calendar
-        | September 4, 2020
+        = post.data
       .card-post__duration
         span.icon-clock
-        | 36 min
+        = post.duration
     h4.title-bold.card-post__title
-      a(href="/single-post.html") What is traffic arbitrage and does it really make money? 
-    p.text-main.card-post__text Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...
-    a(href="/single-post.html").card-post__link
-      | Listen
+      a(href="/single-post.html")= post.title
+    p.text-main.card-post__text= post.text
+    a(href="/single-post.html").title-h5.card-post__link
+      if(post.type == 'Podcast')
+        | Listen
+      if(post.type == 'Article')
+        | Read
+      if(post.type == 'Video')
+        | Watch
       span.icon-arrow-right

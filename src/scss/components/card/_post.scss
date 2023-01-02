@@ -51,7 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5px 12px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 
     &>div:not(:first-child)::before {
       content: '|';
@@ -84,7 +84,8 @@
   }
 
   &__text {
-    margin-top: 8px;
+    margin-top: 7px;
+    @include line-clamp(2);
 
     @media (max-width: 991px) {
       margin-top: 6px;
@@ -96,9 +97,6 @@
     align-items: center;
     gap: 10px;
     margin-top: 16px;
-    font-size: 16px;
-    line-height: 1.6;
-    font-weight: 700;
 
     @media (max-width: 991px) {
       margin-top: 12px;

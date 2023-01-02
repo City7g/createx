@@ -117,9 +117,16 @@ block content
       //-   .slider-navigation__next
       //-     span.icon-arrow-right
 
-      .section-team__team.slider-4
-        each person in [1, 2, 3, 4, 1, 2, 3, 4]
-          +person(person)
+      .section-team__team.slider.slider-4
+        .slider__wrap
+          each person in team
+            +person(person)
+
+        .slider-navigation__prev
+          span.icon-arrow-left
+        .slider-navigation__next
+          span.icon-arrow-right
+        
   
   include ../section/testimonials
   include ../section/last-posts
