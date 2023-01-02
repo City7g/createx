@@ -11,7 +11,7 @@ block content
     .container
       .about-first__wrap
         .about-first__content
-          h4.title-h6.about__subtitle About us
+          h4.title-h6.section__subtitle About us
           h2.title-h2.about-first__title Createx Online School
           h5.title-bold.about-first__heading Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts.
           p.text-main.about-first__text We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.
@@ -82,17 +82,40 @@ block content
             h4.title-h4 New studying program coming soon...
 
 
-  include ../section/do-it
-
-  section.section-team
+  section.section-do-it
     .container
-      .section-team__wrap
-        h4.title-h6.section__subtitle Best tutors are all here
-        h2.title-h2.section__title Meet our team
+      .section-do-it__wrap
+        .section-do-it__content
+          h4.title-h6.section__subtitle Studying process
+          h2.title-h2.section__title That’s how we do it
+          ul.do-it-list.section-do-it__list
+            li.do-it-list__item
+              h6.do-it-list__step STEP 1
+              h4.title-bold.do-it-list__title Watching online video lectures
+              p.text-main.do-it-list__text Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.
+            li.do-it-list__item
+              h6.do-it-list__step STEP 2
+              h4.title-bold.do-it-list__title Passing test
+              p.text-main.do-it-list__text Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin egestas laoreet etiam.
+            li.do-it-list__item
+              h6.do-it-list__step STEP 3
+              h4.title-bold.do-it-list__title Curator’s feedback
+              p.text-main.do-it-list__text Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat egestas facilisi lobortis. 
+            li.do-it-list__item
+              h6.do-it-list__step STEP 4
+              h4.title-bold.do-it-list__title Corrections if needed
+              p.text-main.do-it-list__text Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor.
+        .section-do-it__image
+          img(src="/img/do-it-img.svg", alt="").section-do-it__img
 
-        .section-team__list.slider-mobile-2
-          each person in [1, 2, 3, 4, 5, 6, 7, 8]
-            +person(person)
+  section.about-team
+    .container
+      h4.title-h6.section__subtitle Best tutors are all here
+      h2.title-h2.section__title Meet our team
+
+      .about-team__list.slider-mobile-2
+        each person in [1, 2, 3, 4, 5, 6, 7, 8]
+          +person(person)
 
 
 

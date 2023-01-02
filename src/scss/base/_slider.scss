@@ -75,7 +75,7 @@ body .slider-4 {
   scroll-snap-type: x mandatory;
 
   &>* {
-    flex: 0 0 calc(25% - 90px / 3);
+    flex: 0 0 calc(25% - 90px / 4);
     scroll-snap-align: start;
 
     @media (max-width: 991px) {
