@@ -1,26 +1,26 @@
-mixin course-horizontal(index)
+mixin course-horizontal(course)
   .course-horizontal
     a(href="/single-course.html").course-horizontal__image
-      img(src=`/img/feature/item-${index}.jpg`, alt="").course-horizontal__img
+      img(src=`/img/feature/${course.img}.jpg`, alt="").course-horizontal__img
     .course-horizontal__content
-      h5.course-horizontal__prof Marketing
+      h5.course-horizontal__prof(style="background: " + course.categoryColor)= course.category
       h4.course-horizontal__title
-        a(href="#") Brand Management & PR Communications
+        a(href="/single-course.html")= course.title
       .course-horizontal__info
-        p.course-horizontal__price $530
-        p.course-horizontal__author by Kristin Watson
+        p.course-horizontal__price= '$' + course.price
+        p.course-horizontal__author= 'by ' + course.author
       
-mixin course-vertical(index)
+mixin course-vertical(course)
   .course-vertical
     a(href="/single-course.html").course-vertical__image
-      img(src=`/img/course/item-${index}.jpg`, alt="").course-vertical__img
+      img(src=`/img/course/${course.img}.jpg`, alt="").course-vertical__img
     .course-vertical__content
-      h5.course-vertical__category HR & Recruting
+      h5.course-vertical__category(style="background: " + course.categoryColor)= course.category
       h4.course-vertical__title
-        a(href="/single-course.html") The Ultimate Google Ads Training Course
+        a(href="/single-course.html")= course.title
       .course-vertical__info
-        p.course-vertical__price $100
-        p.course-vertical__author by Jerome Bell
+        p.course-vertical__price= '$' + course.price
+        p.course-vertical__author= 'by ' + course.author
 
 mixin course-teach(index)
   .course-vertical
@@ -29,5 +29,5 @@ mixin course-teach(index)
     .course-vertical__content
       h5.course-vertical__badge Marketing
       p.gray-700.course-vertical__text Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.
-      a(href="#").course-vertical__check Check courses
+      a(href="/single-course.html").course-vertical__check Check courses
         span.icon-arrow-right 

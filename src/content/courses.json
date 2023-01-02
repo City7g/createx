@@ -1,0 +1,83 @@
+[
+  {
+    "id": 0,
+    "title": "The Ultimate Google Ads Training Course",
+    "price": 100,
+    "author": "Jerome Bell",
+    "img": "item-1",
+    "category": "Marketing",
+    "categoryColor": "#03CEA4"
+  },
+  {
+    "id": 1,
+    "title": "Product Management Fundamentals",
+    "price": 480,
+    "author": "Marvin McKinney",
+    "img": "item-2",
+    "category": "Management",
+    "categoryColor": "#5A87FC"
+  },
+  {
+    "id": 2,
+    "title": "HR  Management and Analytics",
+    "price": 200,
+    "author": "Leslie Alexander Li",
+    "img": "item-3",
+    "category": "HR & Recruting",
+    "categoryColor": "#F89828"
+  },
+  {
+    "id": 3,
+    "title": "Brand Management & PR Communications",
+    "price": 530,
+    "author": "Kristin Watson",
+    "img": "item-4",
+    "category": "Marketing",
+    "categoryColor": "#03CEA4"
+  },
+  {
+    "id": 4,
+    "title": "Graphic Design Basic",
+    "price": 500,
+    "author": "Guy Hawkins",
+    "img": "item-5",
+    "category": "Design",
+    "categoryColor": "#F52F6E"
+  },
+  {
+    "id": 5,
+    "title": "Business Development Management",
+    "price": 400,
+    "author": "Dianne Russell",
+    "img": "item-6",
+    "category": "Management",
+    "categoryColor": "#5A87FC"
+  },
+  {
+    "id": 6,
+    "title": "Highload Software Architecture",
+    "price": 600,
+    "author": "Brooklyn Simmons",
+    "img": "item-7",
+    "category": "Development",
+    "categoryColor": "#7772F1"
+  },
+  {
+    "id": 7,
+    "title": "Human Resources – Selection and Recruitment",
+    "price": 150,
+    "author": "Kathryn Murphy",
+    "img": "item-8",
+    "category": "HR & Recruting",
+    "categoryColor": "#F89828"
+  },
+  {
+    "id": 8,
+    "title": "User Experience. Human-centered Design",
+    "price": 240,
+    "author": "Cody Fisher",
+    "img": "item-9",
+    "category": "Design",
+    "categoryColor": "#F52F6E"
+  }
+]

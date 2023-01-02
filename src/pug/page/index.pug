@@ -59,8 +59,10 @@ block content
         h3.title-h2.section__title Featured Courses
         a(href="/courses.html").btn-secondary.section__right View all courses 
       .section-feature__list
-        each course in [1, 2, 3, 4, 5, 6]
+        each course in [...courses.slice(0, 4), courses[5], courses[4]]
           +course-horizontal(course)
+        //- each course in [1, 2, 3, 4, 5, 6]
+        //-   +course-horizontal(course)
     
   section.section-how
     .container
