@@ -161,7 +161,7 @@ block content
     .container
       .course-register__wrap
         .course-register__image
-          img(src="/img/course-register-img.svg", alt="").course-register__image
+          img(src="/img/course-register-img.svg", alt="").course-register__img
         .course-register__content
           h4.title-h6.section__subtitle Leave a request now and get 20% off!
           h2.title-h2.course-register__title Register for the course
@@ -185,7 +185,7 @@ block content
         h2.title-h2.section__title You may also like
       
       .course-other__slider.slider-2
-        each course in [1, 2, 3, 4]
+        each course in courses
           +course-horizontal(course)
 
       .section__footer

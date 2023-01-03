@@ -3,7 +3,7 @@ mixin course-horizontal(course)
     a(href="/single-course.html").course-horizontal__image
       img(src=`/img/feature/${course.img}.jpg`, alt="").course-horizontal__img
     .course-horizontal__content
-      h5.course-horizontal__prof(style="background: " + course.categoryColor)= course.category
+      h5.text-small.course-horizontal__prof(style="background: " + course.categoryColor)= course.category
       h4.title-bold.course-horizontal__title
         a(href="/single-course.html")= course.title
       .course-horizontal__info
@@ -15,7 +15,7 @@ mixin course-vertical(course)
     a(href="/single-course.html").course-vertical__image
       img(src=`/img/course/${course.img}.jpg`, alt="").course-vertical__img
     .course-vertical__content
-      h5.course-vertical__category(style="background: " + course.categoryColor)= course.category
+      h5.text-small.course-vertical__category(style="background: " + course.categoryColor)= course.category
       h4.title-bold.course-vertical__title
         a(href="/single-course.html")= course.title
       .course-vertical__info

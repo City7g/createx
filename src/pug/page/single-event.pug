@@ -48,8 +48,8 @@ block content
           p.text-main.section-author__text Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. 
           .section-author__logos
             img(src="/img/student-work/item-8.png", alt="").section-author__logo
-            img(src="/img/student-work/item-10.png", alt="").section-author__logo
             img(src="/img/student-work/item-3.png", alt="").section-author__logo
+            img(src="/img/student-work/item-10.png", alt="").section-author__logo
           .section-author__socials
             a(href="#").section-author__social
               span.icon-facebook
@@ -114,8 +114,8 @@ block content
         h2.title-h2.section__title You may be interested in
 
       .event-interested__events.slider-3
-        each item in [1, 2, 3, 4, 5, 6, 7, 8, 9]
-          +event-grid(item)
+        each event in events
+          +event-grid(event)
       
       .section__footer
         h5.title-h4 Do you want more?

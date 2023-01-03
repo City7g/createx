@@ -4,7 +4,7 @@ blockquote {
   padding-left: 58px;
 
   @media (max-width: 575px) {
-    padding-left: 40px;
+    padding-left: 28px;
   }
 
   &::before {
@@ -21,8 +21,9 @@ blockquote {
     content: '';
 
     @media (max-width: 575px) {
+      top: 8px;
       width: 20px;
-      height: 14px;
+      height: 12px;
     }
   }
 }

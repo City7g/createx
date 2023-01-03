@@ -393,7 +393,7 @@
 }
 
 .course-register {
-  padding: 90px 0;
+  padding: 80px 0 100px;
   background: #F4F5F7;
 
   @media (max-width: 991px) {
@@ -403,6 +403,7 @@
   &__wrap {
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
     gap: 185px;
 
     @media (max-width: 1399px) {
@@ -431,6 +432,10 @@
     @media (max-width: 991px) {
       margin-bottom: 24px;
     }
+  }
+
+  &__img {
+    display: block;
   }
 }
 

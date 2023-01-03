@@ -96,8 +96,8 @@ block content
       h2.title-h2.section__title Lectures & workshops
 
       .section-event__events
-        each item in [1, 2, 3]
-          +event-list(item)
+        each event in events.slice(0, 3)
+          +event-list(event)
 
       .section-event__footer
         h5.title-h4 Do you want more?

@@ -32,12 +32,12 @@ body .slider-mobile-2 {
 body .slider-2 {
   position: relative;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   overflow: auto;
   scroll-snap-type: x mandatory;
 
   &>* {
-    flex: 0 0 calc(50% - 10px);
+    flex: 0 0 calc(50% - 15px);
     scroll-snap-align: start;
 
     @media (max-width: 991px) {
@@ -128,10 +128,18 @@ body .slider-3 {
 
   &__prev {
     left: -117px;
+
+    @media (max-width: 991px) {
+      left: -55px;
+    }
   }
 
   &__next {
     right: -117px;
+
+    @media (max-width: 991px) {
+      right: -55px;
+    }
   }
 }
 

@@ -34,6 +34,7 @@ const html = () => {
   const courses = JSON.parse(fs.readFileSync("./src/content/courses.json", {encoding: "utf8"}))
   const team = JSON.parse(fs.readFileSync("./src/content/team.json", {encoding: "utf8"}))
   const blog = JSON.parse(fs.readFileSync("./src/content/blog.json", {encoding: "utf8"}))
+  const events = JSON.parse(fs.readFileSync("./src/content/events.json", {encoding: "utf8"}))
 
   return gulp
     .src("./src/pug/page/*.pug")
@@ -43,7 +44,8 @@ const html = () => {
         data: {
           courses,
           team,
-          blog
+          blog,
+          events
         },
       })
     )

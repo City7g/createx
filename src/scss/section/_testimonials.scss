@@ -13,6 +13,14 @@
 
   &__slider {
     margin: 0 105px;
+
+    @media (max-width: 991px) {
+      margin: 0 50px;
+    }
+
+    @media (max-width: 575px) {
+      margin: 0;
+    }
   }
 }
 
@@ -30,7 +38,7 @@
   }
 
   @media (max-width: 575px) {
-    padding: 25px 30px;
+    padding: 25px 20px;
     margin: 0;
   }
 
@@ -43,13 +51,21 @@
     margin-left: 58px;
 
     @media (max-width: 991px) {
-      margin-top: 12px;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 575px) {
+      margin-left: 28px;
     }
   }
 
   &__img {
     grid-row: span 2;
     display: block;
+
+    @media (max-width: 575px) {
+      width: 50px;
+    }
   }
 
   &__name {

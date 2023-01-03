@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "title": "Formation of the organizational structure of the company in the face of uncertainty.",
+    "description": "Onine master-class",
+    "date": 5,
+    "month": "August",
+    "time": "11:00 – 14:00"
+  },
+  {
+    "id": 1,
+    "title": "Building a customer service department. Best Practices.",
+    "description": "Onine lecture",
+    "date": 24,
+    "month": "July",
+    "time": "11:00 – 12:30"
+  },
+  {
+    "id": 2,
+    "title": "How to apply methods of speculative design in practice. Worldbuilding prototyping.",
+    "description": "Onine workshop",
+    "date": 16,
+    "month": "July",
+    "time": "10:00 – 13:00"
+  },
+  {
+    "id": 3,
+    "title": "Find and evaluate: search and assessment tools for candidates.",
+    "description": "Onine workshop",
+    "date": 10,
+    "month": "July",
+    "time": "9:00 – 14:00"
+  },
+  {
+    "id": 4,
+    "title": "Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.",
+    "description": "Onine master-class",
+    "date": 27,
+    "month": "June",
+    "time": "15:00 – 19:00"
+  },
+  {
+    "id": 5,
+    "title": "Marketing or growth hacking: main differences and what business needs.",
+    "description": "Onine lecture",
+    "date": 15,
+    "month": "June",
+    "time": "10:00 – 12:00"
+  },
+  {
+    "id": 6,
+    "title": "How to brief a client and present your design to approve it from the first show.",
+    "description": "Onine lecture",
+    "date": 2,
+    "month": "June",
+    "time": "11:00 – 13:00"
+  },
+  {
+    "id": 7,
+    "title": "Who is a project manager and do I want to be PM?",
+    "description": "Onine lecture",
+    "date": 29,
+    "month": "May",
+    "time": "11:00 – 12:00"
+  },
+  {
+    "id": 8,
+    "title": "The company's business page as an additional tool to support the announcement of vacancies.",
+    "description": "Onine lecture",
+    "date": 18,
+    "month": "May",
+    "time": "10:00 – 12:00"
+  }
+]

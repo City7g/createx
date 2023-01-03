@@ -87,6 +87,9 @@
 }
 
 .event-grid {
+  display: flex;
+  flex-direction: column;
+  min-height: 323px;
   padding: 23px;
   background: $white;
   border: 1px solid #E5E8ED;
@@ -94,6 +97,7 @@
   border-radius: $radius;
 
   @media (max-width: 991px) {
+    min-height: auto;
     padding: 15px;
   }
 
@@ -140,13 +144,17 @@
     line-height: 26px;
   }
 
-  &__more {
-    width: 100%;
-    margin-top: 51px;
-    text-align: center;
+  &__text {
+    margin-bottom: 24px;
 
     @media (max-width: 991px) {
-      margin-top: 30px;
+      margin-top: 16px;
     }
+  }
+
+  &__more {
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
   }
 }

@@ -1,25 +1,22 @@
-mixin event-list(index)
+mixin event-list(event)
   .event-list
-    - let randomDate = Math.ceil(Math.random()*30)
-      if(randomDate > 9)
-        .event-list__day= randomDate
-      else
-        .event-list__day= `0${randomDate}`
-    .event-list__month August
-    .event-list__time 11:00 – 14:00
-    .event-list__title Building a customer service department.
-    .event-list__text Onine lecture
+    if(event.date > 9)
+      .event-list__day= event.date
+    else
+      .event-list__day= `0${event.date}`
+    .event-list__month= event.month
+    .event-list__time= event.time
+    .event-list__title= event.title
+    .event-list__text= event.description
     a(href="/single-event.html").btn-secondary.btn-small.event-list__more View more 
 
-mixin event-grid(index)
+mixin event-grid(event)
   .event-grid
-    //- - let randomDate = Math.ceil(Math.random()*30)
-    - let randomDate = 5
-      if(randomDate > 9)
-        .event-grid__date= `${randomDate} Aug`
-      else
-        .event-grid__date= `0${randomDate} Aug`
-    .event-grid__time 11:00 – 14:00
-    .event-grid__title Formation of the organizational structure of the company in the face of uncertainty.
-    .event-grid__text Onine master-class
+    if(event.date > 9)
+      .event-grid__date= `${event.date} ${event.month.slice(0, 3)}`
+    else
+      .event-grid__date= `0${event.date} ${event.month.slice(0, 3)}`
+    .event-grid__time= event.time
+    .event-grid__title= event.title
+    .event-grid__text= event.description
     a(href="/single-event.html").btn-secondary.btn-small.event-grid__more View more 
