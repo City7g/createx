@@ -22,14 +22,6 @@ const browserSync = () => {
   });
 };
 
-const styles = () => {
-  return gulp
-    .src("./src/scss/main.scss")
-    .pipe(sass())
-    .pipe(gulp.dest("./dist"))
-    .pipe(browsersync.stream());
-};
-
 const html = () => {
   const courses = JSON.parse(fs.readFileSync("./src/content/courses.json", {encoding: "utf8"}))
   const team = JSON.parse(fs.readFileSync("./src/content/team.json", {encoding: "utf8"}))
@@ -53,7 +45,15 @@ const html = () => {
     .pipe(browsersync.stream());
 };
 
-const scripts = () => {
+const style = () => {
+  return gulp
+    .src("./src/scss/main.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("./dist"))
+    .pipe(browsersync.stream());
+};
+
+const script = () => {
   return gulp
     .src("./src/js/main.js")
     .pipe(
@@ -68,26 +68,26 @@ const scripts = () => {
     .pipe(browsersync.stream());
 };
 
-const images = () => {
+const image = () => {
   return gulp.src("./src/img/**/*").pipe(gulp.dest("./dist/img"));
 };
 
-const fonts = () => {
+const font = () => {
   return gulp.src("./src/fonts/**/*").pipe(gulp.dest("./dist/fonts/"));
 };
 
-export { html, styles, scripts, images, fonts, browserSync };
+export { html, style, script, image, font, browserSync };
 
 export default () => {
   html();
-  styles();
-  scripts();
-  images();
-  fonts();
+  style();
+  script();
+  image();
+  font();
   browserSync();
   gulp.watch("./src/pug/**/*.pug", html);
-  gulp.watch("./src/scss/**/*.scss", styles);
-  gulp.watch("./src/js/**/*.js", scripts);
-  gulp.watch("./src/img/**/*", images);
-  gulp.watch("./src/fonts/**/*", fonts);
+  gulp.watch("./src/scss/**/*.scss", style);
+  gulp.watch("./src/js/**/*.js", script);
+  gulp.watch("./src/img/**/*", image);
+  gulp.watch("./src/fonts/**/*", font);
 };
