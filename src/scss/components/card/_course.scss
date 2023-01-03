@@ -132,9 +132,18 @@
     background: $secondary;
   }
 
+  &__banner {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.01);
+    transition: 0.3s transform ease;
+  }
+
   &__img {
     display: block;
     width: 100%;
+    object-fit: cover;
     transform: scale(1.01);
     transition: 0.3s transform ease;
     
@@ -144,7 +153,8 @@
     }
   }
 
-  &__image:hover &__img {
+  &__image:hover &__img,
+  &__image:hover &__banner {
     transform: scale(1.05);
   }
 
@@ -253,8 +263,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 70px;
+  padding: 120px 70px;
   background: #F4F5F7;
   border-radius: $radius;
   text-align: center;
+
+  @media (max-width: 991px) {
+    padding: 80px 30px;
+  }
 }

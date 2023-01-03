@@ -42,7 +42,7 @@
 
   &__img {
     display: block;
-    
+
     @media (max-width: 991px) {
       // max-width: 400px;
       margin: 0 auto;
@@ -68,9 +68,14 @@
 
 .about-video {
   padding: 100px 0 90px;
+  background-image: url('/img/bg/yellow-dots.svg');
+  background-repeat: no-repeat;
+  background-position: left 14% bottom 47px;
+  background-size: auto;
 
   @media (max-width: 991px) {
     padding: 50px 0;
+    background-position: left -10% bottom 270px;
   }
 
   &__wrap {
@@ -109,7 +114,7 @@
     }
   }
 
-  &__item ~ &__item {
+  &__item~&__item {
     margin-top: 20px;
 
     @media (max-width: 991px) {
@@ -120,6 +125,10 @@
 
 .section-values {
   padding: 90px 0;
+  background-image: url('/img/bg/yellow-shapes-top-right.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 93% 0;
   text-align: center;
 
   @media (max-width: 991px) {
@@ -158,9 +167,15 @@
 
 .section-do-it {
   padding: 90px 0;
+  background-image: url('/img/bg/yellow-circles.svg');
+  background-repeat: no-repeat;
+  background-position: 106% 0;
+  background-size: auto;
 
   @media (max-width: 991px) {
     padding: 50px 0;
+    background-position: 120% 0;
+    background-size: 120px;
   }
 
   &__wrap {
@@ -209,17 +224,18 @@
     gap: 40px;
 
     @media (max-width: 991px) {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, auto);
+      justify-content: space-around;
       gap: 30px;
     }
 
     @media (max-width: 575px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, auto);
       gap: 20px;
     }
   }
 
-  & ~ .section-posts {
+  &~.section-posts {
     padding-top: 100px;
   }
 }
@@ -240,7 +256,7 @@
   &__item {
     &:not(:first-child) {
       position: relative;
-      
+
       &::after {
         position: absolute;
         top: 0;
@@ -285,9 +301,18 @@
 
 .about-team {
   padding: 90px 0 120px;
+  background-image: url('/img/bg/yellow-arrows-top-right.svg');
+  background-repeat: no-repeat;
+  background-position: 127px 42px;
+  background-size: auto;
 
   @media (max-width: 991px) {
     padding: 40px 0;
+    background-position: 47px 22px;
+  }
+
+  @media (max-width: 575px) {
+    background-position: 12px 22px;
   }
 
   & .section__title,
@@ -301,7 +326,7 @@
     gap: 60px 30px;
   }
 
-  & ~ .section-testimonials {
+  &~.section-testimonials {
     padding-top: 100px !important;
   }
 }

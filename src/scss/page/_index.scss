@@ -1,8 +1,8 @@
 .section-first {
   padding: 200px 0 80px;
 
-  background-image: url('/img/first-bg-dots.png'), url('/img/first-bg-circle.png'), linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
-  background-position: top 82% right -20px, left -120px bottom -120px, center;
+  background-image: url('/img/bg/white-dots.svg'), url('/img/bg/white-circles.svg'), url('/img/bg/white-triangles-top-right.svg'), url('/img/bg/white-triangles-bottom.svg'), url('/img/bg/white-shapes-right.svg'), url('/img/bg/white-shape.svg'), linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
+  background-position: top 82% right -20px, left -120px bottom -120px, 81px 133px, 94.5% -45px, 43% 47%, 39% 74%, center;
   background-repeat: no-repeat;
   background-size: auto;
 
@@ -163,6 +163,10 @@
 
 .section-why {
   margin: 180px 0;
+  background-image: url('/img/bg/yellow-circles.svg'), url('/img/bg/yellow-dots-top-right.svg');
+  background-repeat: no-repeat;
+  background-size: 278px;
+  background-position: bottom 22px right -156px, -122px 66px;
 
   @media (max-width: 1199px) {
     margin: 120px 0;
@@ -170,6 +174,7 @@
 
   @media (max-width: 991px) {
     margin: 90px 0;
+    background-size: 158px;
   }
 
   &__wrap {
@@ -292,7 +297,10 @@
 
 .section-event {
   padding: 80px 0;
-  background: linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
+  background-image: url('/img/bg/white-circles.svg'), url('/img/bg/white-dots.svg'),linear-gradient(55.95deg, rgba(#FF3F3A, 0.2) 0%, rgba(#F75E05, 0.2) 100%);
+  background-repeat: no-repeat;
+  background-position: top -135px right -60px, bottom -5px left -60px, center;
+  background-size: auto;
 
   @media (max-width: 991px) {
     padding: 50px 0;
